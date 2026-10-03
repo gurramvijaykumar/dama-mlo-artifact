@@ -1,0 +1,147 @@
+P id ap MAP1 node=0 mld=00:00:00:00:00:0a L0=00:00:00:00:00:0b@5GHz/5180 L1=00:00:00:00:00:0c@6GHz/5955
+P id ap MAP4 node=3 mld=00:00:00:00:00:0d L0=00:00:00:00:00:0e@5GHz/5240 L1=00:00:00:00:00:0f@6GHz/6015
+P id sta N1 node=11 mld=00:00:00:00:00:10 L0=00:00:00:00:00:11@5GHz/5180 L1=00:00:00:00:00:12@6GHz/5955
+P id sta N2 node=12 mld=00:00:00:00:00:13 L0=00:00:00:00:00:14@5GHz/5180 L1=00:00:00:00:00:15@6GHz/5955
+P id sta N3 node=13 mld=00:00:00:00:00:16 L0=00:00:00:00:00:17@5GHz/5240 L1=00:00:00:00:00:18@6GHz/6015
+P id sta N4 node=14 mld=00:00:00:00:00:19 L0=00:00:00:00:00:19@5GHz/5240
+P 0.000000 apPsCount MAP1 L0 n=0
+P 0.000000 apPsCount MAP1 L1 n=0
+P 0.000000 apPsCount MAP4 L0 n=0
+P 0.000000 apPsCount MAP4 L1 n=0
+P 0.121000 apPs MAP1 L0 sta=N2/L0 ps=0
+P 0.121000 apPs MAP1 L1 sta=N2/L1 ps=0
+P 0.121000 apPs MAP4 L0 sta=N3/L0 ps=0
+P 0.121000 apPs MAP4 L1 sta=N3/L1 ps=0
+P 0.121000 staPm N3 L0 mode=0
+P 0.121000 staPm N3 L1 mode=0
+P 0.122000 apPs MAP1 L0 sta=N1/L0 ps=0
+P 0.122000 apPs MAP1 L1 sta=N1/L1 ps=0
+P 0.122000 apPs MAP4 L0 sta=N4/L0 ps=0
+P 0.122000 staPm N1 L0 mode=0
+P 0.122000 staPm N1 L1 mode=0
+P 0.122000 staPm N2 L0 mode=0
+P 0.122000 staPm N2 L1 mode=0
+P 0.122000 staPm N4 L0 mode=0
+P 1.019535 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=MAP1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.2
+P 1.019535 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=MAP1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.2
+P 1.020827 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=N1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.2 dst=10.2.1.1
+P 1.020846 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=N1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.2 dst=10.2.1.1
+P 1.058226 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=MAP1 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.3
+P 1.058229 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=MAP1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.3
+P 1.066338 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=N2 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.3 dst=10.2.1.1
+P 1.066435 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=N2 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.1.3 dst=10.2.1.1
+P 1.181165 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=MAP4 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.2
+P 1.181165 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=MAP4 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.2
+P 1.184177 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=MAP4 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.3
+P 1.184177 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=MAP4 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.3
+P 1.185411 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=N3 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.2 dst=10.2.4.1
+P 1.185723 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=N3 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.2 dst=10.2.4.1
+P 1.188757 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=N4/L0 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.3 dst=10.2.4.1
+P 1.188859 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=N4/L0 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.3 dst=10.2.4.1
+R scenario 0
+R chosenMap 0
+R linkMode mloConfined
+R n4Rate EhtMcs0
+R n5X 70.000000
+R n5Y 225.000000
+R rngRun 10
+R window 10.000000
+R tput_N1 18.962400
+R e2e_N1 36.228269
+R probe_N1 34.924128
+R tput_N2 18.831600
+R e2e_N2 35.931748
+R probe_N2 34.579898
+R tput_N3 17.006400
+R e2e_N3 34.952100
+R probe_N3 32.839733
+R tput_N4 5.134800
+R e2e_N4 130.473218
+R probe_N4 38.514527
+R sumTput 59.935200
+R sumLog 10.347625
+R jain 0.872082
+R nSta 4
+R lossPct 0.000000
+R e2eMs 43.847196
+R probeMs 34.531414
+R util_MAP1_L0 0.260990
+R util_MAP1_L1 0.264550
+R util_MAP4_L0 0.852252
+R util_MAP4_L1 0.197654
+R txair_N1_L0 0.023532
+R txair_N1_L1 0.022432
+R txair_N2_L0 0.023296
+R txair_N2_L1 0.021198
+R txair_N3_L0 0.004154
+R txair_N3_L1 0.019945
+R txair_N4_L0 0.063584
+R mcs_N1_L0 EhtMcs11
+R frames_N1_L0 53
+R mcs_N1_L1 EhtMcs10
+R frames_N1_L1 36
+R mcs_N2_L0 EhtMcs11
+R frames_N2_L0 38
+R mcs_N2_L1 EhtMcs10
+R frames_N2_L1 49
+R mcs_N3_L0 EhtMcs11
+R frames_N3_L0 50
+R mcs_N3_L1 EhtMcs10
+R frames_N3_L1 192
+R mcs_N4_L0 EhtMcs0
+R frames_N4_L0 44
+R codeVersion 2.1
+R dN_N1 15802
+R dMiss_N1 0
+R dAcc_N1 1.304141
+R dWbh_N1 30.290131
+R dWired_N1 4.633996
+R dE2e_N1 36.228269
+R dN_N2 15693
+R dMiss_N2 0
+R dAcc_N2 1.349203
+R dWbh_N2 29.964839
+R dWired_N2 4.617705
+R dE2e_N2 35.931748
+R dN_N3 14172
+R dMiss_N3 0
+R dAcc_N3 2.112367
+R dWbh_N3 28.377539
+R dWired_N3 4.462193
+R dE2e_N3 34.952100
+R dN_N4 4279
+R dMiss_N4 0
+R dAcc_N4 91.964931
+R dWbh_N4 33.936845
+R dWired_N4 4.571441
+R dE2e_N4 130.473218
+R dN 49946
+R dMiss 0
+R dAccMs 9.314770
+R dWbhMs 29.957657
+R dWiredMs 4.574770
+R dE2eMs 43.847196
+R apmcs_MAP1_L0_N1 EhtMcs11
+R apframes_MAP1_L0_N1 1818
+R apmcsShare_MAP1_L0_N1 1.000000
+R apmcs_MAP1_L0_N2 EhtMcs11
+R apframes_MAP1_L0_N2 1741
+R apmcsShare_MAP1_L0_N2 1.000000
+R apmcs_MAP1_L1_N1 EhtMcs10
+R apframes_MAP1_L1_N1 1682
+R apmcsShare_MAP1_L1_N1 1.000000
+R apmcs_MAP1_L1_N2 EhtMcs10
+R apframes_MAP1_L1_N2 1636
+R apmcsShare_MAP1_L1_N2 1.000000
+R apmcs_MAP4_L0_N3 EhtMcs11
+R apframes_MAP4_L0_N3 181
+R apmcsShare_MAP4_L0_N3 1.000000
+R apmcs_MAP4_L0_N4 EhtMcs0
+R apframes_MAP4_L0_N4 1512
+R apmcsShare_MAP4_L0_N4 1.000000
+R apmcs_MAP4_L1_N3 EhtMcs10
+R apframes_MAP4_L1_N3 1627
+R apmcsShare_MAP4_L1_N3 1.000000
+R traceVersion 1
+R n5Links all
+rc 0

@@ -1,0 +1,156 @@
+P id ap MAP1 node=0 mld=00:00:00:00:00:0a L0=00:00:00:00:00:0b@5GHz/5180 L1=00:00:00:00:00:0c@6GHz/5955
+P id ap MAP4 node=3 mld=00:00:00:00:00:0d L0=00:00:00:00:00:0e@5GHz/5240 L1=00:00:00:00:00:0f@6GHz/6015
+P id sta N1 node=11 mld=00:00:00:00:00:10 L0=00:00:00:00:00:11@5GHz/5180 L1=00:00:00:00:00:12@6GHz/5955
+P id sta N2 node=12 mld=00:00:00:00:00:13 L0=00:00:00:00:00:14@5GHz/5180 L1=00:00:00:00:00:15@6GHz/5955
+P id sta N3 node=13 mld=00:00:00:00:00:16 L0=00:00:00:00:00:17@5GHz/5240 L1=00:00:00:00:00:18@6GHz/6015
+P id sta N4 node=14 mld=00:00:00:00:00:19 L0=00:00:00:00:00:1a@5GHz/5240 L1=00:00:00:00:00:1b@6GHz/6015
+P 0.000000 apPsCount MAP1 L0 n=0
+P 0.000000 apPsCount MAP1 L1 n=0
+P 0.000000 apPsCount MAP4 L0 n=0
+P 0.000000 apPsCount MAP4 L1 n=0
+P 0.121000 apPs MAP1 L0 sta=N2/L0 ps=0
+P 0.121000 apPs MAP1 L1 sta=N2/L1 ps=0
+P 0.121000 apPs MAP4 L0 sta=N3/L0 ps=0
+P 0.121000 apPs MAP4 L1 sta=N3/L1 ps=0
+P 0.121000 staPm N3 L0 mode=0
+P 0.121000 staPm N3 L1 mode=3
+P 0.122000 apPs MAP1 L0 sta=N1/L0 ps=0
+P 0.122000 apPs MAP1 L1 sta=N1/L1 ps=0
+P 0.122000 apPs MAP4 L0 sta=N4/L0 ps=0
+P 0.122000 apPs MAP4 L1 sta=N4/L1 ps=0
+P 0.122000 staPm N1 L0 mode=0
+P 0.122000 staPm N1 L1 mode=0
+P 0.122000 staPm N2 L0 mode=0
+P 0.122000 staPm N2 L1 mode=0
+P 0.122000 staPm N3 L1 mode=0
+P 0.122000 staPm N4 L0 mode=0
+P 0.122000 staPm N4 L1 mode=0
+P 1.020765 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=MAP1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.2
+P 1.020765 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=MAP1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.2
+P 1.027053 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=N1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.2 dst=10.2.1.1
+P 1.027132 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=N1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.2 dst=10.2.1.1
+P 1.060616 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=MAP1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.3
+P 1.060619 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=MAP1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.3
+P 1.064852 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=N2 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.3 dst=10.2.1.1
+P 1.064935 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=N2 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.3 dst=10.2.1.1
+P 2.125446 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=MAP4 bytes=66 beaconsBefore=21 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.2
+P 2.125454 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=MAP4 bytes=66 beaconsBefore=20 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.2
+P 2.130454 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=MAP4 bytes=66 beaconsBefore=20 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.3
+P 2.130456 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=MAP4 bytes=66 beaconsBefore=21 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.3
+P 2.132733 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=N3 bytes=66 beaconsBefore=21 ethertype=0x806 arp=request src=10.2.4.2 dst=10.2.4.1
+P 2.132819 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=N3 bytes=66 beaconsBefore=20 ethertype=0x806 arp=request src=10.2.4.2 dst=10.2.4.1
+P 2.134659 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=N4 bytes=66 beaconsBefore=21 ethertype=0x806 arp=request src=10.2.4.3 dst=10.2.4.1
+P 2.134745 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=N4 bytes=66 beaconsBefore=20 ethertype=0x806 arp=request src=10.2.4.3 dst=10.2.4.1
+R scenario 0
+R chosenMap 0
+R linkMode mlo
+R n4Rate EhtMcs2
+R n5X 70.000000
+R n5Y 225.000000
+R rngRun 6
+R window 10.000000
+R tput_N1 16.683600
+R e2e_N1 39.437380
+R probe_N1 38.140966
+R tput_N2 16.680000
+R e2e_N2 38.705502
+R probe_N2 37.372657
+R tput_N3 14.836800
+R e2e_N3 43.351666
+R probe_N3 37.441768
+R tput_N4 12.754800
+R e2e_N4 47.666223
+R probe_N4 39.129177
+R sumTput 60.955200
+R sumLog 10.871655
+R jain 0.988826
+R nSta 4
+R lossPct 0.005912
+R e2eMs 41.911738
+R probeMs 37.967927
+R util_MAP1_L0 0.233322
+R util_MAP1_L1 0.238457
+R util_MAP4_L0 0.443172
+R util_MAP4_L1 0.449168
+R txair_N1_L0 0.021810
+R txair_N1_L1 0.019703
+R txair_N2_L0 0.021345
+R txair_N2_L1 0.019706
+R txair_N3_L0 0.012234
+R txair_N3_L1 0.011351
+R txair_N4_L0 0.025807
+R txair_N4_L1 0.023804
+R mcs_N1_L0 EhtMcs11
+R frames_N1_L0 43
+R mcs_N1_L1 EhtMcs10
+R frames_N1_L1 35
+R mcs_N2_L0 EhtMcs11
+R frames_N2_L0 38
+R mcs_N2_L1 EhtMcs10
+R frames_N2_L1 39
+R mcs_N3_L0 EhtMcs11
+R frames_N3_L0 95
+R mcs_N3_L1 EhtMcs10
+R frames_N3_L1 73
+R mcs_N4_L0 EhtMcs2
+R frames_N4_L0 64
+R mcs_N4_L1 EhtMcs2
+R frames_N4_L1 56
+R codeVersion 2.1
+R dN_N1 13903
+R dMiss_N1 0
+R dAcc_N1 1.301090
+R dWbh_N1 33.471420
+R dWired_N1 4.664870
+R dE2e_N1 39.437380
+R dN_N2 13900
+R dMiss_N2 0
+R dAcc_N2 1.335308
+R dWbh_N2 32.700611
+R dWired_N2 4.669583
+R dE2e_N2 38.705502
+R dN_N3 12364
+R dMiss_N3 0
+R dAcc_N3 5.909898
+R dWbh_N3 32.816444
+R dWired_N3 4.625324
+R dE2e_N3 43.351666
+R dN_N4 10629
+R dMiss_N4 0
+R dAcc_N4 8.627997
+R dWbh_N4 34.359780
+R dWired_N4 4.678447
+R dE2e_N4 47.666223
+R dN 50796
+R dMiss 0
+R dAccMs 3.965407
+R dWbhMs 33.286957
+R dWiredMs 4.659375
+R dE2eMs 41.911738
+R apmcs_MAP1_L0_N1 EhtMcs11
+R apframes_MAP1_L0_N1 1655
+R apmcsShare_MAP1_L0_N1 1.000000
+R apmcs_MAP1_L0_N2 EhtMcs11
+R apframes_MAP1_L0_N2 1580
+R apmcsShare_MAP1_L0_N2 1.000000
+R apmcs_MAP1_L1_N1 EhtMcs10
+R apframes_MAP1_L1_N1 1509
+R apmcsShare_MAP1_L1_N1 1.000000
+R apmcs_MAP1_L1_N2 EhtMcs10
+R apframes_MAP1_L1_N2 1541
+R apmcsShare_MAP1_L1_N2 1.000000
+R apmcs_MAP4_L0_N3 EhtMcs11
+R apframes_MAP4_L0_N3 829
+R apmcsShare_MAP4_L0_N3 1.000000
+R apmcs_MAP4_L0_N4 EhtMcs2
+R apframes_MAP4_L0_N4 881
+R apmcsShare_MAP4_L0_N4 1.000000
+R apmcs_MAP4_L1_N3 EhtMcs10
+R apframes_MAP4_L1_N3 814
+R apmcsShare_MAP4_L1_N3 0.998771
+R apmcs_MAP4_L1_N4 EhtMcs2
+R apframes_MAP4_L1_N4 880
+R apmcsShare_MAP4_L1_N4 1.000000
+R traceVersion 1
+R n5Links all
+rc 0

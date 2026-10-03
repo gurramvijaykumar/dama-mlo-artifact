@@ -1,0 +1,30 @@
+COMPLETE
+
+Coverage (cached runs / runs in the sweep):
+grid slo EhtMcs0                     205 /   205
+grid slo EhtMcs2                     205 /   205
+grid slo EhtMcs4                     205 /   205
+grid mlo EhtMcs0                     205 /   205
+grid mlo EhtMcs2                     205 /   205
+grid mlo EhtMcs4                     205 /   205
+grid mloConfined EhtMcs0             205 /   205
+grid mloConfined EhtMcs2             205 /   205
+grid mloConfined EhtMcs4             205 /   205
+states slo                           130 /   130
+states mlo                           130 /   130
+states mloConfined                   130 /   130
+sens baseline 80 MHz (code 2.1)      260 /   260
+sens backhaul 20 MHz                 260 /   260
+sens backhaul 160 MHz                260 /   260
+sens UDP                             260 /   260
+sens downlink                        259 /   260  EXCLUDED 1 (failed_runs.jsonl)
+sens near (10 m)                     260 /   260
+arrivals mlo                       present
+arrivals mloConfined               present
+TOTAL runs                          3794 /  3795  EXCLUDED 1 (failed_runs.jsonl)
+
+
+learners: ['ucb1', 'linucb', 'neural'], replicates: 5 (policy results read from results/policies*.json)
+tables:  tab_states_util, tab_states_results, tab_ablation, tab_policies, tab_training, tab_delay, tab_backhaul, tab_sens, tab_arrivals
+figures: fig_ablation, fig_grid, fig_policies, fig_backhaul, fig_arrivals
+preview.pdf: built

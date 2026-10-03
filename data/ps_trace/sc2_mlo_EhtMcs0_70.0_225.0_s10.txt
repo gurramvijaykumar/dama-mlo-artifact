@@ -1,0 +1,333 @@
+P id ap MAP1 node=0 mld=00:00:00:00:00:0a L0=00:00:00:00:00:0b@5GHz/5180 L1=00:00:00:00:00:0c@6GHz/5955
+P id ap MAP4 node=3 mld=00:00:00:00:00:0d L0=00:00:00:00:00:0e@5GHz/5240 L1=00:00:00:00:00:0f@6GHz/6015
+P id sta N1 node=11 mld=00:00:00:00:00:10 L0=00:00:00:00:00:11@5GHz/5180 L1=00:00:00:00:00:12@6GHz/5955
+P id sta N2 node=12 mld=00:00:00:00:00:13 L0=00:00:00:00:00:14@5GHz/5180 L1=00:00:00:00:00:15@6GHz/5955
+P id sta N3 node=13 mld=00:00:00:00:00:16 L0=00:00:00:00:00:17@5GHz/5240 L1=00:00:00:00:00:18@6GHz/6015
+P id sta N4 node=14 mld=00:00:00:00:00:19 L0=00:00:00:00:00:1a@5GHz/5240 L1=00:00:00:00:00:1b@6GHz/6015
+P id sta N5 node=15 mld=00:00:00:00:00:1c L0=00:00:00:00:00:1d@5GHz/5240 L1=00:00:00:00:00:1e@6GHz/6015
+P 0.000000 apPsCount MAP1 L0 n=0
+P 0.000000 apPsCount MAP1 L1 n=0
+P 0.000000 apPsCount MAP4 L0 n=0
+P 0.000000 apPsCount MAP4 L1 n=0
+P 0.121000 apPs MAP1 L0 sta=N2/L0 ps=0
+P 0.121000 apPs MAP1 L1 sta=N2/L1 ps=0
+P 0.121000 apPs MAP4 L0 sta=N3/L0 ps=0
+P 0.121000 apPs MAP4 L1 sta=N3/L1 ps=0
+P 0.121000 staPm N3 L0 mode=0
+P 0.121000 staPm N3 L1 mode=0
+P 0.122000 apPs MAP1 L0 sta=N1/L0 ps=0
+P 0.122000 apPs MAP1 L1 sta=N1/L1 ps=0
+P 0.122000 apPs MAP4 L0 sta=N5/L0 ps=0
+P 0.122000 apPsCount MAP4 L1 n=1
+P 0.122000 apPs MAP4 L1 sta=N5/L1 ps=1
+P 0.122000 staPm N1 L0 mode=0
+P 0.122000 staPm N1 L1 mode=0
+P 0.122000 staPm N2 L0 mode=0
+P 0.122000 staPm N2 L1 mode=0
+P 0.122000 staPm N5 L0 mode=0
+P 0.122000 staPm N5 L1 mode=3
+P 0.123000 apPs MAP4 L0 sta=N4/L0 ps=0
+P 0.123000 apPsCount MAP4 L1 n=0
+P 0.123000 apPs MAP4 L1 sta=N5/L1 ps=0
+P 0.123000 apPs MAP4 L1 sta=N4/L1 ps=0
+P 0.123000 staPm N4 L0 mode=0
+P 0.123000 staPm N4 L1 mode=3
+P 0.123000 staPm N5 L1 mode=0
+P 0.124000 staPm N4 L1 mode=0
+P 1.016538 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=MAP1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.2
+P 1.016538 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=MAP1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.2
+P 1.026750 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=N1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.2 dst=10.2.1.1
+P 1.026829 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=N1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.2 dst=10.2.1.1
+P 1.059219 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=MAP1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.3
+P 1.059220 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=MAP1 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.3
+P 1.065671 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=N2 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.3 dst=10.2.1.1
+P 1.065757 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=N2 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.1.3 dst=10.2.1.1
+P 1.132358 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=MAP4 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.2
+P 1.132358 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=MAP4 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.2
+P 1.133595 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=N3 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.2 dst=10.2.4.1
+P 1.133677 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=N3 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.2 dst=10.2.4.1
+P 1.162692 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=MAP4 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.3
+P 1.162693 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=MAP4 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.3
+P 1.169098 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=N4 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.3 dst=10.2.4.1
+P 1.169199 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=N4 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.3 dst=10.2.4.1
+P 1.211464 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=MAP4 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.4
+P 1.211466 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=MAP4 bytes=66 beaconsBefore=12 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.4
+P 1.214676 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=N5 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.4 dst=10.2.4.1
+P 1.214763 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=N5 bytes=66 beaconsBefore=12 ethertype=0x806 arp=request src=10.2.4.4 dst=10.2.4.1
+R scenario 2
+R chosenMap 4
+R linkMode mlo
+R n4Rate EhtMcs0
+R n5X 70.000000
+R n5Y 225.000000
+R rngRun 10
+R window 10.000000
+R tput_N1 17.587200
+R e2e_N1 36.959416
+R probe_N1 35.655426
+R tput_N2 17.560800
+R e2e_N2 37.836068
+R probe_N2 36.456777
+R tput_N3 10.188000
+R e2e_N3 75.645958
+R probe_N3 45.912501
+R tput_N4 6.870000
+R e2e_N4 95.090166
+R probe_N4 52.462071
+R tput_N5 8.258400
+R e2e_N5 82.543291
+R probe_N5 48.393962
+R sumTput 60.464400
+R sumLog 12.092446
+R jain 0.873703
+R nSta 5
+R lossPct 0.000000
+R e2eMs 56.563370
+R probeMs 41.279269
+R util_MAP1_L0 0.243475
+R util_MAP1_L1 0.248606
+R util_MAP4_L0 0.737488
+R util_MAP4_L1 0.738443
+R txair_N1_L0 0.022049
+R txair_N1_L1 0.020808
+R txair_N2_L0 0.021893
+R txair_N2_L1 0.020230
+R txair_N3_L0 0.006747
+R txair_N3_L1 0.005990
+R txair_N4_L0 0.043125
+R txair_N4_L1 0.043395
+R txair_N5_L0 0.007734
+R txair_N5_L1 0.007911
+R mcs_N1_L0 EhtMcs11
+R frames_N1_L0 45
+R mcs_N1_L1 EhtMcs10
+R frames_N1_L1 49
+R mcs_N2_L0 EhtMcs11
+R frames_N2_L0 61
+R mcs_N2_L1 EhtMcs10
+R frames_N2_L1 43
+R mcs_N3_L0 EhtMcs11
+R frames_N3_L0 66
+R mcs_N3_L1 EhtMcs10
+R frames_N3_L1 65
+R mcs_N4_L0 EhtMcs0
+R frames_N4_L0 15
+R mcs_N4_L1 EhtMcs0
+R frames_N4_L1 13
+R mcs_N5_L0 EhtMcs4
+R frames_N5_L0 69
+R mcs_N5_L1 EhtMcs4
+R frames_N5_L1 57
+R codeVersion 2.1
+R dN_N1 14656
+R dMiss_N1 0
+R dAcc_N1 1.309261
+R dWbh_N1 30.993613
+R dWired_N1 4.656542
+R dE2e_N1 36.959416
+R dN_N2 14634
+R dMiss_N2 0
+R dAcc_N2 1.387361
+R dWbh_N2 31.771916
+R dWired_N2 4.676791
+R dE2e_N2 37.836068
+R dN_N3 8490
+R dMiss_N3 0
+R dAcc_N3 29.739875
+R dWbh_N3 41.261927
+R dWired_N3 4.644155
+R dE2e_N3 75.645958
+R dN_N4 5725
+R dMiss_N4 0
+R dAcc_N4 42.561534
+R dWbh_N4 47.683266
+R dWired_N4 4.845365
+R dE2e_N4 95.090166
+R dN_N5 6882
+R dMiss_N5 0
+R dAcc_N5 34.150503
+R dWbh_N5 43.622554
+R dWired_N5 4.770235
+R dE2e_N5 82.543291
+R dN 50387
+R dMiss 0
+R dAccMs 15.295041
+R dWbhMs 36.571010
+R dWiredMs 4.697318
+R dE2eMs 56.563370
+R apmcs_MAP1_L0_N1 EhtMcs11
+R apframes_MAP1_L0_N1 1655
+R apmcsShare_MAP1_L0_N1 1.000000
+R apmcs_MAP1_L0_N2 EhtMcs11
+R apframes_MAP1_L0_N2 1650
+R apmcsShare_MAP1_L0_N2 1.000000
+R apmcs_MAP1_L1_N1 EhtMcs10
+R apframes_MAP1_L1_N1 1610
+R apmcsShare_MAP1_L1_N1 1.000000
+R apmcs_MAP1_L1_N2 EhtMcs10
+R apframes_MAP1_L1_N2 1532
+R apmcsShare_MAP1_L1_N2 1.000000
+R apmcs_MAP4_L0_N3 EhtMcs11
+R apframes_MAP4_L0_N3 412
+R apmcsShare_MAP4_L0_N3 1.000000
+R apmcs_MAP4_L0_N4 EhtMcs0
+R apframes_MAP4_L0_N4 1026
+R apmcsShare_MAP4_L0_N4 1.000000
+R apmcs_MAP4_L0_N5 EhtMcs4
+R apframes_MAP4_L0_N5 317
+R apmcsShare_MAP4_L0_N5 1.000000
+R apmcs_MAP4_L1_N3 EhtMcs10
+R apframes_MAP4_L1_N3 381
+R apmcsShare_MAP4_L1_N3 0.992126
+R apmcs_MAP4_L1_N4 EhtMcs0
+R apframes_MAP4_L1_N4 1017
+R apmcsShare_MAP4_L1_N4 1.000000
+R apmcs_MAP4_L1_N5 EhtMcs4
+R apframes_MAP4_L1_N5 332
+R apmcsShare_MAP4_L1_N5 1.000000
+R traceVersion 1
+R n5Links all
+E 0.121910 linksetup link=0 ap=00:00:00:00:00:0e
+E 0.121910 linksetup link=1 ap=00:00:00:00:00:0f
+E 0.121910 assoc 00:00:00:00:00:0d
+E 1.211620 ba_n5 tid=0 state=PENDING
+E 1.211984 ba_n5 tid=0 state=ESTABLISHED
+E 1.212127 ba_ap tid=0 state=PENDING
+E 1.212446 ba_ap tid=0 state=ESTABLISHED
+S 1 assoc=1 links=0;1; q=0 n5Mbps=0
+S 2 assoc=1 links=0;1; q=0 n5Mbps=0.001344
+S 3 assoc=1 links=0;1; q=0 n5Mbps=7.23642
+S 4 assoc=1 links=0;1; q=0 n5Mbps=8.448
+S 5 assoc=1 links=0;1; q=3 n5Mbps=8.472
+S 6 assoc=1 links=0;1; q=0 n5Mbps=7.872
+S 7 assoc=1 links=0;1; q=0 n5Mbps=9.264
+S 8 assoc=1 links=0;1; q=44 n5Mbps=6.312
+S 9 assoc=1 links=0;1; q=6 n5Mbps=7.944
+S 10 assoc=1 links=0;1; q=0 n5Mbps=9.36
+S 11 assoc=1 links=0;1; q=0 n5Mbps=6.48
+S 12 assoc=1 links=0;1; q=0 n5Mbps=9.12
+S 13 assoc=1 links=0;1; q=0 n5Mbps=9.312
+M mpduTimeout_n5_assoc 1
+M mpduTimeout_n5_data 31
+M psduTimeout_ap_bar 2
+M psduTimeout_ap_data 42
+M psduTimeout_n5_bar 158
+M psduTimeout_n5_data 52
+L dn_0 arrival_ack n=482 meanDbm=-77.141160 minDbm=-77.141160 maxDbm=-77.141160
+L dn_0 arrival_action n=4 meanDbm=-77.141160 minDbm=-77.141160 maxDbm=-77.141160
+L dn_0 arrival_assoc n=3 meanDbm=-77.141160 minDbm=-77.141160 maxDbm=-77.141160
+L dn_0 arrival_ba n=811 meanDbm=-77.141160 minDbm=-77.141160 maxDbm=-77.141160
+L dn_0 arrival_bar n=102 meanDbm=-77.141160 minDbm=-77.141160 maxDbm=-77.141160
+L dn_0 arrival_beacon n=136 meanDbm=-77.141160 minDbm=-77.141160 maxDbm=-77.141160
+L dn_0 arrival_data n=1935 meanDbm=-77.136008 minDbm=-77.141160 maxDbm=-77.135992
+L dn_0 decoded_ack_any n=644 meanSnrDb=16.592415 minSnrDb=15.305162
+L dn_0 decoded_action n=4 meanSnrDb=16.824825 minSnrDb=16.824825
+L dn_0 decoded_assoc n=2 meanSnrDb=16.824825 minSnrDb=16.824825
+L dn_0 decoded_ba n=809 meanSnrDb=16.824825 minSnrDb=16.824825
+L dn_0 decoded_bar n=98 meanSnrDb=16.824825 minSnrDb=16.824825
+L dn_0 decoded_beacon n=136 meanSnrDb=16.824825 minSnrDb=16.824825
+L dn_0 decoded_data n=6856 meanSnrDb=16.829988 minSnrDb=16.824825
+L dn_0 phydrop_assoc_BUSY_DECODING_PREAMBLE 1
+L dn_0 phydrop_ba_TXING 2
+L dn_0 phydrop_bar_PREAMBLE_DETECT_FAILURE 4
+L dn_0 phydrop_data_BUSY_DECODING_PREAMBLE 15
+L dn_0 phydrop_data_EHT_SIG_FAILURE 2
+L dn_0 phydrop_data_PREAMBLE_DETECT_FAILURE 66
+L dn_0 phydrop_data_TXING 25
+L dn_0 tx_ack 138
+L dn_0 tx_action 2
+L dn_0 tx_assoc 1
+L dn_0 tx_ba 206
+L dn_0 tx_bar 27
+L dn_0 tx_beacon 136
+L dn_0 tx_data 360
+L dn_0 txmode_EhtMcs4 354
+L dn_0 txmode_OfdmRate6Mbps 6
+L dn_0 txDataMpdus 4107
+L dn_0 macTxDataFailed 783
+L dn_0 macTxFinalDataFailed 0
+L dn_0 txDataPerSec 0,9,349,396,330,375,421,287,347,419,321,375,424,54,
+L dn_0 rxDataPerSec 0,13,517,695,541,563,619,516,683,712,569,651,687,90,
+L dn_1 arrival_ack n=457 meanDbm=-78.339247 minDbm=-78.339247 maxDbm=-78.339247
+L dn_1 arrival_action n=2 meanDbm=-78.339247 minDbm=-78.339247 maxDbm=-78.339247
+L dn_1 arrival_ba n=811 meanDbm=-78.339247 minDbm=-78.339247 maxDbm=-78.339247
+L dn_1 arrival_bar n=78 meanDbm=-78.339247 minDbm=-78.339247 maxDbm=-78.339247
+L dn_1 arrival_beacon n=136 meanDbm=-78.339247 minDbm=-78.339247 maxDbm=-78.339247
+L dn_1 arrival_data n=1914 meanDbm=-78.334095 minDbm=-78.339247 maxDbm=-78.334079
+L dn_1 decoded_ack_any n=600 meanSnrDb=15.415659 minSnrDb=14.107075
+L dn_1 decoded_action n=2 meanSnrDb=15.626739 minSnrDb=15.626739
+L dn_1 decoded_ba n=810 meanSnrDb=15.626739 minSnrDb=15.626739
+L dn_1 decoded_bar n=77 meanSnrDb=15.626739 minSnrDb=15.626739
+L dn_1 decoded_beacon n=136 meanSnrDb=15.626739 minSnrDb=15.626739
+L dn_1 decoded_data n=6981 meanSnrDb=15.631901 minSnrDb=15.626739
+L dn_1 phydrop_ba_TXING 1
+L dn_1 phydrop_bar_PREAMBLE_DETECT_FAILURE 1
+L dn_1 phydrop_data_BUSY_DECODING_PREAMBLE 4
+L dn_1 phydrop_data_EHT_SIG_FAILURE 16
+L dn_1 phydrop_data_PREAMBLE_DETECT_FAILURE 57
+L dn_1 phydrop_data_TXING 21
+L dn_1 tx_ack 173
+L dn_1 tx_ba 224
+L dn_1 tx_bar 17
+L dn_1 tx_beacon 136
+L dn_1 tx_data 373
+L dn_1 txmode_EhtMcs4 366
+L dn_1 txmode_HeMcs0 1
+L dn_1 txmode_OfdmRate6Mbps 6
+L dn_1 txDataMpdus 4103
+L dn_1 macTxDataFailed 493
+L dn_1 macTxFinalDataFailed 0
+L dn_1 txDataPerSec 0,7,302,367,403,362,402,330,347,398,262,412,473,38,
+L dn_1 rxDataPerSec 0,7,525,676,623,550,610,581,681,685,550,715,701,77,
+L up_0 arrival_ack n=73 meanDbm=-77.141160 minDbm=-77.141160 maxDbm=-77.141160
+L up_0 arrival_action n=2 meanDbm=-77.141160 minDbm=-77.141160 maxDbm=-77.141160
+L up_0 arrival_assoc n=2 meanDbm=-77.141160 minDbm=-77.141160 maxDbm=-77.141160
+L up_0 arrival_ba n=284 meanDbm=-77.141160 minDbm=-77.141160 maxDbm=-77.141160
+L up_0 arrival_bar n=111 meanDbm=-77.141160 minDbm=-77.141160 maxDbm=-77.141160
+L up_0 arrival_data n=360 meanDbm=-77.135992 minDbm=-77.135992 maxDbm=-77.135992
+L up_0 decoded_ack_any n=236 meanSnrDb=26.300889 minSnrDb=15.123071
+L up_0 decoded_action n=2 meanSnrDb=16.824825 minSnrDb=16.824825
+L up_0 decoded_assoc n=1 meanSnrDb=16.824825 minSnrDb=16.824825
+L up_0 decoded_ba n=284 meanSnrDb=16.824825 minSnrDb=16.824825
+L up_0 decoded_bar n=29 meanSnrDb=16.824825 minSnrDb=16.824825
+L up_0 decoded_data n=1818 meanSnrDb=16.829993 minSnrDb=16.829993
+L up_0 phydrop_assoc_BUSY_DECODING_PREAMBLE 1
+L up_0 phydrop_bar_TXING 82
+L up_0 phydrop_data_BUSY_DECODING_PREAMBLE 5
+L up_0 phydrop_data_PREAMBLE_DETECT_FAILURE 3
+L up_0 phydrop_data_TXING 40
+L up_0 tx_ack 73
+L up_0 tx_action 2
+L up_0 tx_assoc 2
+L up_0 tx_ba 284
+L up_0 tx_bar 111
+L up_0 tx_data 360
+L up_0 txmode_EhtMcs4 360
+L up_0 txDataMpdus 2167
+L up_0 macTxDataFailed 791
+L up_0 macTxFinalDataFailed 0
+L up_0 txDataPerSec 0,1,147,135,219,192,275,206,213,263,136,178,181,21,
+L up_0 rxDataPerSec 0,1,134,125,216,183,184,152,191,221,89,153,152,17,
+L up_1 arrival_ack n=61 meanDbm=-78.339247 minDbm=-78.339247 maxDbm=-78.339247
+L up_1 arrival_ba n=306 meanDbm=-78.339247 minDbm=-78.339247 maxDbm=-78.339247
+L up_1 arrival_bar n=99 meanDbm=-78.339247 minDbm=-78.339247 maxDbm=-78.339247
+L up_1 arrival_data n=409 meanDbm=-78.334079 minDbm=-78.334079 maxDbm=-78.334079
+L up_1 decoded_ack_any n=204 meanSnrDb=25.114349 minSnrDb=13.924984
+L up_1 decoded_ba n=306 meanSnrDb=15.626739 minSnrDb=15.626739
+L up_1 decoded_bar n=23 meanSnrDb=15.626739 minSnrDb=15.626739
+L up_1 decoded_data n=1979 meanSnrDb=15.631906 minSnrDb=15.631906
+L up_1 phydrop_bar_TXING 76
+L up_1 phydrop_data_BUSY_DECODING_PREAMBLE 6
+L up_1 phydrop_data_TXING 29
+L up_1 tx_ack 61
+L up_1 tx_ba 306
+L up_1 tx_bar 99
+L up_1 tx_data 409
+L up_1 txmode_EhtMcs4 408
+L up_1 txmode_HeMcs0 1
+L up_1 txDataMpdus 2167
+L up_1 macTxDataFailed 463
+L up_1 macTxFinalDataFailed 0
+L up_1 txDataPerSec 1,6,182,258,140,157,213,85,182,187,195,227,302,32,
+L up_1 rxDataPerSec 1,6,168,227,135,147,202,69,176,175,181,227,236,29,
+rc 0

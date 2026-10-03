@@ -1,0 +1,25 @@
+msg="Invalid WifiPhy state.", +1.275940000s 3 file=/home/vijay/ns-allinone-3.48/ns-3.48/src/wifi/model/wifi-phy-state-helper.cc, line=344
+NS_FATAL, terminating
+   0# ns3::WifiPhyStateHelper::SwitchToTx(ns3::Time, std::unordered_map<unsigned short, ns3::Ptr<ns3::WifiPsdu const>, std::hash<unsigned short>, std::equal_to<unsigned short>, std::allocator<std::pair<unsigned short const, ns3::Ptr<ns3::WifiPsdu const> > > > const&, double, ns3::WifiTxVector const&) at :0
+   1# ns3::WifiPhy::Send(std::unordered_map<unsigned short, ns3::Ptr<ns3::WifiPsdu const>, std::hash<unsigned short>, std::equal_to<unsigned short>, std::allocator<std::pair<unsigned short const, ns3::Ptr<ns3::WifiPsdu const> > > > const&, ns3::WifiTxVector const&) [clone .localalias] at :0
+   2# ns3::WifiPhy::Send(ns3::Ptr<ns3::WifiPsdu const>, ns3::WifiTxVector const&) at :0
+   3# ns3::HtFrameExchangeManager::ForwardPsduDown(ns3::Ptr<ns3::WifiPsdu const>, ns3::WifiTxVector&) [clone .localalias] at :0
+   4# ns3::EhtFrameExchangeManager::ForwardPsduDown(ns3::Ptr<ns3::WifiPsdu const>, ns3::WifiTxVector&) [clone .localalias] at :0
+   5# ns3::HtFrameExchangeManager::ForwardMpduDown(ns3::Ptr<ns3::WifiMpdu>, ns3::WifiTxVector&) [clone .localalias] at :0
+   6# ns3::FrameExchangeManager::SendMpdu() [clone .localalias] at :0
+   7# ns3::FrameExchangeManager::PrepareFrameToSend(ns3::Ptr<ns3::WifiMpdu>) at :0
+   8# ns3::EhtFrameExchangeManager::PrepareFrameToSend(ns3::Ptr<ns3::WifiMpdu>) at :0
+   9# ns3::FrameExchangeManager::StartTransmission(ns3::Ptr<ns3::Txop>, double) at :0
+  10# ns3::QosFrameExchangeManager::StartTransmission(ns3::Ptr<ns3::Txop>, double) at :0
+  11# ns3::EhtFrameExchangeManager::StartTransmission(ns3::Ptr<ns3::Txop>, double) at :0
+  12# ns3::ChannelAccessManager::DoGrantDcfAccess() at :0
+  13# ns3::ChannelAccessManager::AccessTimeout() at :0
+  14# ns3::DefaultSimulatorImpl::ProcessOneEvent() [clone .localalias] at :0
+  15# ns3::DefaultSimulatorImpl::Run() [clone .localalias] at :0
+  16# main at :0
+  17# __libc_start_call_main at ../sysdeps/nptl/libc_start_call_main.h:58
+  18# __libc_start_main_impl at ../csu/libc-start.c:360
+  19# _start at :0
+  20# 
+
+terminate called without an active exception

@@ -1,0 +1,760 @@
+P id ap MAP1 node=0 mld=00:00:00:00:00:0a L0=00:00:00:00:00:0a@5GHz/5180
+P id ap MAP4 node=3 mld=00:00:00:00:00:0b L0=00:00:00:00:00:0b@5GHz/5240
+P id sta N1 node=11 mld=00:00:00:00:00:0c L0=00:00:00:00:00:0c@5GHz/5180
+P id sta N2 node=12 mld=00:00:00:00:00:0d L0=00:00:00:00:00:0d@5GHz/5180
+P id sta N3 node=13 mld=00:00:00:00:00:0e L0=00:00:00:00:00:0e@5GHz/5240
+P id sta N4 node=14 mld=00:00:00:00:00:0f L0=00:00:00:00:00:0f@5GHz/5240
+P id sta N5 node=15 mld=00:00:00:00:00:10 L0=00:00:00:00:00:10@5GHz/5240
+P 0.000000 apPsCount MAP1 L0 n=0
+P 0.000000 apPsCount MAP4 L0 n=0
+P 0.121000 apPs MAP1 L0 sta=N2/L0 ps=0
+P 0.121000 apPs MAP4 L0 sta=N3/L0 ps=0
+P 0.121000 apPs MAP4 L0 sta=N4/L0 ps=0
+P 0.121000 staPm N3 L0 mode=0
+P 0.122000 apPs MAP1 L0 sta=N1/L0 ps=0
+P 0.122000 staPm N2 L0 mode=0
+P 0.122000 staPm N4 L0 mode=0
+P 0.123000 staPm N1 L0 mode=0
+P 1.003608 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=N1/L0 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.2 dst=10.2.1.1
+P 1.046977 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=MAP1/L0 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.2
+P 1.052589 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=N2/L0 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.1.3 dst=10.2.1.1
+P 1.064724 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=MAP1/L0 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.3
+P 1.103598 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=N3/L0 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.2 dst=10.2.4.1
+P 1.159700 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=N4/L0 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.3 dst=10.2.4.1
+P 1.167387 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=MAP4/L0 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.2
+P 1.176553 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=MAP4/L0 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.3
+R scenario 2
+R chosenMap 4
+R linkMode slo
+R n4Rate EhtMcs0
+R n5X 100.000000
+R n5Y 285.000000
+R rngRun 2
+R window 10.000000
+R tput_N1 20.107200
+R e2e_N1 31.100003
+R probe_N1 5.974089
+R tput_N2 19.482000
+R e2e_N2 32.753124
+R probe_N2 6.922746
+R tput_N3 10.916400
+R e2e_N3 48.428714
+R probe_N3 13.949883
+R tput_N4 5.226000
+R e2e_N4 154.983096
+R probe_N4 119.251245
+R tput_N5 0.000000
+R e2e_N5 0.000000
+R probe_N5 0.000000
+R sumTput 55.731600
+R sumLog 3.106726
+R jain 0.667725
+R nSta 5
+R lossPct 0.006462
+R e2eMs 46.688759
+R probeMs 18.457648
+R util_MAP1_L0 0.409360
+R util_MAP4_L0 0.922008
+R txair_N1_L0 0.195382
+R txair_N2_L0 0.191750
+R txair_N3_L0 0.120120
+R txair_N4_L0 0.778535
+R txair_N5_L0 0.000000
+R mcs_N1_L0 EhtMcs11
+R frames_N1_L0 1001
+R mcs_N2_L0 EhtMcs11
+R frames_N2_L0 960
+R mcs_N3_L0 EhtMcs11
+R frames_N3_L0 453
+R mcs_N4_L0 EhtMcs0
+R frames_N4_L0 1794
+R mcs_N5_L0 none
+R frames_N5_L0 0
+R codeVersion 2.1
+R dN_N1 16756
+R dMiss_N1 0
+R dAcc_N1 5.986375
+R dWbh_N1 21.089596
+R dWired_N1 4.024032
+R dE2e_N1 31.100003
+R dN_N2 16235
+R dMiss_N2 0
+R dAcc_N2 6.928518
+R dWbh_N2 21.800574
+R dWired_N2 4.024032
+R dE2e_N2 32.753124
+R dN_N3 9097
+R dMiss_N3 0
+R dAcc_N3 13.905508
+R dWbh_N3 30.499003
+R dWired_N3 4.024202
+R dE2e_N3 48.428714
+R dN_N4 4355
+R dMiss_N4 0
+R dAcc_N4 118.861751
+R dWbh_N4 32.097168
+R dWired_N4 4.024177
+R dE2e_N4 154.983096
+R dN 46443
+R dMiss 0
+R dAccMs 18.451296
+R dWbhMs 24.213384
+R dWiredMs 4.024079
+R dE2eMs 46.688759
+R apmcs_MAP1_L0_N1 EhtMcs11
+R apframes_MAP1_L0_N1 303
+R apmcsShare_MAP1_L0_N1 1.000000
+R apmcs_MAP1_L0_N2 EhtMcs11
+R apframes_MAP1_L0_N2 283
+R apmcsShare_MAP1_L0_N2 1.000000
+R apmcs_MAP4_L0_N3 EhtMcs11
+R apframes_MAP4_L0_N3 160
+R apmcsShare_MAP4_L0_N3 0.900000
+R apmcs_MAP4_L0_N4 EhtMcs4
+R apframes_MAP4_L0_N4 84
+R apmcsShare_MAP4_L0_N4 1.000000
+R traceVersion 1
+R n5Links all
+E 1.208000 macTxDrop_n5 (not associated)
+E 2.200000 macTxDrop_n5 (not associated)
+E 3.200000 macTxDrop_n5 (not associated)
+S 1 assoc=0 links= q=0 n5Mbps=0
+S 2 assoc=0 links= q=0 n5Mbps=0
+S 3 assoc=0 links= q=0 n5Mbps=0
+S 4 assoc=0 links= q=0 n5Mbps=0
+S 5 assoc=0 links= q=0 n5Mbps=0
+S 6 assoc=0 links= q=0 n5Mbps=0
+S 7 assoc=0 links= q=0 n5Mbps=0
+S 8 assoc=0 links= q=0 n5Mbps=0
+S 9 assoc=0 links= q=0 n5Mbps=0
+S 10 assoc=0 links= q=0 n5Mbps=0
+S 11 assoc=0 links= q=0 n5Mbps=0
+S 12 assoc=0 links= q=0 n5Mbps=0
+S 13 assoc=0 links= q=0 n5Mbps=0
+M macTxDrop_n5 4
+L dn_0 arrival_ack n=45 meanDbm=-82.496308 minDbm=-82.496308 maxDbm=-82.496308
+L dn_0 arrival_action n=4 meanDbm=-82.496308 minDbm=-82.496308 maxDbm=-82.496308
+L dn_0 arrival_assoc n=2 meanDbm=-82.496308 minDbm=-82.496308 maxDbm=-82.496308
+L dn_0 arrival_ba n=2208 meanDbm=-82.496308 minDbm=-82.496308 maxDbm=-82.496308
+L dn_0 arrival_bar n=128 meanDbm=-82.496308 minDbm=-82.496308 maxDbm=-82.496308
+L dn_0 arrival_beacon n=137 meanDbm=-82.496308 minDbm=-82.496308 maxDbm=-82.496308
+L dn_0 arrival_data n=563 meanDbm=-82.491177 minDbm=-82.496308 maxDbm=-82.491140
+L dn_0 decoded_ack_any n=42 meanSnrDb=13.726398 minSnrDb=13.726398
+L dn_0 phydrop_action_PREAMBLE_DETECT_FAILURE 4
+L dn_0 phydrop_assoc_PREAMBLE_DETECT_FAILURE 2
+L dn_0 phydrop_ba_PREAMBLE_DETECT_FAILURE 2208
+L dn_0 phydrop_bar_BUSY_DECODING_PREAMBLE 2
+L dn_0 phydrop_bar_PREAMBLE_DETECT_FAILURE 126
+L dn_0 phydrop_beacon_BUSY_DECODING_PREAMBLE 1
+L dn_0 phydrop_beacon_PREAMBLE_DETECT_FAILURE 136
+L dn_0 phydrop_data_BUSY_DECODING_PREAMBLE 42
+L dn_0 phydrop_data_PREAMBLE_DETECT_FAILURE 521
+L dn_0 tx_beacon 137
+L dn_0 tx_data 4
+L dn_0 txmode_OfdmRate6Mbps 4
+L dn_0 txDataMpdus 4
+L dn_0 macTxDataFailed 0
+L dn_0 macTxFinalDataFailed 0
+L dn_0 txDataPerSec 0,4,0,0,0,0,0,0,0,0,0,0,0,0,
+L dn_0 rxDataPerSec 0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+L up_0 decoded_ack_any n=59 meanSnrDb=20.728397 minSnrDb=15.123071
+L up_0 txDataMpdus 0
+L up_0 macTxDataFailed 0
+L up_0 macTxFinalDataFailed 0
+L up_0 txDataPerSec 0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+L up_0 rxDataPerSec 0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+D sec 1 flow N1 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=0 rtoChanges=0
+D sec 1 flow N2 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=0 rtoChanges=0
+D sec 1 flow N3 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=0 rtoChanges=0
+D sec 1 flow N4 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=0 rtoChanges=0
+D sec 1 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=0 rtoChanges=0
+D 1.000000 tcpHook N1 state=1 cwnd=1 highRxAck=1 rto=1
+D 1.003000 arpTx N1/sta0 request src=10.2.1.2 dst=10.2.1.1
+D 1.003005 ba N1/sta0 -> MAP1/ap1L0(00:00:00:00:00:0a) tid=0 PENDING
+D 1.003324 ba N1/sta0 -> MAP1/ap1L0(00:00:00:00:00:0a) tid=0 ESTABLISHED
+D 1.003431 arpRx MAP1/ap1 request src=10.2.1.2 dst=10.2.1.1
+D 1.003431 arpTx MAP1/ap1 reply src=10.2.1.1 dst=10.2.1.2
+D 1.003720 arpRx N2/sta0 request src=10.2.1.2 dst=10.2.1.1
+D 1.003871 ba MAP1/ap1 -> N1/sta0L0(00:00:00:00:00:0c) tid=0 PENDING
+D 1.004190 ba MAP1/ap1 -> N1/sta0L0(00:00:00:00:00:0c) tid=0 ESTABLISHED
+D 1.004396 arpRx N1/sta0 reply src=10.2.1.1 dst=10.2.1.2
+D 1.009548 arpTx MAP1/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.009667 arpRx MAP2/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.009667 arpTx MAP2/bh0 reply src=10.1.1.2 dst=10.1.1.1
+D 1.009667 arpRx MAP4/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.009668 arpRx MAP5/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.009668 arpRx MAP3/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.009668 arpRx MAP7/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.009668 arpRx MAP6/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.009668 arpRx MAP8/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.009668 arpRx MAP9/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.009710 ba MAP2/bh0 -> MAP1/bh0L0(00:00:00:00:00:01) tid=0 PENDING
+D 1.010147 ba MAP2/bh0 -> MAP1/bh0L0(00:00:00:00:00:01) tid=0 ESTABLISHED
+D 1.010255 arpRx MAP1/bh0 reply src=10.1.1.2 dst=10.1.1.1
+D 1.010405 ba MAP1/bh0 -> MAP2/bh0L0(00:00:00:00:00:02) tid=0 PENDING
+D 1.010725 ba MAP1/bh0 -> MAP2/bh0L0(00:00:00:00:00:02) tid=0 ESTABLISHED
+D 1.016895 arpTx MAP2/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.017008 arpRx MAP1/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.017008 arpRx MAP3/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.017008 arpTx MAP3/bh0 reply src=10.1.1.3 dst=10.1.1.2
+D 1.017008 arpRx MAP5/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.017008 arpRx MAP4/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.017008 arpRx MAP6/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.017009 arpRx MAP8/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.017009 arpRx MAP7/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.017009 arpRx MAP9/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.017051 ba MAP3/bh0 -> MAP2/bh0L0(00:00:00:00:00:02) tid=0 PENDING
+D 1.017371 ba MAP3/bh0 -> MAP2/bh0L0(00:00:00:00:00:02) tid=0 ESTABLISHED
+D 1.017478 arpRx MAP2/bh0 reply src=10.1.1.3 dst=10.1.1.2
+D 1.017602 ba MAP2/bh0 -> MAP3/bh0L0(00:00:00:00:00:03) tid=0 PENDING
+D 1.017921 ba MAP2/bh0 -> MAP3/bh0L0(00:00:00:00:00:03) tid=0 ESTABLISHED
+D 1.035121 arpTx MAP3/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.035238 arpRx MAP2/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.035238 arpTx MAP2/bh0 reply src=10.1.1.2 dst=10.1.1.3
+D 1.035238 arpRx MAP6/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.035239 arpRx MAP5/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.035239 arpRx MAP1/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.035239 arpRx MAP9/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.035239 arpRx MAP4/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.035239 arpRx MAP8/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.035239 arpRx MAP7/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.035346 arpRx MAP3/bh0 reply src=10.1.1.2 dst=10.1.1.3
+D 1.037597 arpTx MAP2/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.037713 arpRx MAP1/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.037713 arpTx MAP1/bh0 reply src=10.1.1.1 dst=10.1.1.2
+D 1.037713 arpRx MAP3/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.037713 arpRx MAP5/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.037713 arpRx MAP4/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.037713 arpRx MAP6/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.037714 arpRx MAP8/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.037714 arpRx MAP7/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.037714 arpRx MAP9/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.037821 arpRx MAP2/bh0 reply src=10.1.1.1 dst=10.1.1.2
+D 1.046972 arpTx MAP1/ap1 request src=10.2.1.1 dst=10.2.1.2
+D 1.047089 arpRx N1/sta0 request src=10.2.1.1 dst=10.2.1.2
+D 1.047089 arpTx N1/sta0 reply src=10.2.1.2 dst=10.2.1.1
+D 1.047089 arpRx N2/sta0 request src=10.2.1.1 dst=10.2.1.2
+D 1.047196 arpRx MAP1/ap1 reply src=10.2.1.2 dst=10.2.1.1
+D 1.047437 tcpState N1 ESTABLISHED
+D 1.050000 tcpHook N2 state=1 cwnd=1 highRxAck=1 rto=1
+D 1.052000 arpTx N2/sta0 request src=10.2.1.3 dst=10.2.1.1
+D 1.052003 ba N2/sta0 -> MAP1/ap1L0(00:00:00:00:00:0a) tid=0 PENDING
+D 1.052322 ba N2/sta0 -> MAP1/ap1L0(00:00:00:00:00:0a) tid=0 ESTABLISHED
+D 1.052502 arpRx MAP1/ap1 request src=10.2.1.3 dst=10.2.1.1
+D 1.052502 arpTx MAP1/ap1 reply src=10.2.1.1 dst=10.2.1.3
+D 1.052701 arpRx N1/sta0 request src=10.2.1.3 dst=10.2.1.1
+D 1.052861 ba MAP1/ap1 -> N2/sta0L0(00:00:00:00:00:0d) tid=0 PENDING
+D 1.053180 ba MAP1/ap1 -> N2/sta0L0(00:00:00:00:00:0d) tid=0 ESTABLISHED
+D 1.053287 arpRx N2/sta0 reply src=10.2.1.1 dst=10.2.1.3
+D 1.064723 arpTx MAP1/ap1 request src=10.2.1.1 dst=10.2.1.3
+D 1.064836 arpRx N1/sta0 request src=10.2.1.1 dst=10.2.1.3
+D 1.064836 arpRx N2/sta0 request src=10.2.1.1 dst=10.2.1.3
+D 1.064836 arpTx N2/sta0 reply src=10.2.1.3 dst=10.2.1.1
+D 1.064943 arpRx MAP1/ap1 reply src=10.2.1.3 dst=10.2.1.1
+D 1.065166 tcpState N2 ESTABLISHED
+D 1.100000 tcpHook N3 state=1 cwnd=1 highRxAck=1 rto=1
+D 1.103000 arpTx N3/sta0 request src=10.2.4.2 dst=10.2.4.1
+D 1.103004 ba N3/sta0 -> MAP4/ap1L0(00:00:00:00:00:0b) tid=0 PENDING
+D 1.103323 ba N3/sta0 -> MAP4/ap1L0(00:00:00:00:00:0b) tid=0 ESTABLISHED
+D 1.103452 arpPhyDrop N5/sta0L0 from N3/sta0L0(00:00:00:00:00:0e) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.2 dst=10.2.4.1
+D 1.103511 arpRx MAP4/ap1 request src=10.2.4.2 dst=10.2.4.1
+D 1.103511 arpTx MAP4/ap1 reply src=10.2.4.1 dst=10.2.4.2
+D 1.103603 arpPhyDrop N5/sta0L0 from MAP4/ap1L0(00:00:00:00:00:0b) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.2 dst=10.2.4.1
+D 1.103711 arpRx N4/sta0 request src=10.2.4.2 dst=10.2.4.1
+D 1.103789 ba MAP4/ap1 -> N3/sta0L0(00:00:00:00:00:0e) tid=0 PENDING
+D 1.104180 ba MAP4/ap1 -> N3/sta0L0(00:00:00:00:00:0e) tid=0 ESTABLISHED
+D 1.104228 arpPhyDrop N5/sta0L0 from MAP4/ap1L0(00:00:00:00:00:0b) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.1 dst=10.2.4.2
+D 1.104260 arpPhyDrop N4/sta0L0 from MAP4/ap1L0(00:00:00:00:00:0b) reason=EHT_SIG_FAILURE reply src=10.2.4.1 dst=10.2.4.2
+D 1.104287 arpRx N3/sta0 reply src=10.2.4.1 dst=10.2.4.2
+D 1.112538 arpTx MAP4/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 1.112832 arpRx MAP1/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 1.112832 arpRx MAP5/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 1.112832 arpTx MAP5/bh0 reply src=10.1.1.5 dst=10.1.1.4
+D 1.112832 arpRx MAP7/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 1.112832 arpRx MAP2/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 1.112832 arpRx MAP8/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 1.112832 arpRx MAP6/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 1.112832 arpRx MAP3/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 1.112832 arpRx MAP9/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 1.112875 ba MAP5/bh0 -> MAP4/bh0L0(00:00:00:00:00:04) tid=0 PENDING
+D 1.114839 ba MAP5/bh0 -> MAP4/bh0L0(00:00:00:00:00:04) tid=0 ESTABLISHED
+D 1.114964 arpRx MAP4/bh0 reply src=10.1.1.5 dst=10.1.1.4
+D 1.115051 ba MAP4/bh0 -> MAP5/bh0L0(00:00:00:00:00:05) tid=0 PENDING
+D 1.115380 ba MAP4/bh0 -> MAP5/bh0L0(00:00:00:00:00:05) tid=0 ESTABLISHED
+D 1.123587 arpTx MAP5/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 1.124326 arpRx MAP2/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 1.124326 arpRx MAP4/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 1.124326 arpRx MAP6/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 1.124326 arpTx MAP6/bh0 reply src=10.1.1.6 dst=10.1.1.5
+D 1.124326 arpRx MAP8/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 1.124326 arpRx MAP1/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 1.124326 arpRx MAP3/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 1.124326 arpRx MAP7/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 1.124326 arpRx MAP9/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 1.124369 ba MAP6/bh0 -> MAP5/bh0L0(00:00:00:00:00:05) tid=0 PENDING
+D 1.125385 ba MAP6/bh0 -> MAP5/bh0L0(00:00:00:00:00:05) tid=0 ESTABLISHED
+D 1.125429 arpPhyDrop MAP2/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=TXING reply src=10.1.1.6 dst=10.1.1.5
+D 1.125433 arpPhyDrop MAP3/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=PREAMBLE_DETECT_FAILURE reply src=10.1.1.6 dst=10.1.1.5
+D 1.125433 arpPhyDrop MAP5/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=PREAMBLE_DETECT_FAILURE reply src=10.1.1.6 dst=10.1.1.5
+D 1.125433 arpPhyDrop MAP8/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=PREAMBLE_DETECT_FAILURE reply src=10.1.1.6 dst=10.1.1.5
+D 1.125433 arpPhyDrop MAP4/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=BUSY_DECODING_PREAMBLE reply src=10.1.1.6 dst=10.1.1.5
+D 1.125433 arpPhyDrop MAP1/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=BUSY_DECODING_PREAMBLE reply src=10.1.1.6 dst=10.1.1.5
+D 1.125433 arpPhyDrop MAP7/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=PREAMBLE_DETECT_FAILURE reply src=10.1.1.6 dst=10.1.1.5
+D 1.125465 arpPhyDrop MAP9/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=EHT_SIG_FAILURE reply src=10.1.1.6 dst=10.1.1.5
+D 1.125680 arpPhyDrop MAP2/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=TXING reply src=10.1.1.6 dst=10.1.1.5
+D 1.125680 arpPhyDrop MAP1/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=RXING reply src=10.1.1.6 dst=10.1.1.5
+D 1.125684 arpPhyDrop MAP3/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=PREAMBLE_DETECT_FAILURE reply src=10.1.1.6 dst=10.1.1.5
+D 1.125684 arpPhyDrop MAP5/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=PREAMBLE_DETECT_FAILURE reply src=10.1.1.6 dst=10.1.1.5
+D 1.125684 arpPhyDrop MAP8/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=PREAMBLE_DETECT_FAILURE reply src=10.1.1.6 dst=10.1.1.5
+D 1.125684 arpPhyDrop MAP4/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=PREAMBLE_DETECT_FAILURE reply src=10.1.1.6 dst=10.1.1.5
+D 1.125684 arpPhyDrop MAP7/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=PREAMBLE_DETECT_FAILURE reply src=10.1.1.6 dst=10.1.1.5
+D 1.125716 arpPhyDrop MAP9/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=EHT_SIG_FAILURE reply src=10.1.1.6 dst=10.1.1.5
+D 1.130460 arpRx MAP5/bh0 reply src=10.1.1.6 dst=10.1.1.5
+D 1.130547 ba MAP5/bh0 -> MAP6/bh0L0(00:00:00:00:00:06) tid=0 PENDING
+D 1.135684 ba MAP5/bh0 -> MAP6/bh0L0(00:00:00:00:00:06) tid=0 NO_REPLY
+D 1.145523 ba MAP5/bh0 -> MAP6/bh0L0(00:00:00:00:00:06) tid=0 ESTABLISHED
+D 1.150000 tcpHook N4 state=1 cwnd=1 highRxAck=1 rto=1
+D 1.150890 arpTx MAP6/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 1.151558 arpRx MAP3/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 1.151558 arpRx MAP5/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 1.151558 arpTx MAP5/bh0 reply src=10.1.1.5 dst=10.1.1.6
+D 1.151558 arpRx MAP9/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 1.151558 arpRx MAP2/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 1.151558 arpRx MAP8/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 1.151558 arpRx MAP4/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 1.151559 arpRx MAP1/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 1.151559 arpRx MAP7/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 1.151665 arpRx MAP6/bh0 reply src=10.1.1.5 dst=10.1.1.6
+D 1.156768 arpTx MAP5/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 1.159000 arpTx N4/sta0 request src=10.2.4.3 dst=10.2.4.1
+D 1.159003 ba N4/sta0 -> MAP4/ap1L0(00:00:00:00:00:0b) tid=0 PENDING
+D 1.159323 ba N4/sta0 -> MAP4/ap1L0(00:00:00:00:00:0b) tid=0 ESTABLISHED
+D 1.159597 arpRx MAP4/ap1 request src=10.2.4.3 dst=10.2.4.1
+D 1.159597 arpTx MAP4/ap1 reply src=10.2.4.1 dst=10.2.4.3
+D 1.159705 arpPhyDrop N5/sta0L0 from MAP4/ap1L0(00:00:00:00:00:0b) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.3 dst=10.2.4.1
+D 1.159812 arpRx N3/sta0 request src=10.2.4.3 dst=10.2.4.1
+D 1.159864 ba MAP4/ap1 -> N4/sta0L0(00:00:00:00:00:0f) tid=0 PENDING
+D 1.160043 arpRx MAP2/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 1.160043 arpRx MAP4/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 1.160043 arpTx MAP4/bh0 reply src=10.1.1.4 dst=10.1.1.5
+D 1.160043 arpRx MAP6/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 1.160043 arpRx MAP8/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 1.160044 arpRx MAP1/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 1.160044 arpRx MAP3/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 1.160044 arpRx MAP7/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 1.160044 arpRx MAP9/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 1.160151 arpRx MAP5/bh0 reply src=10.1.1.4 dst=10.1.1.5
+D 1.160211 ba MAP4/ap1 -> N4/sta0L0(00:00:00:00:00:0f) tid=0 ESTABLISHED
+D 1.160294 arpPhyDrop N5/sta0L0 from MAP4/ap1L0(00:00:00:00:00:0b) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.1 dst=10.2.4.3
+D 1.160354 arpRx N4/sta0 reply src=10.2.4.1 dst=10.2.4.3
+D 1.167383 arpTx MAP4/ap1 request src=10.2.4.1 dst=10.2.4.2
+D 1.167391 arpPhyDrop N5/sta0L0 from MAP4/ap1L0(00:00:00:00:00:0b) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.1 dst=10.2.4.2
+D 1.167499 arpRx N3/sta0 request src=10.2.4.1 dst=10.2.4.2
+D 1.167499 arpTx N3/sta0 reply src=10.2.4.2 dst=10.2.4.1
+D 1.167499 arpRx N4/sta0 request src=10.2.4.1 dst=10.2.4.2
+D 1.167546 arpPhyDrop N5/sta0L0 from N3/sta0L0(00:00:00:00:00:0e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.2 dst=10.2.4.1
+D 1.167606 arpRx MAP4/ap1 reply src=10.2.4.2 dst=10.2.4.1
+D 1.167757 tcpState N3 ESTABLISHED
+D 1.176549 arpTx MAP4/ap1 request src=10.2.4.1 dst=10.2.4.3
+D 1.176558 arpPhyDrop N5/sta0L0 from MAP4/ap1L0(00:00:00:00:00:0b) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.1 dst=10.2.4.3
+D 1.176665 arpRx N3/sta0 request src=10.2.4.1 dst=10.2.4.3
+D 1.176665 arpRx N4/sta0 request src=10.2.4.1 dst=10.2.4.3
+D 1.176665 arpTx N4/sta0 reply src=10.2.4.3 dst=10.2.4.1
+D 1.176841 arpRx MAP4/ap1 reply src=10.2.4.3 dst=10.2.4.1
+D 1.177132 tcpState N4 ESTABLISHED
+D 1.200000 tcpHook N5 state=1 cwnd=1 highRxAck=1 rto=1
+D 1.208000 arpTx N5/sta0 request src=10.2.4.4 dst=10.2.4.1
+D sec 2 flow N1 appTx=2549928 sinkRx=2520968 state=ESTABLISHED cwnd=131768 highRxAck=2419609 rto=1 rtoChanges=1
+D sec 2 flow N2 appTx=2494904 sinkRx=2384856 state=ESTABLISHED cwnd=131768 highRxAck=2364585 rto=1 rtoChanges=1
+D sec 2 flow N3 appTx=1209080 sinkRx=1209080 state=ESTABLISHED cwnd=131768 highRxAck=1078761 rto=1 rtoChanges=1
+D sec 2 flow N4 appTx=493768 sinkRx=396752 state=ESTABLISHED cwnd=131768 highRxAck=363449 rto=1 rtoChanges=1
+D sec 2 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=0.8 rtoChanges=4
+D 2.200000 arpTx N5/sta0 request src=10.2.4.4 dst=10.2.4.1
+D 2.600000 arpDrop N5
+D sec 3 flow N1 appTx=5211352 sinkRx=5081032 state=ESTABLISHED cwnd=131768 highRxAck=5081033 rto=1 rtoChanges=1
+D sec 3 flow N2 appTx=5208456 sinkRx=5125920 state=ESTABLISHED cwnd=131768 highRxAck=5078137 rto=1 rtoChanges=1
+D sec 3 flow N3 appTx=2225576 sinkRx=2225576 state=ESTABLISHED cwnd=131768 highRxAck=2095257 rto=1 rtoChanges=1
+D sec 3 flow N4 appTx=1046904 sinkRx=952784 state=ESTABLISHED cwnd=131768 highRxAck=916585 rto=1 rtoChanges=1
+D sec 3 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=1.6 rtoChanges=6
+D 3.200000 arpTx N5/sta0 request src=10.2.4.4 dst=10.2.4.1
+D sec 4 flow N1 appTx=7441272 sinkRx=7374664 state=ESTABLISHED cwnd=131768 highRxAck=7310953 rto=1 rtoChanges=1
+D sec 4 flow N2 appTx=7499192 sinkRx=7368872 state=ESTABLISHED cwnd=131768 highRxAck=7368873 rto=1 rtoChanges=1
+D sec 4 flow N3 appTx=3647512 sinkRx=3647512 state=ESTABLISHED cwnd=131768 highRxAck=3517193 rto=1 rtoChanges=1
+D sec 4 flow N4 appTx=1672440 sinkRx=1608728 state=ESTABLISHED cwnd=131768 highRxAck=1542121 rto=1 rtoChanges=1
+D sec 4 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=1.6 rtoChanges=6
+D 4.200000 arpDrop N5
+D 4.200000 arpTx N5/sta0 request src=10.2.4.4 dst=10.2.4.1
+D sec 5 flow N1 appTx=9928936 sinkRx=9850744 state=ESTABLISHED cwnd=131768 highRxAck=9798617 rto=1 rtoChanges=1
+D sec 5 flow N2 appTx=10070840 sinkRx=9949208 state=ESTABLISHED cwnd=131768 highRxAck=9940521 rto=1 rtoChanges=1
+D sec 5 flow N3 appTx=5095512 sinkRx=5021664 state=ESTABLISHED cwnd=131768 highRxAck=4965193 rto=1 rtoChanges=1
+D sec 5 flow N4 appTx=2318248 sinkRx=2209648 state=ESTABLISHED cwnd=131768 highRxAck=2187929 rto=1 rtoChanges=1
+D sec 5 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=3.2 rtoChanges=8
+D 5.200000 arpCacheDrop N5 if1
+D 5.200000 arpCacheDrop N5 if1
+D 5.200000 arpCacheDrop N5 if1
+D sec 6 flow N1 appTx=12014056 sinkRx=12003920 state=ESTABLISHED cwnd=131768 highRxAck=11883737 rto=1 rtoChanges=1
+D sec 6 flow N2 appTx=12286280 sinkRx=12155960 state=ESTABLISHED cwnd=131768 highRxAck=12155961 rto=1 rtoChanges=1
+D sec 6 flow N3 appTx=6586952 sinkRx=6491384 state=ESTABLISHED cwnd=131768 highRxAck=6456633 rto=1 rtoChanges=1
+D sec 6 flow N4 appTx=2917720 sinkRx=2874280 state=ESTABLISHED cwnd=131768 highRxAck=2787401 rto=1 rtoChanges=1
+D sec 6 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=3.2 rtoChanges=8
+D sec 7 flow N1 appTx=14869512 sinkRx=14759464 state=ESTABLISHED cwnd=131768 highRxAck=14739193 rto=1 rtoChanges=1
+D sec 7 flow N2 appTx=14857928 sinkRx=14727608 state=ESTABLISHED cwnd=131768 highRxAck=14727609 rto=1 rtoChanges=1
+D sec 7 flow N3 appTx=7675848 sinkRx=7597656 state=ESTABLISHED cwnd=131768 highRxAck=7545529 rto=1 rtoChanges=1
+D sec 7 flow N4 appTx=3563528 sinkRx=3499816 state=ESTABLISHED cwnd=131768 highRxAck=3433209 rto=1 rtoChanges=1
+D sec 7 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=3.2 rtoChanges=8
+D 7.400000 arpDrop N5
+D sec 8 flow N1 appTx=17195000 sinkRx=17195000 state=ESTABLISHED cwnd=131768 highRxAck=17064681 rto=1 rtoChanges=1
+D sec 8 flow N2 appTx=17183416 sinkRx=17074816 state=ESTABLISHED cwnd=131768 highRxAck=17053097 rto=1 rtoChanges=1
+D sec 8 flow N3 appTx=8802392 sinkRx=8802392 state=ESTABLISHED cwnd=131768 highRxAck=8672073 rto=1 rtoChanges=1
+D sec 8 flow N4 appTx=4273048 sinkRx=4164448 state=ESTABLISHED cwnd=131768 highRxAck=4142729 rto=1 rtoChanges=1
+D sec 8 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=6.4 rtoChanges=10
+D sec 9 flow N1 appTx=19729000 sinkRx=19717416 state=ESTABLISHED cwnd=131768 highRxAck=19598681 rto=1 rtoChanges=1
+D sec 9 flow N2 appTx=19427816 sinkRx=19335144 state=ESTABLISHED cwnd=131768 highRxAck=19297497 rto=1 rtoChanges=1
+D sec 9 flow N3 appTx=9899976 sinkRx=9899976 state=ESTABLISHED cwnd=131768 highRxAck=9769657 rto=1 rtoChanges=1
+D sec 9 flow N4 appTx=4836320 sinkRx=4753784 state=ESTABLISHED cwnd=131768 highRxAck=4706001 rto=1 rtoChanges=1
+D sec 9 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=6.4 rtoChanges=10
+D sec 10 flow N1 appTx=22251416 sinkRx=22239832 state=ESTABLISHED cwnd=131768 highRxAck=22121097 rto=1 rtoChanges=1
+D sec 10 flow N2 appTx=21927064 sinkRx=21799640 state=ESTABLISHED cwnd=131768 highRxAck=21796745 rto=1 rtoChanges=1
+D sec 10 flow N3 appTx=11223448 sinkRx=11208968 state=ESTABLISHED cwnd=131768 highRxAck=11093129 rto=1 rtoChanges=1
+D sec 10 flow N4 appTx=5499504 sinkRx=5383664 state=ESTABLISHED cwnd=131768 highRxAck=5369185 rto=1 rtoChanges=1
+D sec 10 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=6.4 rtoChanges=10
+D sec 11 flow N1 appTx=24831752 sinkRx=24740528 state=ESTABLISHED cwnd=131768 highRxAck=24701433 rto=1 rtoChanges=1
+D sec 11 flow N2 appTx=24327848 sinkRx=24197528 state=ESTABLISHED cwnd=131768 highRxAck=24197529 rto=1 rtoChanges=1
+D sec 11 flow N3 appTx=12685928 sinkRx=12587464 state=ESTABLISHED cwnd=131768 highRxAck=12555609 rto=1 rtoChanges=1
+D sec 11 flow N4 appTx=6136624 sinkRx=6010648 state=ESTABLISHED cwnd=131768 highRxAck=6006305 rto=1 rtoChanges=1
+D sec 11 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=6.4 rtoChanges=10
+D sec 12 flow N1 appTx=26931352 sinkRx=26931352 state=ESTABLISHED cwnd=131768 highRxAck=26801033 rto=1 rtoChanges=1
+D sec 12 flow N2 appTx=26346360 sinkRx=26279752 state=ESTABLISHED cwnd=131768 highRxAck=26216041 rto=1 rtoChanges=1
+D sec 12 flow N3 appTx=14342440 sinkRx=14330856 state=ESTABLISHED cwnd=131768 highRxAck=14212121 rto=1 rtoChanges=1
+D sec 12 flow N4 appTx=6698448 sinkRx=6626048 state=ESTABLISHED cwnd=131768 highRxAck=6568129 rto=1 rtoChanges=1
+D sec 12 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=6.4 rtoChanges=10
+D sec 13 flow N1 appTx=29366888 sinkRx=29343720 state=ESTABLISHED cwnd=131768 highRxAck=29236569 rto=1 rtoChanges=1
+D sec 13 flow N2 appTx=28689224 sinkRx=28634200 state=ESTABLISHED cwnd=131768 highRxAck=28558905 rto=1 rtoChanges=1
+D sec 13 flow N3 appTx=15480568 sinkRx=15398032 state=ESTABLISHED cwnd=131768 highRxAck=15350249 rto=1 rtoChanges=1
+D sec 13 flow N4 appTx=7376112 sinkRx=7258824 state=ESTABLISHED cwnd=131768 highRxAck=7245793 rto=1 rtoChanges=1
+D sec 13 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=6.4 rtoChanges=10
+D 13.000000 tcpState N1 FIN_WAIT_1
+D 13.000000 tcpState N2 FIN_WAIT_1
+D 13.000000 tcpState N3 FIN_WAIT_1
+D 13.000000 tcpState N4 FIN_WAIT_1
+D 13.000000 tcpState N5 CLOSED
+D 13.019340 tcpState N2 CLOSING
+D 13.019340 tcpState N2 TIME_WAIT
+D 13.019806 tcpState N1 CLOSING
+D 13.019806 tcpState N1 TIME_WAIT
+D 13.143688 tcpState N3 CLOSING
+D 13.143688 tcpState N3 TIME_WAIT
+D 13.148842 tcpState N4 CLOSING
+D 13.148842 tcpState N4 TIME_WAIT
+D persec ipLocalDeliver N1 0,837,919,770,859,720,986,803,875,871,891,725,841,46,
+D persec ipLocalDeliver N2 0,818,937,791,888,765,888,803,775,863,829,697,809,46,
+D persec ipLocalDeliver N3 0,374,351,491,500,515,376,389,379,457,505,572,393,46,
+D persec ipLocalDeliver N4 0,127,191,216,223,207,223,245,195,229,220,194,234,46,
+D persec ipLocalDeliver SRV 0,4505,4747,4568,4856,4485,4875,4594,4468,4783,4768,4580,4466,200,
+D persec ipSendOutgoing N1 0,1763,1838,1540,1718,1440,1972,1606,1750,1742,1782,1450,1682,2,
+D persec ipSendOutgoing N2 0,1725,1874,1582,1776,1530,1776,1606,1550,1726,1658,1394,1618,2,
+D persec ipSendOutgoing N3 0,837,702,982,1000,1030,752,778,758,914,1010,1144,786,2,
+D persec ipSendOutgoing N4 0,343,382,432,446,414,446,490,389,458,440,388,468,2,
+D persec ipSendOutgoing N5 0,3,1,0,1,0,0,1,0,0,0,0,0,1,
+D persec ipSendOutgoing SRV 0,2254,2373,2285,2427,2243,2438,2296,2235,2392,2383,2291,2232,101,
+D persec ipUnicastForward GW 0,6754,7125,6856,7280,6728,7313,6883,6716,7169,7153,6854,6712,302,
+D persec ipUnicastForward MAP1 0,5143,5562,4647,5283,4469,5608,4810,4958,5202,5160,4266,4950,96,
+D persec ipUnicastForward MAP2 0,5140,5561,4643,5303,4402,5539,4919,4952,5243,5140,4312,4904,96,
+D persec ipUnicastForward MAP3 0,5089,5504,4687,5238,4514,5521,4954,4977,5144,5076,4418,4955,77,
+D persec ipUnicastForward MAP4 0,1620,1655,2181,2092,2215,1765,1875,1787,2000,2151,2339,1846,165,
+D persec ipUnicastForward MAP5 0,1614,1718,2123,2070,2189,1812,1877,1784,2028,2123,2318,1867,168,
+D persec ipUnicastForward MAP6 0,1665,1634,2156,2038,2216,1813,1901,1764,2009,2077,2444,1744,230,
+D persec txData MAP1/ap1L0 0,1771,2139,1694,1880,1551,1996,1674,1712,1977,1801,1505,1822,92,
+D persec txData MAP1/bh0L0 0,4190,4404,4084,4241,3962,4606,4290,4530,4274,4161,3568,4060,4,
+D persec txData MAP2/bh0L0 0,6014,6757,5903,6403,5485,6392,6394,5919,6005,5958,5072,6457,108,
+D persec txData MAP3/bh0L0 0,1967,2175,2219,2115,1990,2192,2024,1892,1932,1951,1794,2173,184,
+D persec txData MAP4/ap1L0 0,582,567,812,777,907,769,649,663,789,746,917,635,94,
+D persec txData MAP4/bh0L0 0,1398,1357,1683,1632,1845,1566,1515,1326,1739,1732,2075,1549,78,
+D persec txData MAP5/bh0L0 0,1795,2606,2776,2428,2874,2037,2367,2173,2538,2599,3034,2134,236,
+D persec txData MAP6/bh0L0 0,606,711,879,786,989,690,729,806,720,876,949,759,101,
+D persec txData N1/sta0L0 0,1840,2074,1652,1806,1670,2199,1695,1922,1948,1842,1745,1895,3,
+D persec txData N2/sta0L0 0,1848,2090,1742,1844,1691,2061,1687,1804,1995,1783,1696,1767,3,
+D persec txData N3/sta0L0 0,978,790,1174,1193,1183,876,925,893,1105,1349,1253,895,7,
+D persec txData N4/sta0L0 0,304,426,441,436,468,450,479,435,471,457,461,449,74,
+D cnt arpCacheDrop N5 if1 3
+D cnt arpDrop N5 4
+D cnt arpPhyDrop MAP1/bh0L0 2
+D cnt arpPhyDrop MAP2/bh0L0 2
+D cnt arpPhyDrop MAP3/bh0L0 2
+D cnt arpPhyDrop MAP4/bh0L0 2
+D cnt arpPhyDrop MAP5/bh0L0 2
+D cnt arpPhyDrop MAP7/bh0L0 2
+D cnt arpPhyDrop MAP8/bh0L0 2
+D cnt arpPhyDrop MAP9/bh0L0 2
+D cnt arpPhyDrop N4/sta0L0 1
+D cnt arpPhyDrop N5/sta0L0 8
+D cnt arpRx MAP1/ap1 4
+D cnt arpRx MAP1/bh0 8
+D cnt arpRx MAP2/bh0 8
+D cnt arpRx MAP3/bh0 8
+D cnt arpRx MAP4/ap1 4
+D cnt arpRx MAP4/bh0 8
+D cnt arpRx MAP5/bh0 8
+D cnt arpRx MAP6/bh0 8
+D cnt arpRx MAP7/bh0 8
+D cnt arpRx MAP8/bh0 8
+D cnt arpRx MAP9/bh0 8
+D cnt arpRx N1/sta0 4
+D cnt arpRx N2/sta0 4
+D cnt arpRx N3/sta0 4
+D cnt arpRx N4/sta0 4
+D cnt arpTx MAP1/ap1 4
+D cnt arpTx MAP1/bh0 2
+D cnt arpTx MAP2/bh0 4
+D cnt arpTx MAP3/bh0 2
+D cnt arpTx MAP4/ap1 4
+D cnt arpTx MAP4/bh0 2
+D cnt arpTx MAP5/bh0 4
+D cnt arpTx MAP6/bh0 2
+D cnt arpTx N1/sta0 2
+D cnt arpTx N2/sta0 2
+D cnt arpTx N3/sta0 2
+D cnt arpTx N4/sta0 2
+D cnt arpTx N5/sta0 4
+D arp t2 MAP1 if1 10.1.1.2 dev 0 lladdr 01-06-00:00:00:00:00:02 REACHABLE
+D arp t2 MAP1 if2 10.2.1.2 dev 1 lladdr 01-06-00:00:00:00:00:0c REACHABLE
+D arp t2 MAP1 if2 10.2.1.3 dev 1 lladdr 01-06-00:00:00:00:00:0d REACHABLE
+D arp t2 MAP2 if1 10.1.1.1 dev 0 lladdr 01-06-00:00:00:00:00:01 REACHABLE
+D arp t2 MAP2 if1 10.1.1.3 dev 0 lladdr 01-06-00:00:00:00:00:03 REACHABLE
+D arp t2 MAP3 if1 10.1.1.2 dev 0 lladdr 01-06-00:00:00:00:00:02 REACHABLE
+D arp t2 MAP4 if1 10.1.1.5 dev 0 lladdr 01-06-00:00:00:00:00:05 REACHABLE
+D arp t2 MAP4 if2 10.2.4.2 dev 1 lladdr 01-06-00:00:00:00:00:0e REACHABLE
+D arp t2 MAP4 if2 10.2.4.3 dev 1 lladdr 01-06-00:00:00:00:00:0f REACHABLE
+D arp t2 MAP5 if1 10.1.1.4 dev 0 lladdr 01-06-00:00:00:00:00:04 REACHABLE
+D arp t2 MAP5 if1 10.1.1.6 dev 0 lladdr 01-06-00:00:00:00:00:06 REACHABLE
+D arp t2 MAP6 if1 10.1.1.5 dev 0 lladdr 01-06-00:00:00:00:00:05 REACHABLE
+D arp t2 N1 if1 10.2.1.1 dev 0 lladdr 01-06-00:00:00:00:00:0a REACHABLE
+D arp t2 N2 if1 10.2.1.1 dev 0 lladdr 01-06-00:00:00:00:00:0a REACHABLE
+D arp t2 N3 if1 10.2.4.1 dev 0 lladdr 01-06-00:00:00:00:00:0b REACHABLE
+D arp t2 N4 if1 10.2.4.1 dev 0 lladdr 01-06-00:00:00:00:00:0b REACHABLE
+D arp t2 N5 if1 10.2.4.1 dev 0 lladdr 00-00:00 DELAY
+D arp end MAP1 if1 10.1.1.2 dev 0 lladdr 01-06-00:00:00:00:00:02 REACHABLE
+D arp end MAP1 if2 10.2.1.2 dev 1 lladdr 01-06-00:00:00:00:00:0c REACHABLE
+D arp end MAP1 if2 10.2.1.3 dev 1 lladdr 01-06-00:00:00:00:00:0d REACHABLE
+D arp end MAP2 if1 10.1.1.1 dev 0 lladdr 01-06-00:00:00:00:00:01 REACHABLE
+D arp end MAP2 if1 10.1.1.3 dev 0 lladdr 01-06-00:00:00:00:00:03 REACHABLE
+D arp end MAP3 if1 10.1.1.2 dev 0 lladdr 01-06-00:00:00:00:00:02 REACHABLE
+D arp end MAP4 if1 10.1.1.5 dev 0 lladdr 01-06-00:00:00:00:00:05 REACHABLE
+D arp end MAP4 if2 10.2.4.2 dev 1 lladdr 01-06-00:00:00:00:00:0e REACHABLE
+D arp end MAP4 if2 10.2.4.3 dev 1 lladdr 01-06-00:00:00:00:00:0f REACHABLE
+D arp end MAP5 if1 10.1.1.4 dev 0 lladdr 01-06-00:00:00:00:00:04 REACHABLE
+D arp end MAP5 if1 10.1.1.6 dev 0 lladdr 01-06-00:00:00:00:00:06 REACHABLE
+D arp end MAP6 if1 10.1.1.5 dev 0 lladdr 01-06-00:00:00:00:00:05 REACHABLE
+D arp end N1 if1 10.2.1.1 dev 0 lladdr 01-06-00:00:00:00:00:0a REACHABLE
+D arp end N2 if1 10.2.1.1 dev 0 lladdr 01-06-00:00:00:00:00:0a REACHABLE
+D arp end N3 if1 10.2.4.1 dev 0 lladdr 01-06-00:00:00:00:00:0b REACHABLE
+D arp end N4 if1 10.2.4.1 dev 0 lladdr 01-06-00:00:00:00:00:0b REACHABLE
+D arp end N5 if1 10.2.4.1 dev 0 lladdr 00-00:00 STALE
+D rt Node: 0, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 0, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.2.1.0        0.0.0.0         255.255.255.0   U     0      -      -   2
+D rt 10.4.1.0        10.1.1.2        255.255.255.0   UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 0, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 1, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 1, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.4.1.0        10.1.1.3        255.255.255.0   UGS   0      -      -   1
+D rt 10.2.1.0        10.1.1.1        255.255.255.0   UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 1, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 2, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 2, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.3.3.0        0.0.0.0         255.255.255.0   U     0      -      -   2
+D rt 10.4.1.0        10.3.3.2        255.255.255.0   UGS   0      -      -   2
+D rt 10.2.1.0        10.1.1.2        255.255.255.0   UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 2, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 3, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 3, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.2.4.0        0.0.0.0         255.255.255.0   U     0      -      -   2
+D rt 10.4.1.0        10.1.1.5        255.255.255.0   UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 3, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 4, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 4, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.4.1.0        10.1.1.6        255.255.255.0   UGS   0      -      -   1
+D rt 10.2.4.0        10.1.1.4        255.255.255.0   UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 4, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 5, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 5, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.3.6.0        0.0.0.0         255.255.255.0   U     0      -      -   2
+D rt 10.4.1.0        10.3.6.2        255.255.255.0   UGS   0      -      -   2
+D rt 10.2.4.0        10.1.1.5        255.255.255.0   UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 5, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 6, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 6, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 6, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 7, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 7, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 7, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 8, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 8, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.3.9.0        0.0.0.0         255.255.255.0   U     0      -      -   2
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 8, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 9, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 9, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.3.3.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.3.6.0        0.0.0.0         255.255.255.0   U     0      -      -   2
+D rt 10.3.9.0        0.0.0.0         255.255.255.0   U     0      -      -   3
+D rt 10.4.1.0        0.0.0.0         255.255.255.0   U     0      -      -   4
+D rt 10.2.1.0        10.3.3.1        255.255.255.0   UGS   0      -      -   1
+D rt 10.2.4.0        10.3.6.1        255.255.255.0   UGS   0      -      -   2
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 9, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 10, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 10, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.4.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.2.0.0        10.4.1.1        255.255.0.0     UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 10, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 11, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 11, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.2.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 0.0.0.0         10.2.1.1        0.0.0.0         UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 11, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 12, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 12, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.2.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 0.0.0.0         10.2.1.1        0.0.0.0         UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 12, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 13, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 13, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.2.4.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 0.0.0.0         10.2.4.1        0.0.0.0         UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 13, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 14, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 14, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.2.4.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 0.0.0.0         10.2.4.1        0.0.0.0         UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 14, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 15, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 15, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.2.4.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 0.0.0.0         10.2.4.1        0.0.0.0         UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 15, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D end flow N1 appTx=29366888 sinkRx=29366888 state=TIME_WAIT cwnd=131768 highRxAck=29366890 rto=1.000000 rtoChanges=1
+D end flow N2 appTx=28689224 sinkRx=28689224 state=TIME_WAIT cwnd=131768 highRxAck=28689226 rto=1.000000 rtoChanges=1
+D end flow N3 appTx=15480568 sinkRx=15480568 state=TIME_WAIT cwnd=131768 highRxAck=15480570 rto=1.000000 rtoChanges=1
+D end flow N4 appTx=7376112 sinkRx=7376112 state=TIME_WAIT cwnd=131768 highRxAck=7376114 rto=1.000000 rtoChanges=1
+D end flow N5 appTx=0 sinkRx=0 state=CLOSED cwnd=0 highRxAck=0 rto=1.001000 rtoChanges=11
+D end dev MAP1/bh0 beQueue=0
+D end ba MAP1/bh0 -> MAP2/bh0L0(00:00:00:00:00:02) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev MAP1/ap1 beQueue=0
+D end ba MAP1/ap1 -> N1/sta0L0(00:00:00:00:00:0c) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end ba MAP1/ap1 -> N2/sta0L0(00:00:00:00:00:0d) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev MAP2/bh0 beQueue=0
+D end ba MAP2/bh0 -> MAP1/bh0L0(00:00:00:00:00:01) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end ba MAP2/bh0 -> MAP3/bh0L0(00:00:00:00:00:03) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev MAP3/bh0 beQueue=0
+D end ba MAP3/bh0 -> MAP2/bh0L0(00:00:00:00:00:02) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev MAP4/bh0 beQueue=0
+D end ba MAP4/bh0 -> MAP5/bh0L0(00:00:00:00:00:05) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev MAP4/ap1 beQueue=0
+D end ba MAP4/ap1 -> N3/sta0L0(00:00:00:00:00:0e) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end ba MAP4/ap1 -> N4/sta0L0(00:00:00:00:00:0f) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev MAP5/bh0 beQueue=0
+D end ba MAP5/bh0 -> MAP4/bh0L0(00:00:00:00:00:04) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end ba MAP5/bh0 -> MAP6/bh0L0(00:00:00:00:00:06) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev MAP6/bh0 beQueue=0
+D end ba MAP6/bh0 -> MAP5/bh0L0(00:00:00:00:00:05) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev MAP7/bh0 beQueue=0
+D end dev MAP8/bh0 beQueue=0
+D end dev MAP9/bh0 beQueue=0
+D end dev N1/sta0 beQueue=0
+D end ba N1/sta0 -> MAP1/ap1L0(00:00:00:00:00:0a) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev N2/sta0 beQueue=0
+D end ba N2/sta0 -> MAP1/ap1L0(00:00:00:00:00:0a) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev N3/sta0 beQueue=0
+D end ba N3/sta0 -> MAP4/ap1L0(00:00:00:00:00:0b) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev N4/sta0 beQueue=0
+D end ba N4/sta0 -> MAP4/ap1L0(00:00:00:00:00:0b) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev N5/sta0 beQueue=0
+rc 0

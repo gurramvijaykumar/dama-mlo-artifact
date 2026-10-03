@@ -1,0 +1,2057 @@
+P id ap MAP1 node=0 mld=00:00:00:00:00:0a L0=00:00:00:00:00:0b@5GHz/5180 L1=00:00:00:00:00:0c@6GHz/5955
+P id ap MAP4 node=3 mld=00:00:00:00:00:0d L0=00:00:00:00:00:0e@5GHz/5240 L1=00:00:00:00:00:0f@6GHz/6015
+P id sta N1 node=11 mld=00:00:00:00:00:10 L0=00:00:00:00:00:11@5GHz/5180 L1=00:00:00:00:00:12@6GHz/5955
+P id sta N2 node=12 mld=00:00:00:00:00:13 L0=00:00:00:00:00:14@5GHz/5180 L1=00:00:00:00:00:15@6GHz/5955
+P id sta N3 node=13 mld=00:00:00:00:00:16 L0=00:00:00:00:00:17@5GHz/5240 L1=00:00:00:00:00:18@6GHz/6015
+P id sta N4 node=14 mld=00:00:00:00:00:19 L0=00:00:00:00:00:1a@5GHz/5240 L1=00:00:00:00:00:1b@6GHz/6015
+P id sta N5 node=15 mld=00:00:00:00:00:1c L0=00:00:00:00:00:1d@5GHz/5240 L1=00:00:00:00:00:1e@6GHz/6015
+P 0.000000 apPsCount MAP1 L0 n=0
+P 0.000000 apPsCount MAP1 L1 n=0
+P 0.000000 apPsCount MAP4 L0 n=0
+P 0.000000 apPsCount MAP4 L1 n=0
+P 0.121000 apPs MAP1 L0 sta=N1/L0 ps=0
+P 0.121000 apPs MAP1 L1 sta=N1/L1 ps=0
+P 0.121000 apPs MAP4 L0 sta=N3/L0 ps=0
+P 0.121000 apPs MAP4 L1 sta=N3/L1 ps=0
+P 0.122000 apPs MAP1 L0 sta=N2/L0 ps=0
+P 0.122000 apPs MAP1 L1 sta=N2/L1 ps=0
+P 0.122000 staPm N1 L0 mode=0
+P 0.122000 staPm N1 L1 mode=2
+P 0.123000 apPs MAP4 L0 sta=N4/L0 ps=0
+P 0.123000 apPsCount MAP4 L1 n=1
+P 0.123000 apPs MAP4 L1 sta=N3/L1 ps=1
+P 0.123000 apPs MAP4 L1 sta=N4/L1 ps=0
+P 0.123000 staPm N1 L1 mode=0
+P 0.123000 staPm N2 L0 mode=0
+P 0.123000 staPm N2 L1 mode=0
+P 0.123000 staPm N3 L0 mode=0
+P 0.123000 staPm N3 L1 mode=3
+P 0.124000 apPsCount MAP4 L1 n=0
+P 0.124000 apPs MAP4 L1 sta=N3/L1 ps=0
+P 0.124000 staPm N3 L1 mode=0
+P 0.124000 staPm N4 L0 mode=0
+P 0.124000 staPm N4 L1 mode=0
+P 0.621000 apPs MAP4 L0 sta=N5/L0 ps=0
+P 0.621000 apPsCount MAP4 L1 n=1
+P 0.621000 apPs MAP4 L1 sta=N5/L1 ps=1
+P 0.621000 staPm N5 L0 mode=0
+P 0.621000 staPm N5 L1 mode=3
+P 1.005476 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=N1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.2 dst=10.2.1.1
+P 1.005479 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=N1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.2 dst=10.2.1.1
+P 1.040669 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=MAP1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.2
+P 1.040675 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=MAP1 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.2
+P 1.056481 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=N2 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.1.3 dst=10.2.1.1
+P 1.056483 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=N2 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.3 dst=10.2.1.1
+P 1.066512 grp MAP1 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L0 a3=MAP1 bytes=66 beaconsBefore=10 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.3
+P 1.066513 grp MAP1 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP1/L1 a3=MAP1 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.1.1 dst=10.2.1.3
+P 1.107474 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=N3 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.2 dst=10.2.4.1
+P 1.156465 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=N4 bytes=66 beaconsBefore=11 ethertype=0x806 arp=request src=10.2.4.3 dst=10.2.4.1
+P 1.214022 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=N5 bytes=66 beaconsBefore=12 ethertype=0x806 arp=request src=10.2.4.4 dst=10.2.4.1
+P 1.249046 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=N3 bytes=66 beaconsBefore=13 ethertype=0x806 arp=request src=10.2.4.2 dst=10.2.4.1
+P 1.249237 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=N4 bytes=66 beaconsBefore=13 ethertype=0x806 arp=request src=10.2.4.3 dst=10.2.4.1
+P 1.249482 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=N5 bytes=66 beaconsBefore=13 ethertype=0x806 arp=request src=10.2.4.4 dst=10.2.4.1
+P 3.141373 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=MAP4 bytes=66 beaconsBefore=31 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.3
+P 3.147444 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=MAP4 bytes=66 beaconsBefore=31 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.2
+P 3.401354 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=MAP4 bytes=66 beaconsBefore=34 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.3
+P 3.407047 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=MAP4 bytes=66 beaconsBefore=34 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.2
+P 4.257274 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=MAP4 bytes=66 beaconsBefore=42 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.4
+P 4.321651 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=MAP4 bytes=66 beaconsBefore=43 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.4
+P 5.316017 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=MAP4 bytes=66 beaconsBefore=52 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.4
+P 5.553658 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=MAP4 bytes=66 beaconsBefore=55 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.4
+P 6.287698 grp MAP4 L0 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L0 a3=MAP4 bytes=66 beaconsBefore=61 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.4
+P 6.476302 grp MAP4 L1 type=QOSDATA a1=ff:ff:ff:ff:ff:ff a2=MAP4/L1 a3=MAP4 bytes=66 beaconsBefore=64 ethertype=0x806 arp=request src=10.2.4.1 dst=10.2.4.4
+R scenario 2
+R chosenMap 4
+R linkMode mlo
+R n4Rate EhtMcs0
+R n5X 30.000000
+R n5Y 300.000000
+R rngRun 5
+R window 10.000000
+R tput_N1 32.323200
+R e2e_N1 19.847426
+R probe_N1 3.406284
+R tput_N2 32.036400
+R e2e_N2 20.291265
+R probe_N2 3.653985
+R tput_N3 19.626042
+R e2e_N3 31.860601
+R probe_N3 8.835917
+R tput_N4 10.074042
+R e2e_N4 75.063046
+R probe_N4 52.958224
+R tput_N5 0.000045
+R e2e_N5 25.193408
+R probe_N5 14.479621
+R sumTput 94.059728
+R sumLog 5.321722
+R jain 0.691788
+R nSta 5
+R lossPct 0.007638
+R e2eMs 28.419522
+R probeMs 9.927137
+R util_MAP1_L0 0.348385
+R util_MAP1_L1 0.356762
+R util_MAP4_L0 0.898575
+R util_MAP4_L1 0.903725
+R txair_N1_L0 0.156395
+R txair_N1_L1 0.171970
+R txair_N2_L0 0.164960
+R txair_N2_L1 0.158116
+R txair_N3_L0 0.105937
+R txair_N3_L1 0.121438
+R txair_N4_L0 0.774501
+R txair_N4_L1 0.761089
+R txair_N5_L0 0.003674
+R txair_N5_L1 0.015485
+R mcs_N1_L0 EhtMcs11
+R frames_N1_L0 1109
+R mcs_N1_L1 EhtMcs10
+R frames_N1_L1 1024
+R mcs_N2_L0 EhtMcs11
+R frames_N2_L0 1122
+R mcs_N2_L1 EhtMcs10
+R frames_N2_L1 973
+R mcs_N3_L0 EhtMcs11
+R frames_N3_L0 396
+R mcs_N3_L1 EhtMcs10
+R frames_N3_L1 401
+R mcs_N4_L0 EhtMcs0
+R frames_N4_L0 1524
+R mcs_N4_L1 EhtMcs0
+R frames_N4_L1 1500
+R mcs_N5_L0 EhtMcs3
+R frames_N5_L0 23
+R mcs_N5_L1 HeMcs0
+R frames_N5_L1 19
+R codeVersion 2.1
+R dN_N1 26936
+R dMiss_N1 0
+R dAcc_N1 3.403345
+R dWbh_N1 12.387065
+R dWired_N1 4.057015
+R dE2e_N1 19.847426
+R dN_N2 26697
+R dMiss_N2 0
+R dAcc_N2 3.652839
+R dWbh_N2 12.582271
+R dWired_N2 4.056155
+R dE2e_N2 20.291265
+R dN_N3 16356
+R dMiss_N3 0
+R dAcc_N3 8.835917
+R dWbh_N3 18.972660
+R dWired_N3 4.052024
+R dE2e_N3 31.860601
+R dN_N4 8396
+R dMiss_N4 0
+R dAcc_N4 52.952314
+R dWbh_N4 18.063216
+R dWired_N4 4.047515
+R dE2e_N4 75.063046
+R dN_N5 1
+R dMiss_N5 0
+R dAcc_N5 14.479621
+R dWbh_N5 6.691467
+R dWired_N5 4.022320
+R dE2e_N5 25.193408
+R dN 78386
+R dMiss 0
+R dAccMs 9.929257
+R dWbhMs 14.435603
+R dWiredMs 4.054663
+R dE2eMs 28.419522
+R apmcs_MAP1_L0_N1 EhtMcs11
+R apframes_MAP1_L0_N1 262
+R apmcsShare_MAP1_L0_N1 1.000000
+R apmcs_MAP1_L0_N2 EhtMcs11
+R apframes_MAP1_L0_N2 246
+R apmcsShare_MAP1_L0_N2 1.000000
+R apmcs_MAP1_L1_N1 EhtMcs10
+R apframes_MAP1_L1_N1 243
+R apmcsShare_MAP1_L1_N1 1.000000
+R apmcs_MAP1_L1_N2 EhtMcs10
+R apframes_MAP1_L1_N2 245
+R apmcsShare_MAP1_L1_N2 1.000000
+R apmcs_MAP4_L0_N3 EhtMcs11
+R apframes_MAP4_L0_N3 141
+R apmcsShare_MAP4_L0_N3 0.907801
+R apmcs_MAP4_L0_N4 EhtMcs4
+R apframes_MAP4_L0_N4 79
+R apmcsShare_MAP4_L0_N4 1.000000
+R apmcs_MAP4_L1_N3 EhtMcs10
+R apframes_MAP4_L1_N3 161
+R apmcsShare_MAP4_L1_N3 0.863354
+R apmcs_MAP4_L1_N4 EhtMcs4
+R apframes_MAP4_L1_N4 75
+R apmcsShare_MAP4_L1_N4 0.986667
+R traceVersion 1
+R n5Links all
+E 0.123077 drop_n5_assoc_RETRY_LIMIT
+E 0.620761 linksetup link=0 ap=00:00:00:00:00:0e
+E 0.620761 linksetup link=1 ap=00:00:00:00:00:0f
+E 0.620761 assoc 00:00:00:00:00:0d
+E 0.631601 drop_n5_data_RETRY_LIMIT
+E 0.725156 drop_n5_data_RETRY_LIMIT
+E 0.824372 drop_n5_data_RETRY_LIMIT
+E 1.205007 ba_n5 tid=0 state=PENDING
+E 1.213852 ba_n5 tid=0 state=NO_REPLY
+E 1.213852 drop_n5_action_RETRY_LIMIT
+E 1.214303 ba_ap tid=0 state=PENDING
+E 1.214623 ba_ap tid=0 state=ESTABLISHED
+E 1.413852 ba_n5 tid=0 state=RESET
+E 1.800004 ba_n5 tid=0 state=PENDING
+E 1.800324 ba_n5 tid=0 state=ESTABLISHED
+E 2.305580 drop_n5_data_EXPIRED_LIFETIME
+E 3.102781 drop_n5_data_EXPIRED_LIFETIME
+E 4.759290 drop_n5_data_EXPIRED_LIFETIME
+E 6.848593 drop_n5_data_QOS_OLD
+E 6.848593 drop_n5_data_QOS_OLD
+E 6.848593 drop_n5_data_QOS_OLD
+S 1 assoc=1 links=0;1; q=0 n5Mbps=0
+S 2 assoc=1 links=0;1; q=1 n5Mbps=0
+S 3 assoc=1 links=0;1; q=1 n5Mbps=0
+S 4 assoc=1 links=0;1; q=1 n5Mbps=0
+S 5 assoc=1 links=0;1; q=1 n5Mbps=0.000448
+S 6 assoc=1 links=0;1; q=0 n5Mbps=0
+S 7 assoc=1 links=0;1; q=0 n5Mbps=0
+S 8 assoc=1 links=0;1; q=0 n5Mbps=0
+S 9 assoc=1 links=0;1; q=0 n5Mbps=0
+S 10 assoc=1 links=0;1; q=0 n5Mbps=0
+S 11 assoc=1 links=0;1; q=0 n5Mbps=0
+S 12 assoc=1 links=0;1; q=0 n5Mbps=0
+S 13 assoc=1 links=0;1; q=2 n5Mbps=0
+M drop_n5_action_RETRY_LIMIT 1
+M drop_n5_assoc_RETRY_LIMIT 1
+M drop_n5_data_EXPIRED_LIFETIME 10
+M drop_n5_data_QOS_OLD 6
+M drop_n5_data_RETRY_LIMIT 83
+M mpduTimeout_ap_data 1
+M mpduTimeout_n5_action 7
+M mpduTimeout_n5_assoc 7
+M mpduTimeout_n5_data 1470
+M psduTimeout_ap_bar 4
+M psduTimeout_ap_data 1
+M psduTimeout_n5_bar 1414
+M psduTimeout_n5_data 4
+L dn_0 arrival_ack n=44 meanDbm=-81.478582 minDbm=-81.478582 maxDbm=-81.478582
+L dn_0 arrival_action n=3 meanDbm=-81.478582 minDbm=-81.478582 maxDbm=-81.478582
+L dn_0 arrival_assoc n=3 meanDbm=-81.478582 minDbm=-81.478582 maxDbm=-81.478582
+L dn_0 arrival_ba n=1895 meanDbm=-81.478582 minDbm=-81.478582 maxDbm=-81.478582
+L dn_0 arrival_bar n=161 meanDbm=-81.478582 minDbm=-81.478582 maxDbm=-81.478582
+L dn_0 arrival_beacon n=137 meanDbm=-81.478582 minDbm=-81.478582 maxDbm=-81.478582
+L dn_0 arrival_data n=541 meanDbm=-81.473491 minDbm=-81.478582 maxDbm=-81.473414
+L dn_0 decoded_ack_any n=43 meanSnrDb=12.487404 minSnrDb=12.487404
+L dn_0 decoded_action n=3 meanSnrDb=12.487404 minSnrDb=12.487404
+L dn_0 decoded_assoc n=3 meanSnrDb=12.487404 minSnrDb=12.487404
+L dn_0 decoded_ba n=1849 meanSnrDb=12.487404 minSnrDb=12.487404
+L dn_0 decoded_bar n=39 meanSnrDb=12.487404 minSnrDb=12.487404
+L dn_0 decoded_beacon n=136 meanSnrDb=12.487404 minSnrDb=12.487404
+L dn_0 decoded_data n=2226 meanSnrDb=12.492552 minSnrDb=12.487404
+L dn_0 phydrop_ba_PREAMBLE_DETECT_FAILURE 41
+L dn_0 phydrop_ba_SIGNAL_DETECTION_ABORTED_BY_TX 3
+L dn_0 phydrop_ba_TXING 2
+L dn_0 phydrop_bar_PREAMBLE_DETECT_FAILURE 122
+L dn_0 phydrop_beacon_TXING 1
+L dn_0 phydrop_data_EHT_SIG_FAILURE 181
+L dn_0 phydrop_data_PREAMBLE_DETECT_FAILURE 76
+L dn_0 phydrop_data_TXING 2
+L dn_0 tx_ack 7
+L dn_0 tx_action 2
+L dn_0 tx_assoc 1
+L dn_0 tx_ba 11
+L dn_0 tx_bar 5
+L dn_0 tx_beacon 137
+L dn_0 tx_data 17
+L dn_0 txmode_EhtMcs3 9
+L dn_0 txmode_OfdmRate6Mbps 8
+L dn_0 txDataMpdus 26
+L dn_0 macTxDataFailed 12
+L dn_0 macTxFinalDataFailed 0
+L dn_0 txDataPerSec 0,4,0,2,1,1,7,2,0,0,1,0,0,8,
+L dn_0 rxDataPerSec 0,5,0,215,195,242,275,214,225,225,158,247,195,30,
+L dn_1 arrival_ack n=37 meanDbm=-82.676669 minDbm=-82.676669 maxDbm=-82.676669
+L dn_1 arrival_action n=3 meanDbm=-82.676669 minDbm=-82.676669 maxDbm=-82.676669
+L dn_1 arrival_ba n=1888 meanDbm=-82.676669 minDbm=-82.676669 maxDbm=-82.676669
+L dn_1 arrival_bar n=149 meanDbm=-82.676669 minDbm=-82.676669 maxDbm=-82.676669
+L dn_1 arrival_beacon n=137 meanDbm=-82.676669 minDbm=-82.676669 maxDbm=-82.676669
+L dn_1 arrival_data n=514 meanDbm=-82.671582 minDbm=-82.676669 maxDbm=-82.671501
+L dn_1 phydrop_action_PREAMBLE_DETECT_FAILURE 3
+L dn_1 phydrop_ba_PREAMBLE_DETECT_FAILURE 1862
+L dn_1 phydrop_ba_TXING 26
+L dn_1 phydrop_bar_PREAMBLE_DETECT_FAILURE 144
+L dn_1 phydrop_bar_TXING 5
+L dn_1 phydrop_beacon_PREAMBLE_DETECT_FAILURE 132
+L dn_1 phydrop_beacon_TXING 5
+L dn_1 phydrop_data_PREAMBLE_DETECT_FAILURE 499
+L dn_1 phydrop_data_TXING 15
+L dn_1 tx_beacon 137
+L dn_1 tx_data 8
+L dn_1 txmode_OfdmRate6Mbps 8
+L dn_1 txDataMpdus 8
+L dn_1 macTxDataFailed 0
+L dn_1 macTxFinalDataFailed 0
+L dn_1 txDataPerSec 0,3,0,2,1,1,1,0,0,0,0,0,0,0,
+L dn_1 rxDataPerSec 0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+L up_0 arrival_ack n=8 meanDbm=-81.478582 minDbm=-81.478582 maxDbm=-81.478582
+L up_0 arrival_action n=2 meanDbm=-81.478582 minDbm=-81.478582 maxDbm=-81.478582
+L up_0 arrival_assoc n=8 meanDbm=-81.478582 minDbm=-81.478582 maxDbm=-81.478582
+L up_0 arrival_ba n=3 meanDbm=-81.478582 minDbm=-81.478582 maxDbm=-81.478582
+L up_0 arrival_bar n=550 meanDbm=-81.478582 minDbm=-81.478582 maxDbm=-81.478582
+L up_0 arrival_data n=74 meanDbm=-81.473414 minDbm=-81.473414 maxDbm=-81.473414
+L up_0 decoded_ack_any n=75 meanSnrDb=21.585910 minSnrDb=12.487404
+L up_0 decoded_action n=2 meanSnrDb=12.487404 minSnrDb=12.487404
+L up_0 decoded_assoc n=1 meanSnrDb=12.487404 minSnrDb=12.487404
+L up_0 decoded_ba n=3 meanSnrDb=12.487404 minSnrDb=12.487404
+L up_0 decoded_bar n=10 meanSnrDb=12.487404 minSnrDb=12.487404
+L up_0 decoded_data n=11 meanSnrDb=12.492571 minSnrDb=12.492571
+L up_0 phydrop_assoc_BUSY_DECODING_PREAMBLE 1
+L up_0 phydrop_assoc_PREAMBLE_DETECT_FAILURE 1
+L up_0 phydrop_assoc_RXING 1
+L up_0 phydrop_bar_BUSY_DECODING_PREAMBLE 9
+L up_0 phydrop_bar_L_SIG_FAILURE 2
+L up_0 phydrop_bar_PREAMBLE_DETECT_FAILURE 42
+L up_0 phydrop_bar_RECEPTION_ABORTED_BY_TX 1
+L up_0 phydrop_bar_RXING 480
+L up_0 phydrop_bar_TXING 4
+L up_0 phydrop_data_PREAMBLE_DETECT_FAILURE 6
+L up_0 phydrop_data_RXING 58
+L up_0 phydrop_data_TXING 3
+L up_0 tx_ack 8
+L up_0 tx_action 2
+L up_0 tx_assoc 8
+L up_0 tx_ba 3
+L up_0 tx_bar 550
+L up_0 tx_data 74
+L up_0 txmode_EhtMcs3 74
+L up_0 txDataMpdus 92
+L up_0 macTxDataFailed 647
+L up_0 macTxFinalDataFailed 1
+L up_0 txDataPerSec 0,1,0,0,6,42,23,0,0,0,0,0,13,7,
+L up_0 rxDataPerSec 0,1,0,0,1,0,8,0,0,0,0,0,0,1,
+L up_1 arrival_action n=7 meanDbm=-82.676669 minDbm=-82.676669 maxDbm=-82.676669
+L up_1 arrival_bar n=871 meanDbm=-82.676669 minDbm=-82.676669 maxDbm=-82.676669
+L up_1 arrival_data n=1405 meanDbm=-82.671501 minDbm=-82.671501 maxDbm=-82.671501
+L up_1 decoded_ack_any n=42 meanSnrDb=20.596443 minSnrDb=13.924984
+L up_1 phydrop_action_PREAMBLE_DETECT_FAILURE 7
+L up_1 phydrop_bar_BUSY_DECODING_PREAMBLE 8
+L up_1 phydrop_bar_PREAMBLE_DETECT_FAILURE 308
+L up_1 phydrop_bar_RXING 523
+L up_1 phydrop_bar_SIGNAL_DETECTION_ABORTED_BY_TX 2
+L up_1 phydrop_bar_TXING 30
+L up_1 phydrop_data_BUSY_DECODING_PREAMBLE 3
+L up_1 phydrop_data_PREAMBLE_DETECT_FAILURE 733
+L up_1 phydrop_data_RXING 626
+L up_1 phydrop_data_SIGNAL_DETECTION_ABORTED_BY_TX 1
+L up_1 phydrop_data_TXING 42
+L up_1 tx_action 7
+L up_1 tx_bar 871
+L up_1 tx_data 1405
+L up_1 txmode_HeMcs0 1405
+L up_1 txDataMpdus 1409
+L up_1 macTxDataFailed 2289
+L up_1 macTxFinalDataFailed 88
+L up_1 txDataPerSec 28,178,353,48,279,31,39,70,70,70,70,70,73,30,
+L up_1 rxDataPerSec 0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+D 0.123074 drop N4/sta0 assoc RETRY_LIMIT to MAP4/ap1L0(00:00:00:00:00:0e)
+D 0.123077 drop N5/sta0 assoc RETRY_LIMIT to MAP4/ap1L0(00:00:00:00:00:0e)
+D 0.631601 drop N5/sta0 data RETRY_LIMIT to MAP4/ap1L1(00:00:00:00:00:0f)
+D 0.725156 drop N5/sta0 data RETRY_LIMIT to MAP4/ap1L1(00:00:00:00:00:0f)
+D 0.824372 drop N5/sta0 data RETRY_LIMIT to MAP4/ap1L1(00:00:00:00:00:0f)
+D sec 1 flow N1 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=0 rtoChanges=0
+D sec 1 flow N2 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=0 rtoChanges=0
+D sec 1 flow N3 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=0 rtoChanges=0
+D sec 1 flow N4 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=0 rtoChanges=0
+D sec 1 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=0 rtoChanges=0
+D 1.000000 tcpHook N1 state=1 cwnd=1 highRxAck=1 rto=1
+D 1.005000 arpTx N1/sta0 request src=10.2.1.2 dst=10.2.1.1
+D 1.005000 ba N1/sta0 -> MAP1/ap1(00:00:00:00:00:0a) tid=0 PENDING
+D 1.005319 ba N1/sta0 -> MAP1/ap1(00:00:00:00:00:0a) tid=0 ESTABLISHED
+D 1.005389 arpRx MAP1/ap1 request src=10.2.1.2 dst=10.2.1.1
+D 1.005389 arpTx MAP1/ap1 reply src=10.2.1.1 dst=10.2.1.2
+D 1.005588 arpRx N2/sta0 request src=10.2.1.2 dst=10.2.1.1
+D 1.005591 arpRx N2/sta0 request src=10.2.1.2 dst=10.2.1.1
+D 1.005676 ba MAP1/ap1 -> N1/sta0(00:00:00:00:00:10) tid=0 PENDING
+D 1.005995 ba MAP1/ap1 -> N1/sta0(00:00:00:00:00:10) tid=0 ESTABLISHED
+D 1.006067 arpRx N1/sta0 reply src=10.2.1.1 dst=10.2.1.2
+D 1.012201 arpTx MAP1/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.012323 arpRx MAP2/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.012323 arpTx MAP2/bh0 reply src=10.1.1.2 dst=10.1.1.1
+D 1.012323 arpRx MAP4/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.012323 arpRx MAP5/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.012323 arpRx MAP3/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.012323 arpRx MAP7/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.012323 arpRx MAP6/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.012323 arpRx MAP8/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.012323 arpRx MAP9/bh0 request src=10.1.1.1 dst=10.1.1.2
+D 1.012366 ba MAP2/bh0 -> MAP1/bh0L0(00:00:00:00:00:01) tid=0 PENDING
+D 1.012749 ba MAP2/bh0 -> MAP1/bh0L0(00:00:00:00:00:01) tid=0 ESTABLISHED
+D 1.012919 arpRx MAP1/bh0 reply src=10.1.1.2 dst=10.1.1.1
+D 1.013051 ba MAP1/bh0 -> MAP2/bh0L0(00:00:00:00:00:02) tid=0 PENDING
+D 1.013452 ba MAP1/bh0 -> MAP2/bh0L0(00:00:00:00:00:02) tid=0 ESTABLISHED
+D 1.019559 arpTx MAP2/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.019672 arpRx MAP1/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.019672 arpRx MAP3/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.019672 arpTx MAP3/bh0 reply src=10.1.1.3 dst=10.1.1.2
+D 1.019672 arpRx MAP5/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.019672 arpRx MAP4/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.019672 arpRx MAP6/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.019673 arpRx MAP8/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.019673 arpRx MAP7/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.019673 arpRx MAP9/bh0 request src=10.1.1.2 dst=10.1.1.3
+D 1.019715 ba MAP3/bh0 -> MAP2/bh0L0(00:00:00:00:00:02) tid=0 PENDING
+D 1.020089 ba MAP3/bh0 -> MAP2/bh0L0(00:00:00:00:00:02) tid=0 ESTABLISHED
+D 1.020196 arpRx MAP2/bh0 reply src=10.1.1.3 dst=10.1.1.2
+D 1.020328 ba MAP2/bh0 -> MAP3/bh0L0(00:00:00:00:00:03) tid=0 PENDING
+D 1.020649 ba MAP2/bh0 -> MAP3/bh0L0(00:00:00:00:00:03) tid=0 ESTABLISHED
+D 1.030794 arpTx MAP3/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.030909 arpRx MAP2/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.030909 arpTx MAP2/bh0 reply src=10.1.1.2 dst=10.1.1.3
+D 1.030909 arpRx MAP6/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.030910 arpRx MAP5/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.030910 arpRx MAP1/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.030910 arpRx MAP9/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.030910 arpRx MAP4/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.030910 arpRx MAP8/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.030910 arpRx MAP7/bh0 request src=10.1.1.3 dst=10.1.1.2
+D 1.031017 arpRx MAP3/bh0 reply src=10.1.1.2 dst=10.1.1.3
+D 1.036213 arpTx MAP2/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.036327 arpRx MAP1/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.036327 arpTx MAP1/bh0 reply src=10.1.1.1 dst=10.1.1.2
+D 1.036327 arpRx MAP3/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.036327 arpRx MAP5/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.036327 arpRx MAP4/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.036327 arpRx MAP6/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.036328 arpRx MAP8/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.036328 arpRx MAP7/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.036328 arpRx MAP9/bh0 request src=10.1.1.2 dst=10.1.1.1
+D 1.036434 arpRx MAP2/bh0 reply src=10.1.1.1 dst=10.1.1.2
+D 1.040667 arpTx MAP1/ap1 request src=10.2.1.1 dst=10.2.1.2
+D 1.040781 arpRx N1/sta0 request src=10.2.1.1 dst=10.2.1.2
+D 1.040781 arpTx N1/sta0 reply src=10.2.1.2 dst=10.2.1.1
+D 1.040781 arpRx N2/sta0 request src=10.2.1.1 dst=10.2.1.2
+D 1.040787 arpRx N1/sta0 request src=10.2.1.1 dst=10.2.1.2
+D 1.040787 arpTx N1/sta0 reply src=10.2.1.2 dst=10.2.1.1
+D 1.040787 arpRx N2/sta0 request src=10.2.1.1 dst=10.2.1.2
+D 1.040877 arpRx MAP1/ap1 reply src=10.2.1.2 dst=10.2.1.1
+D 1.040889 arpRx MAP1/ap1 reply src=10.2.1.2 dst=10.2.1.1
+D 1.040889 arpDrop MAP1
+D 1.041020 tcpState N1 ESTABLISHED
+D 1.050000 tcpHook N2 state=1 cwnd=1 highRxAck=1 rto=1
+D 1.056000 arpTx N2/sta0 request src=10.2.1.3 dst=10.2.1.1
+D 1.056004 ba N2/sta0 -> MAP1/ap1(00:00:00:00:00:0a) tid=0 PENDING
+D 1.056323 ba N2/sta0 -> MAP1/ap1(00:00:00:00:00:0a) tid=0 ESTABLISHED
+D 1.056394 arpRx MAP1/ap1 request src=10.2.1.3 dst=10.2.1.1
+D 1.056394 arpTx MAP1/ap1 reply src=10.2.1.1 dst=10.2.1.3
+D 1.056593 arpRx N1/sta0 request src=10.2.1.3 dst=10.2.1.1
+D 1.056595 arpRx N1/sta0 request src=10.2.1.3 dst=10.2.1.1
+D 1.056636 ba MAP1/ap1 -> N2/sta0(00:00:00:00:00:13) tid=0 PENDING
+D 1.057036 ba MAP1/ap1 -> N2/sta0(00:00:00:00:00:13) tid=0 ESTABLISHED
+D 1.057107 arpRx N2/sta0 reply src=10.2.1.1 dst=10.2.1.3
+D 1.066508 arpTx MAP1/ap1 request src=10.2.1.1 dst=10.2.1.3
+D 1.066624 arpRx N1/sta0 request src=10.2.1.1 dst=10.2.1.3
+D 1.066624 arpRx N2/sta0 request src=10.2.1.1 dst=10.2.1.3
+D 1.066624 arpTx N2/sta0 reply src=10.2.1.3 dst=10.2.1.1
+D 1.066625 arpRx N1/sta0 request src=10.2.1.1 dst=10.2.1.3
+D 1.066625 arpRx N2/sta0 request src=10.2.1.1 dst=10.2.1.3
+D 1.066625 arpTx N2/sta0 reply src=10.2.1.3 dst=10.2.1.1
+D 1.066720 arpRx MAP1/ap1 reply src=10.2.1.3 dst=10.2.1.1
+D 1.066731 arpRx MAP1/ap1 reply src=10.2.1.3 dst=10.2.1.1
+D 1.066731 arpDrop MAP1
+D 1.066795 tcpState N2 ESTABLISHED
+D 1.100000 tcpHook N3 state=1 cwnd=1 highRxAck=1 rto=1
+D 1.107000 arpTx N3/sta0 request src=10.2.4.2 dst=10.2.4.1
+D 1.107003 ba N3/sta0 -> MAP4/ap1(00:00:00:00:00:0d) tid=0 PENDING
+D 1.107322 ba N3/sta0 -> MAP4/ap1(00:00:00:00:00:0d) tid=0 ESTABLISHED
+D 1.107328 arpPhyDrop N5/sta0L0 from N3/sta0L0(00:00:00:00:00:17) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.2 dst=10.2.4.1
+D 1.107387 arpRx MAP4/ap1 request src=10.2.4.2 dst=10.2.4.1
+D 1.107387 arpTx MAP4/ap1 reply src=10.2.4.1 dst=10.2.4.2
+D 1.107401 ba MAP4/ap1 -> N3/sta0(00:00:00:00:00:16) tid=0 PENDING
+D 1.107587 arpRx N4/sta0 request src=10.2.4.2 dst=10.2.4.1
+D 1.107587 arpRx N5/sta0 request src=10.2.4.2 dst=10.2.4.1
+D 1.107747 ba MAP4/ap1 -> N3/sta0(00:00:00:00:00:16) tid=0 ESTABLISHED
+D 1.107792 arpPhyDrop N5/sta0L0 from MAP4/ap1L0(00:00:00:00:00:0e) reason=EHT_SIG_FAILURE reply src=10.2.4.1 dst=10.2.4.2
+D 1.107819 arpRx N3/sta0 reply src=10.2.4.1 dst=10.2.4.2
+D 1.107909 arpTx MAP4/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 1.107914 arpPhyDrop MAP2/bh0L0 from MAP4/bh0L0(00:00:00:00:00:04) reason=TXING request src=10.1.1.4 dst=10.1.1.5
+D 1.107917 arpPhyDrop MAP3/bh0L0 from MAP4/bh0L0(00:00:00:00:00:04) reason=BUSY_DECODING_PREAMBLE request src=10.1.1.4 dst=10.1.1.5
+D 1.107918 arpPhyDrop MAP1/bh0L0 from MAP4/bh0L0(00:00:00:00:00:04) reason=PREAMBLE_DETECT_FAILURE request src=10.1.1.4 dst=10.1.1.5
+D 1.107918 arpPhyDrop MAP5/bh0L0 from MAP4/bh0L0(00:00:00:00:00:04) reason=PREAMBLE_DETECT_FAILURE request src=10.1.1.4 dst=10.1.1.5
+D 1.107918 arpPhyDrop MAP8/bh0L0 from MAP4/bh0L0(00:00:00:00:00:04) reason=PREAMBLE_DETECT_FAILURE request src=10.1.1.4 dst=10.1.1.5
+D 1.107918 arpPhyDrop MAP6/bh0L0 from MAP4/bh0L0(00:00:00:00:00:04) reason=PREAMBLE_DETECT_FAILURE request src=10.1.1.4 dst=10.1.1.5
+D 1.107918 arpPhyDrop MAP9/bh0L0 from MAP4/bh0L0(00:00:00:00:00:04) reason=PREAMBLE_DETECT_FAILURE request src=10.1.1.4 dst=10.1.1.5
+D 1.108026 arpRx MAP7/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 1.150000 tcpHook N4 state=1 cwnd=1 highRxAck=1 rto=1
+D 1.156000 arpTx N4/sta0 request src=10.2.4.3 dst=10.2.4.1
+D 1.156003 ba N4/sta0 -> MAP4/ap1(00:00:00:00:00:0d) tid=0 PENDING
+D 1.156322 ba N4/sta0 -> MAP4/ap1(00:00:00:00:00:0d) tid=0 ESTABLISHED
+D 1.156335 arpPhyDrop N5/sta0L1 from N4/sta0L1(00:00:00:00:00:1b) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.3 dst=10.2.4.1
+D 1.156463 arpRx MAP4/ap1 request src=10.2.4.3 dst=10.2.4.1
+D 1.156463 arpTx MAP4/ap1 reply src=10.2.4.1 dst=10.2.4.3
+D 1.156566 ba MAP4/ap1 -> N4/sta0(00:00:00:00:00:19) tid=0 PENDING
+D 1.156577 arpRx N3/sta0 request src=10.2.4.3 dst=10.2.4.1
+D 1.156577 arpRx N5/sta0 request src=10.2.4.3 dst=10.2.4.1
+D 1.156949 ba MAP4/ap1 -> N4/sta0(00:00:00:00:00:19) tid=0 ESTABLISHED
+D 1.157017 arpRx N4/sta0 reply src=10.2.4.1 dst=10.2.4.3
+D 1.200000 tcpHook N5 state=1 cwnd=1 highRxAck=1 rto=1
+D 1.205000 arpTx N5/sta0 request src=10.2.4.4 dst=10.2.4.1
+D 1.205007 ba N5/sta0 -> MAP4/ap1(00:00:00:00:00:0d) tid=0 PENDING
+D 1.213852 ba N5/sta0 -> MAP4/ap1(00:00:00:00:00:0d) tid=0 NO_REPLY
+D 1.213852 drop N5/sta0 action RETRY_LIMIT to MAP4/ap1L1(00:00:00:00:00:0f)
+D 1.213859 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.4 dst=10.2.4.1
+D 1.213859 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.4 dst=10.2.4.1
+D 1.213935 arpRx MAP4/ap1 request src=10.2.4.4 dst=10.2.4.1
+D 1.213935 arpTx MAP4/ap1 reply src=10.2.4.1 dst=10.2.4.4
+D 1.214134 arpRx N3/sta0 request src=10.2.4.4 dst=10.2.4.1
+D 1.214134 arpRx N4/sta0 request src=10.2.4.4 dst=10.2.4.1
+D 1.214303 ba MAP4/ap1 -> N5/sta0(00:00:00:00:00:1c) tid=0 PENDING
+D 1.214623 ba MAP4/ap1 -> N5/sta0(00:00:00:00:00:1c) tid=0 ESTABLISHED
+D 1.214846 arpRx N5/sta0 reply src=10.2.4.1 dst=10.2.4.4
+D 1.249051 arpPhyDrop N5/sta0L1 from MAP4/ap1L1(00:00:00:00:00:0f) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.2 dst=10.2.4.1
+D 1.249158 arpRx N4/sta0 request src=10.2.4.2 dst=10.2.4.1
+D 1.249242 arpPhyDrop N5/sta0L1 from MAP4/ap1L1(00:00:00:00:00:0f) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.3 dst=10.2.4.1
+D 1.249349 arpRx N3/sta0 request src=10.2.4.3 dst=10.2.4.1
+D 1.249487 arpPhyDrop N5/sta0L1 from MAP4/ap1L1(00:00:00:00:00:0f) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.4 dst=10.2.4.1
+D 1.249594 arpRx N3/sta0 request src=10.2.4.4 dst=10.2.4.1
+D 1.249594 arpRx N4/sta0 request src=10.2.4.4 dst=10.2.4.1
+D 1.350167 arpDrop MAP4
+D 1.413852 ba N5/sta0 -> MAP4/ap1(00:00:00:00:00:0d) tid=0 RESET
+D 1.700065 arpDrop MAP4
+D 1.750166 arpDrop MAP4
+D 1.800004 ba N5/sta0 -> MAP4/ap1(00:00:00:00:00:0d) tid=0 PENDING
+D 1.800324 ba N5/sta0 -> MAP4/ap1(00:00:00:00:00:0d) tid=0 ESTABLISHED
+D sec 2 flow N1 appTx=5550184 sinkRx=5445928 state=ESTABLISHED cwnd=131768 highRxAck=5419865 rto=1 rtoChanges=1
+D sec 2 flow N2 appTx=5321400 sinkRx=5222936 state=ESTABLISHED cwnd=131768 highRxAck=5191081 rto=1 rtoChanges=1
+D sec 2 flow N3 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=0.8 rtoChanges=4
+D sec 2 flow N4 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=0.8 rtoChanges=4
+D sec 2 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=0.8 rtoChanges=4
+D 2.107909 arpTx MAP4/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 2.108990 arpRx MAP1/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 2.108990 arpRx MAP5/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 2.108990 arpTx MAP5/bh0 reply src=10.1.1.5 dst=10.1.1.4
+D 2.108990 arpRx MAP7/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 2.108990 arpRx MAP2/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 2.108990 arpRx MAP8/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 2.108990 arpRx MAP6/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 2.108991 arpRx MAP3/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 2.108991 arpRx MAP9/bh0 request src=10.1.1.4 dst=10.1.1.5
+D 2.109033 ba MAP5/bh0 -> MAP4/bh0L0(00:00:00:00:00:04) tid=0 PENDING
+D 2.109407 ba MAP5/bh0 -> MAP4/bh0L0(00:00:00:00:00:04) tid=0 ESTABLISHED
+D 2.109532 arpRx MAP4/bh0 reply src=10.1.1.5 dst=10.1.1.4
+D 2.109619 ba MAP4/bh0 -> MAP5/bh0L0(00:00:00:00:00:05) tid=0 PENDING
+D 2.109993 ba MAP4/bh0 -> MAP5/bh0L0(00:00:00:00:00:05) tid=0 ESTABLISHED
+D 2.115123 arpTx MAP5/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 2.116621 arpRx MAP2/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 2.116621 arpRx MAP4/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 2.116621 arpRx MAP6/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 2.116621 arpTx MAP6/bh0 reply src=10.1.1.6 dst=10.1.1.5
+D 2.116621 arpRx MAP8/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 2.116621 arpRx MAP1/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 2.116621 arpRx MAP3/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 2.116621 arpRx MAP7/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 2.116621 arpRx MAP9/bh0 request src=10.1.1.5 dst=10.1.1.6
+D 2.116664 ba MAP6/bh0 -> MAP5/bh0L0(00:00:00:00:00:05) tid=0 PENDING
+D 2.118821 ba MAP6/bh0 -> MAP5/bh0L0(00:00:00:00:00:05) tid=0 ESTABLISHED
+D 2.118928 arpRx MAP5/bh0 reply src=10.1.1.6 dst=10.1.1.5
+D 2.119051 ba MAP5/bh0 -> MAP6/bh0L0(00:00:00:00:00:06) tid=0 PENDING
+D 2.119544 ba MAP5/bh0 -> MAP6/bh0L0(00:00:00:00:00:06) tid=0 ESTABLISHED
+D 2.128703 arpTx MAP6/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 2.129325 arpPhyDrop MAP3/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=TXING request src=10.1.1.6 dst=10.1.1.5
+D 2.129325 arpPhyDrop MAP2/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=TXING request src=10.1.1.6 dst=10.1.1.5
+D 2.129326 arpPhyDrop MAP1/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=TXING request src=10.1.1.6 dst=10.1.1.5
+D 2.129329 arpPhyDrop MAP5/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=PREAMBLE_DETECT_FAILURE request src=10.1.1.6 dst=10.1.1.5
+D 2.129329 arpPhyDrop MAP9/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=PREAMBLE_DETECT_FAILURE request src=10.1.1.6 dst=10.1.1.5
+D 2.129329 arpPhyDrop MAP8/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=PREAMBLE_DETECT_FAILURE request src=10.1.1.6 dst=10.1.1.5
+D 2.129330 arpPhyDrop MAP4/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=PREAMBLE_DETECT_FAILURE request src=10.1.1.6 dst=10.1.1.5
+D 2.129330 arpPhyDrop MAP7/bh0L0 from MAP6/bh0L0(00:00:00:00:00:06) reason=PREAMBLE_DETECT_FAILURE request src=10.1.1.6 dst=10.1.1.5
+D 2.305580 drop N5/sta0 data EXPIRED_LIFETIME to MAP4/ap1(00:00:00:00:00:0d)
+D 2.327703 arpDrop MAP6
+D 2.327705 arpDrop MAP6
+D 2.508291 arpDrop MAP6
+D sec 3 flow N1 appTx=11324808 sinkRx=11246616 state=ESTABLISHED cwnd=131768 highRxAck=11194489 rto=1 rtoChanges=1
+D sec 3 flow N2 appTx=11035208 sinkRx=10983080 state=ESTABLISHED cwnd=131768 highRxAck=10904889 rto=1 rtoChanges=1
+D sec 3 flow N3 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=1.6 rtoChanges=6
+D sec 3 flow N4 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=1.6 rtoChanges=6
+D sec 3 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=1.6 rtoChanges=6
+D 3.102781 drop N5/sta0 data EXPIRED_LIFETIME to MAP4/ap1(00:00:00:00:00:0d)
+D 3.127703 arpTx MAP6/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 3.128599 arpRx MAP3/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 3.128599 arpRx MAP5/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 3.128599 arpTx MAP5/bh0 reply src=10.1.1.5 dst=10.1.1.6
+D 3.128599 arpRx MAP9/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 3.128600 arpRx MAP2/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 3.128600 arpRx MAP8/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 3.128600 arpRx MAP4/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 3.128600 arpRx MAP1/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 3.128600 arpRx MAP7/bh0 request src=10.1.1.6 dst=10.1.1.5
+D 3.128707 arpRx MAP6/bh0 reply src=10.1.1.5 dst=10.1.1.6
+D 3.135038 arpTx MAP5/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 3.135742 arpRx MAP2/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 3.135742 arpRx MAP4/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 3.135742 arpTx MAP4/bh0 reply src=10.1.1.4 dst=10.1.1.5
+D 3.135742 arpRx MAP6/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 3.135742 arpRx MAP8/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 3.135742 arpRx MAP1/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 3.135742 arpRx MAP3/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 3.135742 arpRx MAP7/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 3.135742 arpRx MAP9/bh0 request src=10.1.1.5 dst=10.1.1.4
+D 3.135849 arpRx MAP5/bh0 reply src=10.1.1.4 dst=10.1.1.5
+D 3.141371 arpTx MAP4/ap1 request src=10.2.4.1 dst=10.2.4.3
+D 3.141485 arpRx N3/sta0 request src=10.2.4.1 dst=10.2.4.3
+D 3.141485 arpRx N4/sta0 request src=10.2.4.1 dst=10.2.4.3
+D 3.141485 arpTx N4/sta0 reply src=10.2.4.3 dst=10.2.4.1
+D 3.141486 arpRx N5/sta0 request src=10.2.4.1 dst=10.2.4.3
+D 3.141490 arpPhyDrop N5/sta0L1 from N4/sta0L1(00:00:00:00:00:1b) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.3 dst=10.2.4.1
+D 3.141618 arpRx MAP4/ap1 reply src=10.2.4.3 dst=10.2.4.1
+D 3.141716 tcpState N4 ESTABLISHED
+D 3.143368 arpTx MAP4/ap1 request src=10.2.4.1 dst=10.2.4.2
+D 3.147556 arpRx N3/sta0 request src=10.2.4.1 dst=10.2.4.2
+D 3.147556 arpTx N3/sta0 reply src=10.2.4.2 dst=10.2.4.1
+D 3.147556 arpRx N4/sta0 request src=10.2.4.1 dst=10.2.4.2
+D 3.147556 arpRx N5/sta0 request src=10.2.4.1 dst=10.2.4.2
+D 3.147599 arpPhyDrop N4/sta0L0 from N3/sta0L0(00:00:00:00:00:17) reason=TXING reply src=10.2.4.2 dst=10.2.4.1
+D 3.147603 arpPhyDrop N5/sta0L0 from N3/sta0L0(00:00:00:00:00:17) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.2 dst=10.2.4.1
+D 3.147841 arpPhyDrop N4/sta0L0 from N3/sta0L0(00:00:00:00:00:17) reason=TXING reply src=10.2.4.2 dst=10.2.4.1
+D 3.147845 arpPhyDrop N5/sta0L0 from N3/sta0L0(00:00:00:00:00:17) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.2 dst=10.2.4.1
+D 3.148200 arpPhyDrop N4/sta0L0 from N3/sta0L0(00:00:00:00:00:17) reason=TXING reply src=10.2.4.2 dst=10.2.4.1
+D 3.148204 arpPhyDrop N5/sta0L0 from N3/sta0L0(00:00:00:00:00:17) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.2 dst=10.2.4.1
+D 3.148703 arpPhyDrop N4/sta0L0 from N3/sta0L0(00:00:00:00:00:17) reason=TXING reply src=10.2.4.2 dst=10.2.4.1
+D 3.148707 arpPhyDrop N5/sta0L0 from N3/sta0L0(00:00:00:00:00:17) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.2 dst=10.2.4.1
+D 3.149314 arpPhyDrop N4/sta0L0 from N3/sta0L0(00:00:00:00:00:17) reason=TXING reply src=10.2.4.2 dst=10.2.4.1
+D 3.149318 arpPhyDrop N5/sta0L0 from N3/sta0L0(00:00:00:00:00:17) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.2 dst=10.2.4.1
+D 3.149378 arpRx MAP4/ap1 reply src=10.2.4.2 dst=10.2.4.1
+D 3.149538 tcpState N3 ESTABLISHED
+D 3.401358 arpPhyDrop N5/sta0L1 from MAP4/ap1L1(00:00:00:00:00:0f) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.1 dst=10.2.4.3
+D 3.401466 arpRx N3/sta0 request src=10.2.4.1 dst=10.2.4.3
+D 3.401466 arpRx N4/sta0 request src=10.2.4.1 dst=10.2.4.3
+D 3.401466 arpTx N4/sta0 reply src=10.2.4.3 dst=10.2.4.1
+D 3.407051 arpPhyDrop N5/sta0L1 from MAP4/ap1L1(00:00:00:00:00:0f) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.1 dst=10.2.4.2
+D 3.407159 arpRx N3/sta0 request src=10.2.4.1 dst=10.2.4.2
+D 3.407159 arpTx N3/sta0 reply src=10.2.4.2 dst=10.2.4.1
+D 3.407159 arpRx N4/sta0 request src=10.2.4.1 dst=10.2.4.2
+D 3.407206 arpPhyDrop N5/sta0L1 from N3/sta0L1(00:00:00:00:00:18) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.2 dst=10.2.4.1
+D 3.407266 arpRx MAP4/ap1 reply src=10.2.4.2 dst=10.2.4.1
+D 3.434745 arpPhyDrop N5/sta0L1 from N4/sta0L1(00:00:00:00:00:1b) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.3 dst=10.2.4.1
+D 3.439193 arpRx MAP4/ap1 reply src=10.2.4.3 dst=10.2.4.1
+D sec 4 flow N1 appTx=15802024 sinkRx=15674600 state=ESTABLISHED cwnd=131768 highRxAck=15671705 rto=1 rtoChanges=1
+D sec 4 flow N2 appTx=15295224 sinkRx=15245992 state=ESTABLISHED cwnd=131768 highRxAck=15164905 rto=1 rtoChanges=1
+D sec 4 flow N3 appTx=1935976 sinkRx=1805656 state=ESTABLISHED cwnd=131768 highRxAck=1805657 rto=1 rtoChanges=29
+D sec 4 flow N4 appTx=1211976 sinkRx=1083104 state=ESTABLISHED cwnd=131768 highRxAck=1081657 rto=1 rtoChanges=29
+D sec 4 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=1.6 rtoChanges=6
+D 4.254633 arpTx MAP4/ap1 request src=10.2.4.1 dst=10.2.4.4
+D 4.257386 arpRx N3/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 4.257386 arpRx N4/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 4.257386 arpRx N5/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 4.257386 arpTx N5/sta0 reply src=10.2.4.4 dst=10.2.4.1
+D 4.257394 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.257394 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.257394 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.260324 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.260324 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.260324 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.261463 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.261463 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.261463 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.261720 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.261720 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.261720 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.262094 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.262094 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.262094 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.262675 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.262675 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.262675 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.262968 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.262968 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.262968 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.264764 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.264764 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.264764 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.266587 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.266587 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.266587 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.269058 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.269058 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.269058 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.273842 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.273842 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.273842 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.274162 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.274162 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.274162 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.274410 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.274410 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.274410 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.275126 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.275126 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.275126 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.276121 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.276121 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.276121 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.277400 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.277404 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.277404 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.281563 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.281567 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.281567 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.281784 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.281788 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.281788 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.285983 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.285983 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.285983 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.286222 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.286222 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.286222 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.286479 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.286479 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.286479 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.287069 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.287069 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.287069 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.288163 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.288163 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.288163 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.288834 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.288834 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.288838 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.289820 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.289820 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.289824 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.292381 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.292381 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.292381 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.294105 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.294105 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.294105 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.294353 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.294353 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.294353 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.294628 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.294628 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.294628 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.295047 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.295047 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.295047 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.296312 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.296312 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.296312 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.297946 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.297946 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.297946 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.300930 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.300930 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.300930 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.307955 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.307955 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.307955 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.314746 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.314746 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.314746 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.314994 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.314994 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.314994 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.315251 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.315251 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.315251 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.315742 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.315742 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.315742 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.316296 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.316296 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.316296 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.317804 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.317804 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.317804 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.319267 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.319267 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.319267 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.321656 arpPhyDrop N5/sta0L1 from MAP4/ap1L1(00:00:00:00:00:0f) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.1 dst=10.2.4.4
+D 4.321763 arpRx N3/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 4.321764 arpRx N4/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 4.327966 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.327966 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.327966 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.330905 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.330905 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.330905 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.331225 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.331225 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.331225 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.331680 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.331680 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.331680 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.331973 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.331973 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.331973 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.333175 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.333175 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.333175 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.333729 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.333729 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.333729 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.334652 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.334652 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.334652 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.341092 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.341092 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.341092 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.349953 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.349953 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.349953 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.350165 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.350165 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.350165 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.350404 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.350404 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.350404 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.351084 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.351084 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.351084 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.351431 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.351431 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.351431 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.352012 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.352012 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.352012 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.356310 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.356310 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.356310 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.362574 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.362574 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.362574 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.369928 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.369928 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.369928 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.370212 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.370212 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.370212 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.370532 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.370532 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.370532 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.371275 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.371275 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.371275 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.372207 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.372207 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.372207 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.373814 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.373814 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.373814 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.374782 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.374782 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.374782 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.382797 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.382797 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.382797 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.389426 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.389426 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.389426 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.389737 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.389737 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.389737 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.390174 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.390174 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.390174 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.390836 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.390836 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.390836 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.391984 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.391984 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.391984 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.392286 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.392286 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.392286 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.392597 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.392597 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.392597 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.400126 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.400126 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.400126 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.405162 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.405162 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.405162 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.405383 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.405383 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.405383 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.405811 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.405811 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.405811 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.406158 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.406158 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.406158 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.406424 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.406424 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.406424 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.408121 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.408121 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.408121 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.410682 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.410682 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.410682 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.413873 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.413873 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.413873 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.418112 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.418112 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.418112 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.418405 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.418405 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.418405 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.418865 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.418865 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.418865 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.419518 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.419518 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.419518 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.420621 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.420621 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.420621 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.421904 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.421904 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.421904 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.426661 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.426661 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.426661 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.431940 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.431940 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.431940 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.435077 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.435077 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.435077 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.435325 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.435325 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.435325 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.435771 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.435771 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.435771 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.436257 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.436257 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.436257 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.436627 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.436627 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.436627 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.437496 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.437496 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.437496 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.439535 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.439535 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.439535 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.440242 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.440242 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.440242 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.443685 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.443685 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.443685 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.443933 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.443933 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.443933 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.444145 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.444145 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.444145 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.444582 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.444582 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.444582 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.445028 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.445028 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.445028 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.445240 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.445240 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.445240 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.447927 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.447927 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.447927 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.451442 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.451442 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.451442 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.460075 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.460075 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.460075 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.460395 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.460395 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.460395 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.460652 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.460652 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.460652 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.461323 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.461323 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.461323 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.462642 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.462642 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.462642 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.464357 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.464357 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.464357 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.469159 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.469159 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.469159 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.472494 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.472494 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.472494 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.473358 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.473358 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.473358 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.473674 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.473678 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.473678 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.474138 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.474142 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.474142 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.474395 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.474399 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.474399 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.475408 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.475412 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.475412 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.476079 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.476083 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.476083 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.479607 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.479607 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.479607 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.486313 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.486313 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.486313 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.494364 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.494364 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.494364 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.494702 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.494702 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.494702 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.495022 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.495022 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.495022 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.495531 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.495531 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.495531 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.496076 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.496076 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.496076 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.498520 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.498520 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.498520 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.503304 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.503304 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.503304 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.505793 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.505793 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.505793 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.509515 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.509515 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.509515 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.509790 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.509790 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.509790 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.510155 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.510155 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.510155 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.510502 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.510502 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.510502 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.510804 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.510804 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.510804 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.512744 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.512744 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.512744 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.515224 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.515224 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.515224 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.520215 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.520215 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.520215 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.520913 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.520913 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.520913 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.521134 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.521134 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.521134 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.521616 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.521616 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.521616 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.521945 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.521945 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.521945 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.522688 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.522688 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.522688 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.524979 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.524979 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.524979 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.525974 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.525974 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.525974 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.530650 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.530650 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.530650 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.539286 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.539286 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.539286 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.539579 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.539579 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.539579 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.539899 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.539899 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.539899 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.540435 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.540435 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.540435 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.540647 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.540647 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.540647 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.541606 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.541606 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.541606 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.545400 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.545400 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.545400 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.549014 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.549014 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.549014 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.552295 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.552295 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.552295 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.552642 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.552642 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.552642 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.552890 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.552890 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.552890 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.553489 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.553489 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.553489 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.554731 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.554731 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.554731 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.556982 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.556982 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.556982 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.558256 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.558256 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.558256 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.559089 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.559089 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.559089 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.561209 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.561209 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.561209 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.561484 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.561484 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.561484 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.561975 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.561975 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.561975 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.562385 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.562385 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.562385 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.563200 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.563200 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.563200 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.563646 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.563646 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.563646 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.568034 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.568034 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.568034 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.573592 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.573592 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.573592 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.575073 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.575073 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.575073 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.575294 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.575294 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.575294 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.575560 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.575560 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.575560 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.576285 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.576285 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.576285 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.577505 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.577505 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.577505 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.578662 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.578662 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.578662 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.582420 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.582420 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.582420 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.582902 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.582902 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.582902 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.584581 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.584581 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.584581 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.584928 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.584928 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.584928 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.585257 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.585257 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.585257 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.585559 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.585559 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.585559 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.586815 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.586815 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.586815 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.587153 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.587153 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.587153 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.588013 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.588013 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.588013 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.591060 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.591060 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.591060 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.597896 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.597896 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.597896 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.598180 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.598180 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.598180 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.598536 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.598536 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.598536 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.598802 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.598802 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.598802 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 4.599743 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.599743 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.599743 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.601044 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.601044 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.601044 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.605153 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.605153 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.605153 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.608920 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.608920 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.608920 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.615612 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.615612 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.615612 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.615905 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.615905 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.615905 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.616351 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.616351 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.616351 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.616590 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.616590 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.616590 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.617054 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.617054 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.617054 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.617707 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.617707 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.617707 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.619755 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.619755 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.619755 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.622946 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.622946 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.622946 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.624868 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.624868 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.624868 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.625080 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.625080 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.625080 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.625391 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.625391 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.625391 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.625918 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.625918 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.625918 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.626409 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.626409 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.626409 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.628403 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.628403 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.628403 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.632737 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.632737 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.632737 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.636819 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.636819 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.636819 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.642098 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.642098 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.642098 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.642364 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.642364 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.642364 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.642738 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.642738 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.642738 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.643427 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.643427 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.643427 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.644521 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.644521 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.644521 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.645030 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.645030 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.645030 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.648617 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.648617 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.648617 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.650926 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.650926 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.650926 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.657276 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.657276 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.657276 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.657524 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.657524 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.657524 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.657907 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.657907 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.657907 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.658398 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.658398 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.658398 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.658637 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.658637 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.658637 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.660415 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.660415 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.660415 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.663336 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.663336 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.663336 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.667845 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.667845 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.667845 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.671158 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.671162 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.671162 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.671442 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.671446 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.671446 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.671924 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.671928 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.671928 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.672595 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.672599 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.672599 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.673950 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.673950 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.673950 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.675899 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.675899 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.675899 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.678914 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.678914 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.678914 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 4.683334 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.683334 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.683334 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.690602 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.690602 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.690602 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.690922 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.690922 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.690922 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.691368 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.691368 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.691368 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.691904 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.691904 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.691904 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.692134 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.692134 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.692134 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.692553 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.692553 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.692553 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.695393 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.695393 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.695393 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.701122 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.701122 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.701122 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.706005 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.706005 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.706005 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.706244 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.706244 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.706244 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.706690 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.706690 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.706690 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.707145 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.707145 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.707145 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.707384 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.707384 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.707384 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.707929 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.707929 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.707929 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.712731 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.712731 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.712731 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.714482 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.714482 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.714482 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.716377 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.716377 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.716377 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.716697 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.716697 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.716697 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.717125 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.717125 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.717125 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.717724 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.717724 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.717724 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.718692 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.718692 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.718692 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.720506 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.720506 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.720506 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.723544 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.723544 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.723544 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.731541 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.731541 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.731541 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.731888 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.731888 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.731888 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.732235 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.732235 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.732235 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.732447 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.732447 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.732447 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.732920 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.732920 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.732920 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.733654 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.733654 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.733654 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.735891 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.735891 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.735891 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.736886 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.736886 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.736886 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.745567 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.745567 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.745567 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.753141 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.753141 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.753141 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.753416 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.753416 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.753416 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.753781 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.753781 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.753781 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.754056 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.754056 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.754056 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.754916 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.754916 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.754916 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.756415 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.756415 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.756415 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 4.759290 drop N5/sta0 data EXPIRED_LIFETIME to MAP4/ap1(00:00:00:00:00:0d)
+D sec 5 flow N1 appTx=19740584 sinkRx=19621848 state=ESTABLISHED cwnd=131768 highRxAck=19610265 rto=1 rtoChanges=1
+D sec 5 flow N2 appTx=19187448 sinkRx=19097672 state=ESTABLISHED cwnd=131768 highRxAck=19057129 rto=1 rtoChanges=1
+D sec 5 flow N3 appTx=4394680 sinkRx=4264360 state=ESTABLISHED cwnd=131768 highRxAck=4264361 rto=1 rtoChanges=29
+D sec 5 flow N4 appTx=2396440 sinkRx=2266120 state=ESTABLISHED cwnd=131768 highRxAck=2266121 rto=1 rtoChanges=29
+D sec 5 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=3.2 rtoChanges=8
+D 5.246633 arpTx MAP4/ap1 request src=10.2.4.1 dst=10.2.4.4
+D 5.316130 arpRx N3/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 5.316130 arpRx N4/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 5.316130 arpRx N5/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 5.316130 arpTx N5/sta0 reply src=10.2.4.4 dst=10.2.4.1
+D 5.316178 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.316178 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.316450 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.316453 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.316454 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.316879 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.316882 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.316883 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.317956 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.317959 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.317960 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.318565 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.318568 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.318569 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.334607 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.334608 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.334608 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.374648 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.374648 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.374648 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.375193 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.375194 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.375194 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.375711 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.375712 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.375712 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.376049 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.376050 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.376050 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.376342 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.376343 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.376343 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.377427 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.377428 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.377428 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.379430 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.379431 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.379431 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.524797 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.524797 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.524797 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.553663 arpPhyDrop N5/sta0L1 from MAP4/ap1L1(00:00:00:00:00:0f) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.1 dst=10.2.4.4
+D 5.553770 arpRx N3/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 5.553771 arpRx N4/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 5.571812 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.571812 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.571812 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.571989 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.571989 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.571989 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.572247 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.572247 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.572247 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.572676 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.572676 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.572676 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.573582 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.573582 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.573582 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.584355 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.584355 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.584355 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.584532 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.584532 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.584532 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.584889 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.584889 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.584889 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.585075 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.585075 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.585075 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.612754 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.612754 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.612754 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.613003 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.613003 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.613003 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.613180 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.613180 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.613180 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.613654 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.613654 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.613654 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.614731 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.614731 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.614731 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.626540 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.626540 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.626540 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.638313 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.638313 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.638313 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.698085 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.698085 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.698085 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.721020 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.721020 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.721020 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.721980 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.721980 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.721980 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.726069 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.726069 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.726069 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.757695 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.757695 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.757695 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.758016 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.758016 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.758016 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.758688 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.758688 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.758688 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.759828 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.759828 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.759828 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.788663 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.788666 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 5.788667 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.788894 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.788894 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.788898 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.789300 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.789300 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.790544 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.790544 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.790548 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.790755 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.790755 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.790755 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.792458 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.792458 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.792462 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.796220 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.796220 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.796220 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.799742 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.799742 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.799742 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.800629 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.800629 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.800629 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.800841 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.800841 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.800841 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.801314 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.801314 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.801314 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.801994 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.801994 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.801994 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.802674 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.802674 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.802674 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.804267 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.804267 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.804267 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.805109 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.805109 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.805109 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.810559 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.810559 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.810559 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.810772 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.810772 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.810772 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.811174 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.811174 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.811174 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.811432 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.811432 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.811432 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.811699 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.811699 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=RXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.811699 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 5.812953 arpPhyDrop MAP4/ap1L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.812953 arpPhyDrop N3/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 5.812953 arpPhyDrop N4/sta0L1 from N5/sta0L1(00:00:00:00:00:1e) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D sec 6 flow N1 appTx=23548824 sinkRx=23508280 state=ESTABLISHED cwnd=131768 highRxAck=23418505 rto=1 rtoChanges=1
+D sec 6 flow N2 appTx=23192616 sinkRx=23126008 state=ESTABLISHED cwnd=131768 highRxAck=23062297 rto=1 rtoChanges=1
+D sec 6 flow N3 appTx=6867864 sinkRx=6778088 state=ESTABLISHED cwnd=131768 highRxAck=6737545 rto=1 rtoChanges=29
+D sec 6 flow N4 appTx=3601176 sinkRx=3472304 state=ESTABLISHED cwnd=131768 highRxAck=3470857 rto=1 rtoChanges=29
+D sec 6 flow N5 appTx=0 sinkRx=0 state=? cwnd=0 highRxAck=0 rto=3.2 rtoChanges=8
+D 6.246633 arpTx MAP4/ap1 request src=10.2.4.1 dst=10.2.4.4
+D 6.287810 arpRx N3/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 6.287810 arpRx N4/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 6.287810 arpRx N5/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 6.287810 arpTx N5/sta0 reply src=10.2.4.4 dst=10.2.4.1
+D 6.287854 arpPhyDrop MAP4/ap1L0 from N5/sta0L0(00:00:00:00:00:1d) reason=TXING reply src=10.2.4.4 dst=10.2.4.1
+D 6.287857 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=BUSY_DECODING_PREAMBLE reply src=10.2.4.4 dst=10.2.4.1
+D 6.287858 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 6.306796 arpPhyDrop N3/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 6.306796 arpPhyDrop N4/sta0L0 from N5/sta0L0(00:00:00:00:00:1d) reason=PREAMBLE_DETECT_FAILURE reply src=10.2.4.4 dst=10.2.4.1
+D 6.306872 arpRx MAP4/ap1 reply src=10.2.4.4 dst=10.2.4.1
+D 6.346154 tcpState N5 ESTABLISHED
+D 6.476307 arpPhyDrop N5/sta0L1 from MAP4/ap1L1(00:00:00:00:00:0f) reason=PREAMBLE_DETECT_FAILURE request src=10.2.4.1 dst=10.2.4.4
+D 6.476414 arpRx N3/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 6.476414 arpRx N4/sta0 request src=10.2.4.1 dst=10.2.4.4
+D 6.848593 drop N5/sta0 data QOS_OLD to MAP4/ap1(00:00:00:00:00:0d)
+D 6.848593 drop N5/sta0 data QOS_OLD to MAP4/ap1(00:00:00:00:00:0d)
+D 6.848593 drop N5/sta0 data QOS_OLD to MAP4/ap1(00:00:00:00:00:0d)
+D sec 7 flow N1 appTx=27296248 sinkRx=27171720 state=ESTABLISHED cwnd=131768 highRxAck=27165929 rto=1 rtoChanges=1
+D sec 7 flow N2 appTx=26945832 sinkRx=26815512 state=ESTABLISHED cwnd=131768 highRxAck=26815513 rto=1 rtoChanges=1
+D sec 7 flow N3 appTx=9520600 sinkRx=9413448 state=ESTABLISHED cwnd=131768 highRxAck=9390281 rto=1 rtoChanges=29
+D sec 7 flow N4 appTx=4785640 sinkRx=4668352 state=ESTABLISHED cwnd=131768 highRxAck=4655321 rto=1 rtoChanges=29
+D sec 7 flow N5 appTx=130320 sinkRx=0 state=ESTABLISHED cwnd=14480 highRxAck=1 rto=6.438 rtoChanges=9
+D sec 8 flow N1 appTx=31017608 sinkRx=30981408 state=ESTABLISHED cwnd=131768 highRxAck=30887289 rto=1 rtoChanges=1
+D sec 8 flow N2 appTx=30742488 sinkRx=30644024 state=ESTABLISHED cwnd=131768 highRxAck=30612169 rto=1 rtoChanges=1
+D sec 8 flow N3 appTx=11909800 sinkRx=11828712 state=ESTABLISHED cwnd=131768 highRxAck=11779481 rto=1 rtoChanges=29
+D sec 8 flow N4 appTx=6036712 sinkRx=5912184 state=ESTABLISHED cwnd=131768 highRxAck=5906393 rto=1 rtoChanges=29
+D sec 8 flow N5 appTx=130320 sinkRx=0 state=ESTABLISHED cwnd=14480 highRxAck=1 rto=6.438 rtoChanges=9
+D sec 9 flow N1 appTx=34898248 sinkRx=34773720 state=ESTABLISHED cwnd=131768 highRxAck=34767929 rto=1 rtoChanges=1
+D sec 9 flow N2 appTx=34310360 sinkRx=34259680 state=ESTABLISHED cwnd=131768 highRxAck=34180041 rto=1 rtoChanges=1
+D sec 9 flow N3 appTx=14504616 sinkRx=14374296 state=ESTABLISHED cwnd=131768 highRxAck=14374297 rto=1 rtoChanges=29
+D sec 9 flow N4 appTx=7200904 sinkRx=7119816 state=ESTABLISHED cwnd=131768 highRxAck=7070585 rto=1 rtoChanges=29
+D sec 9 flow N5 appTx=130320 sinkRx=0 state=ESTABLISHED cwnd=14480 highRxAck=1 rto=6.438 rtoChanges=9
+D sec 10 flow N1 appTx=38735448 sinkRx=38634088 state=ESTABLISHED cwnd=131768 highRxAck=38605129 rto=1 rtoChanges=1
+D sec 10 flow N2 appTx=38147560 sinkRx=38046200 state=ESTABLISHED cwnd=131768 highRxAck=38017241 rto=1 rtoChanges=1
+D sec 10 flow N3 appTx=16685304 sinkRx=16685304 state=ESTABLISHED cwnd=131768 highRxAck=16554985 rto=1 rtoChanges=29
+D sec 10 flow N4 appTx=8451976 sinkRx=8379576 state=ESTABLISHED cwnd=131768 highRxAck=8321657 rto=1 rtoChanges=29
+D sec 10 flow N5 appTx=130320 sinkRx=0 state=ESTABLISHED cwnd=14480 highRxAck=1 rto=6.438 rtoChanges=9
+D sec 11 flow N1 appTx=42865144 sinkRx=42757992 state=ESTABLISHED cwnd=131768 highRxAck=42734825 rto=1 rtoChanges=1
+D sec 11 flow N2 appTx=42245400 sinkRx=42190376 state=ESTABLISHED cwnd=131768 highRxAck=42115081 rto=1 rtoChanges=1
+D sec 11 flow N3 appTx=18854408 sinkRx=18813864 state=ESTABLISHED cwnd=131768 highRxAck=18724089 rto=1 rtoChanges=29
+D sec 11 flow N4 appTx=9676984 sinkRx=9597344 state=ESTABLISHED cwnd=131768 highRxAck=9546665 rto=1 rtoChanges=29
+D sec 11 flow N5 appTx=130320 sinkRx=0 state=ESTABLISHED cwnd=14480 highRxAck=1 rto=6.438 rtoChanges=9
+D sec 12 flow N1 appTx=46406952 sinkRx=46383784 state=ESTABLISHED cwnd=131768 highRxAck=46276633 rto=1 rtoChanges=1
+D sec 12 flow N2 appTx=45937800 sinkRx=45887120 state=ESTABLISHED cwnd=131768 highRxAck=45807481 rto=1 rtoChanges=1
+D sec 12 flow N3 appTx=21527416 sinkRx=21459360 state=ESTABLISHED cwnd=131768 highRxAck=21397097 rto=1 rtoChanges=29
+D sec 12 flow N4 appTx=10991768 sinkRx=10881720 state=ESTABLISHED cwnd=131768 highRxAck=10861449 rto=1 rtoChanges=29
+D sec 12 flow N5 appTx=130320 sinkRx=0 state=ESTABLISHED cwnd=14480 highRxAck=1 rto=6.438 rtoChanges=9
+D sec 13 flow N1 appTx=50380264 sinkRx=50249944 state=ESTABLISHED cwnd=131768 highRxAck=50249945 rto=1 rtoChanges=1
+D sec 13 flow N2 appTx=49708392 sinkRx=49640336 state=ESTABLISHED cwnd=131768 highRxAck=49578073 rto=1 rtoChanges=1
+D sec 13 flow N3 appTx=23792088 sinkRx=23682040 state=ESTABLISHED cwnd=131768 highRxAck=23661769 rto=1 rtoChanges=29
+D sec 13 flow N4 appTx=12199400 sinkRx=12155960 state=ESTABLISHED cwnd=131768 highRxAck=12069081 rto=1 rtoChanges=29
+D sec 13 flow N5 appTx=130320 sinkRx=0 state=ESTABLISHED cwnd=1448 highRxAck=1 rto=12.876 rtoChanges=10
+D 13.000000 tcpState N1 FIN_WAIT_1
+D 13.000000 tcpState N2 FIN_WAIT_1
+D 13.000000 tcpState N3 FIN_WAIT_1
+D 13.000000 tcpState N4 FIN_WAIT_1
+D 13.028577 tcpState N1 CLOSING
+D 13.028577 tcpState N1 TIME_WAIT
+D 13.028806 tcpState N2 CLOSING
+D 13.028806 tcpState N2 TIME_WAIT
+D 13.034008 tcpState N3 CLOSING
+D 13.034008 tcpState N3 TIME_WAIT
+D 13.043937 tcpState N4 CLOSING
+D 13.043937 tcpState N4 TIME_WAIT
+D persec ipLocalDeliver N1 0,1873,1994,1546,1360,1315,1294,1285,1340,1325,1426,1223,1372,46,
+D persec ipLocalDeliver N2 0,1794,1973,1471,1344,1383,1296,1311,1232,1325,1415,1275,1302,46,
+D persec ipLocalDeliver N3 0,0,0,626,849,854,916,825,896,753,749,923,782,46,
+D persec ipLocalDeliver N4 0,0,0,375,409,416,409,432,402,432,423,454,417,46,
+D persec ipLocalDeliver N5 0,0,0,0,0,0,3,1,0,0,1,0,0,8,
+D persec ipLocalDeliver SRV 0,7372,7989,7999,7902,8035,7724,7802,7708,7747,8021,7771,7677,259,
+D persec ipSendOutgoing N1 0,3835,3988,3092,2720,2630,2588,2570,2680,2650,2852,2446,2744,2,
+D persec ipSendOutgoing N2 0,3677,3946,2942,2688,2766,2592,2622,2464,2650,2830,2550,2604,2,
+D persec ipSendOutgoing N3 0,3,1,1338,1698,1708,1832,1650,1792,1506,1498,1846,1564,2,
+D persec ipSendOutgoing N4 0,3,1,838,818,832,818,864,804,864,846,908,834,2,
+D persec ipSendOutgoing N5 0,3,1,0,1,0,11,0,0,0,0,0,1,2,
+D persec ipSendOutgoing SRV 0,3687,4000,4000,3954,4018,3862,3902,3854,3874,4011,3885,3839,134,
+D persec ipUnicastForward GW 0,11076,11976,11995,11866,12077,11557,11695,11574,11643,12002,11670,11486,409,
+D persec ipUnicastForward MAP1 0,11178,11897,8967,8192,8103,7764,7794,7638,7992,8523,7530,8022,96,
+D persec ipUnicastForward MAP2 0,11088,11977,8966,8161,8080,7707,7959,7611,7950,8571,7481,7996,149,
+D persec ipUnicastForward MAP3 0,11094,11935,8998,8132,8157,7659,7870,7677,7943,8541,7583,7889,218,
+D persec ipUnicastForward MAP4 0,6,2,3106,3813,3757,3936,3819,3848,3642,3520,4109,3574,195,
+D persec ipUnicastForward MAP5 0,0,5,2998,3777,3893,3943,3819,3848,3638,3558,4058,3590,197,
+D persec ipUnicastForward MAP6 0,0,13,2996,3777,3893,3927,3794,3891,3678,3486,4085,3598,192,
+D persec txData MAP1/ap1L0 0,2079,2188,1767,1528,1317,1427,1509,1384,1302,1520,1303,1406,69,
+D persec txData MAP1/ap1L1 0,1800,2085,1529,1414,1608,1415,1140,1331,1496,1514,1303,1427,23,
+D persec txData MAP1/bh0L0 0,8736,9060,7164,7027,6930,6314,6860,6496,7073,7064,6421,6576,99,
+D persec txData MAP2/bh0L0 0,12639,13298,10589,9594,9480,9501,9471,9661,9953,10191,9215,9928,221,
+D persec txData MAP3/bh0L0 0,4073,4612,3624,3189,3490,3066,3074,2926,3244,3300,2851,3305,113,
+D persec txData MAP4/ap1L0 0,6,0,553,844,803,723,512,724,699,518,783,714,78,
+D persec txData MAP4/ap1L1 0,3,0,523,684,737,780,820,834,594,686,787,706,8,
+D persec txData MAP4/bh0L0 0,1,9,2340,3196,3280,3357,3101,3373,3011,2922,3404,3078,128,
+D persec txData MAP5/bh0L0 0,0,7,3800,4702,4776,4837,4713,4580,4349,4272,5241,4598,238,
+D persec txData MAP6/bh0L0 0,0,2,1152,1665,1658,1508,1819,1801,1531,1644,1499,1851,79,
+D persec txData N1/sta0L0 0,2332,2474,1570,1404,1248,1460,1430,1367,1314,1555,1500,1639,0,
+D persec txData N1/sta0L1 0,1853,1976,1668,1595,1516,1346,1283,1554,1555,1633,1101,1190,3,
+D persec txData N2/sta0L0 0,1921,2241,1623,1626,1698,1412,1678,1518,1562,1643,1354,1180,0,
+D persec txData N2/sta0L1 0,1924,2210,1596,1251,1255,1434,1107,1161,1185,1419,1339,1505,3,
+D persec txData N3/sta0L0 0,2,1,621,1126,1155,930,785,853,1105,745,1021,1023,51,
+D persec txData N3/sta0L1 0,2,0,729,922,1116,1287,1322,980,776,829,1121,867,42,
+D persec txData N4/sta0L0 0,2,1,403,454,436,468,476,455,452,437,471,471,9,
+D persec txData N4/sta0L1 0,2,0,389,459,443,445,441,444,470,422,455,475,21,
+D persec txData N5/sta0L0 0,1,0,0,6,42,23,0,0,0,0,0,13,7,
+D persec txData N5/sta0L1 0,129,353,48,272,17,4,0,0,0,0,0,17,2,
+D cnt arpDrop MAP1 2
+D cnt arpDrop MAP4 6
+D cnt arpDrop MAP6 6
+D cnt arpPhyDrop MAP1/bh0L0 2
+D cnt arpPhyDrop MAP2/bh0L0 2
+D cnt arpPhyDrop MAP3/bh0L0 2
+D cnt arpPhyDrop MAP4/ap1L0 41
+D cnt arpPhyDrop MAP4/ap1L1 289
+D cnt arpPhyDrop MAP4/bh0L0 1
+D cnt arpPhyDrop MAP5/bh0L0 2
+D cnt arpPhyDrop MAP6/bh0L0 1
+D cnt arpPhyDrop MAP7/bh0L0 1
+D cnt arpPhyDrop MAP8/bh0L0 2
+D cnt arpPhyDrop MAP9/bh0L0 2
+D cnt arpPhyDrop N3/sta0L0 45
+D cnt arpPhyDrop N3/sta0L1 289
+D cnt arpPhyDrop N4/sta0L0 50
+D cnt arpPhyDrop N4/sta0L1 289
+D cnt arpPhyDrop N5/sta0L0 7
+D cnt arpPhyDrop N5/sta0L1 12
+D cnt arpRx MAP1/ap1 6
+D cnt arpRx MAP1/bh0 8
+D cnt arpRx MAP2/bh0 8
+D cnt arpRx MAP3/bh0 8
+D cnt arpRx MAP4/ap1 8
+D cnt arpRx MAP4/bh0 8
+D cnt arpRx MAP5/bh0 8
+D cnt arpRx MAP6/bh0 8
+D cnt arpRx MAP7/bh0 9
+D cnt arpRx MAP8/bh0 8
+D cnt arpRx MAP9/bh0 8
+D cnt arpRx N1/sta0 7
+D cnt arpRx N2/sta0 7
+D cnt arpRx N3/sta0 15
+D cnt arpRx N4/sta0 15
+D cnt arpRx N5/sta0 8
+D cnt arpTx MAP1/ap1 4
+D cnt arpTx MAP1/bh0 2
+D cnt arpTx MAP2/bh0 4
+D cnt arpTx MAP3/bh0 2
+D cnt arpTx MAP4/ap1 8
+D cnt arpTx MAP4/bh0 3
+D cnt arpTx MAP5/bh0 4
+D cnt arpTx MAP6/bh0 3
+D cnt arpTx N1/sta0 3
+D cnt arpTx N2/sta0 3
+D cnt arpTx N3/sta0 3
+D cnt arpTx N4/sta0 3
+D cnt arpTx N5/sta0 4
+D cnt drop N4/sta0 assoc RETRY_LIMIT 1
+D cnt drop N5/sta0 action RETRY_LIMIT 1
+D cnt drop N5/sta0 assoc RETRY_LIMIT 1
+D cnt drop N5/sta0 data EXPIRED_LIFETIME 10
+D cnt drop N5/sta0 data QOS_OLD 6
+D cnt drop N5/sta0 data RETRY_LIMIT 83
+D arp t2 MAP1 if1 10.1.1.2 dev 0 lladdr 01-06-00:00:00:00:00:02 REACHABLE
+D arp t2 MAP1 if2 10.2.1.2 dev 1 lladdr 01-06-00:00:00:00:00:10 REACHABLE
+D arp t2 MAP1 if2 10.2.1.3 dev 1 lladdr 01-06-00:00:00:00:00:13 REACHABLE
+D arp t2 MAP2 if1 10.1.1.1 dev 0 lladdr 01-06-00:00:00:00:00:01 REACHABLE
+D arp t2 MAP2 if1 10.1.1.3 dev 0 lladdr 01-06-00:00:00:00:00:03 REACHABLE
+D arp t2 MAP3 if1 10.1.1.2 dev 0 lladdr 01-06-00:00:00:00:00:02 REACHABLE
+D arp t2 MAP4 if1 10.1.1.5 dev 0 lladdr 00-00:00 DELAY
+D arp t2 N1 if1 10.2.1.1 dev 0 lladdr 01-06-00:00:00:00:00:0a REACHABLE
+D arp t2 N2 if1 10.2.1.1 dev 0 lladdr 01-06-00:00:00:00:00:0a REACHABLE
+D arp t2 N3 if1 10.2.4.1 dev 0 lladdr 01-06-00:00:00:00:00:0d REACHABLE
+D arp t2 N4 if1 10.2.4.1 dev 0 lladdr 01-06-00:00:00:00:00:0d REACHABLE
+D arp t2 N5 if1 10.2.4.1 dev 0 lladdr 01-06-00:00:00:00:00:0d REACHABLE
+D arp end MAP1 if1 10.1.1.2 dev 0 lladdr 01-06-00:00:00:00:00:02 REACHABLE
+D arp end MAP1 if2 10.2.1.2 dev 1 lladdr 01-06-00:00:00:00:00:10 REACHABLE
+D arp end MAP1 if2 10.2.1.3 dev 1 lladdr 01-06-00:00:00:00:00:13 REACHABLE
+D arp end MAP2 if1 10.1.1.1 dev 0 lladdr 01-06-00:00:00:00:00:01 REACHABLE
+D arp end MAP2 if1 10.1.1.3 dev 0 lladdr 01-06-00:00:00:00:00:03 REACHABLE
+D arp end MAP3 if1 10.1.1.2 dev 0 lladdr 01-06-00:00:00:00:00:02 REACHABLE
+D arp end MAP4 if1 10.1.1.5 dev 0 lladdr 01-06-00:00:00:00:00:05 REACHABLE
+D arp end MAP4 if2 10.2.4.2 dev 1 lladdr 01-06-00:00:00:00:00:16 REACHABLE
+D arp end MAP4 if2 10.2.4.3 dev 1 lladdr 01-06-00:00:00:00:00:19 REACHABLE
+D arp end MAP4 if2 10.2.4.4 dev 1 lladdr 01-06-00:00:00:00:00:1c REACHABLE
+D arp end MAP5 if1 10.1.1.4 dev 0 lladdr 01-06-00:00:00:00:00:04 REACHABLE
+D arp end MAP5 if1 10.1.1.6 dev 0 lladdr 01-06-00:00:00:00:00:06 REACHABLE
+D arp end MAP6 if1 10.1.1.5 dev 0 lladdr 01-06-00:00:00:00:00:05 REACHABLE
+D arp end N1 if1 10.2.1.1 dev 0 lladdr 01-06-00:00:00:00:00:0a REACHABLE
+D arp end N2 if1 10.2.1.1 dev 0 lladdr 01-06-00:00:00:00:00:0a REACHABLE
+D arp end N3 if1 10.2.4.1 dev 0 lladdr 01-06-00:00:00:00:00:0d REACHABLE
+D arp end N4 if1 10.2.4.1 dev 0 lladdr 01-06-00:00:00:00:00:0d REACHABLE
+D arp end N5 if1 10.2.4.1 dev 0 lladdr 01-06-00:00:00:00:00:0d REACHABLE
+D rt Node: 0, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 0, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.2.1.0        0.0.0.0         255.255.255.0   U     0      -      -   2
+D rt 10.4.1.0        10.1.1.2        255.255.255.0   UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 0, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 1, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 1, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.4.1.0        10.1.1.3        255.255.255.0   UGS   0      -      -   1
+D rt 10.2.1.0        10.1.1.1        255.255.255.0   UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 1, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 2, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 2, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.3.3.0        0.0.0.0         255.255.255.0   U     0      -      -   2
+D rt 10.4.1.0        10.3.3.2        255.255.255.0   UGS   0      -      -   2
+D rt 10.2.1.0        10.1.1.2        255.255.255.0   UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 2, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 3, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 3, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.2.4.0        0.0.0.0         255.255.255.0   U     0      -      -   2
+D rt 10.4.1.0        10.1.1.5        255.255.255.0   UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 3, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 4, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 4, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.4.1.0        10.1.1.6        255.255.255.0   UGS   0      -      -   1
+D rt 10.2.4.0        10.1.1.4        255.255.255.0   UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 4, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 5, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 5, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.3.6.0        0.0.0.0         255.255.255.0   U     0      -      -   2
+D rt 10.4.1.0        10.3.6.2        255.255.255.0   UGS   0      -      -   2
+D rt 10.2.4.0        10.1.1.5        255.255.255.0   UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 5, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 6, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 6, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 6, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 7, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 7, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 7, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 8, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 8, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.1.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.3.9.0        0.0.0.0         255.255.255.0   U     0      -      -   2
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 8, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 9, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 9, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.3.3.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.3.6.0        0.0.0.0         255.255.255.0   U     0      -      -   2
+D rt 10.3.9.0        0.0.0.0         255.255.255.0   U     0      -      -   3
+D rt 10.4.1.0        0.0.0.0         255.255.255.0   U     0      -      -   4
+D rt 10.2.1.0        10.3.3.1        255.255.255.0   UGS   0      -      -   1
+D rt 10.2.4.0        10.3.6.1        255.255.255.0   UGS   0      -      -   2
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 9, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 10, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 10, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.4.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 10.2.0.0        10.4.1.1        255.255.0.0     UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 10, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 11, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 11, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.2.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 0.0.0.0         10.2.1.1        0.0.0.0         UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 11, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 12, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 12, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.2.1.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 0.0.0.0         10.2.1.1        0.0.0.0         UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 12, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 13, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 13, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.2.4.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 0.0.0.0         10.2.4.1        0.0.0.0         UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 13, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 14, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 14, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.2.4.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 0.0.0.0         10.2.4.1        0.0.0.0         UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 14, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt Node: 15, Time: +2s, Local time: +2s, Ipv4ListRouting table
+D rt   Priority: 0 Protocol: ns3::Ipv4StaticRouting
+D rt Node: 15, Time: +2s, Local time: +2s, Ipv4StaticRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D rt 127.0.0.0       0.0.0.0         255.0.0.0       U     0      -      -   0
+D rt 10.2.4.0        0.0.0.0         255.255.255.0   U     0      -      -   1
+D rt 0.0.0.0         10.2.4.1        0.0.0.0         UGS   0      -      -   1
+D rt   Priority: -10 Protocol: ns3::Ipv4GlobalRouting
+D rt Node: 15, Time: +2s, Local time: +2s, Ipv4GlobalRouting table
+D rt Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+D end flow N1 appTx=50380264 sinkRx=50380264 state=TIME_WAIT cwnd=131768 highRxAck=50380266 rto=1.000000 rtoChanges=1
+D end flow N2 appTx=49708392 sinkRx=49708392 state=TIME_WAIT cwnd=131768 highRxAck=49708394 rto=1.000000 rtoChanges=1
+D end flow N3 appTx=23792088 sinkRx=23792088 state=TIME_WAIT cwnd=131768 highRxAck=23792090 rto=1.000000 rtoChanges=29
+D end flow N4 appTx=12199400 sinkRx=12199400 state=TIME_WAIT cwnd=131768 highRxAck=12199402 rto=1.000000 rtoChanges=29
+D end flow N5 appTx=130320 sinkRx=1448 state=ESTABLISHED cwnd=2896 highRxAck=1449 rto=6.438000 rtoChanges=11
+D end dev MAP1/bh0 beQueue=0
+D end ba MAP1/bh0 -> MAP2/bh0L0(00:00:00:00:00:02) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev MAP1/ap1 beQueue=0
+D end ba MAP1/ap1 -> N1/sta0(00:00:00:00:00:10) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;L1:no;
+D end ba MAP1/ap1 -> N2/sta0(00:00:00:00:00:13) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;L1:no;
+D end dev MAP2/bh0 beQueue=0
+D end ba MAP2/bh0 -> MAP1/bh0L0(00:00:00:00:00:01) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end ba MAP2/bh0 -> MAP3/bh0L0(00:00:00:00:00:03) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev MAP3/bh0 beQueue=0
+D end ba MAP3/bh0 -> MAP2/bh0L0(00:00:00:00:00:02) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev MAP4/bh0 beQueue=0
+D end ba MAP4/bh0 -> MAP5/bh0L0(00:00:00:00:00:05) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev MAP4/ap1 beQueue=0
+D end ba MAP4/ap1 -> N3/sta0(00:00:00:00:00:16) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;L1:no;
+D end ba MAP4/ap1 -> N4/sta0(00:00:00:00:00:19) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;L1:no;
+D end ba MAP4/ap1 -> N5/sta0(00:00:00:00:00:1c) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;L1:POWER_SAVE_MODE;
+D end dev MAP5/bh0 beQueue=0
+D end ba MAP5/bh0 -> MAP4/bh0L0(00:00:00:00:00:04) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end ba MAP5/bh0 -> MAP6/bh0L0(00:00:00:00:00:06) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev MAP6/bh0 beQueue=0
+D end ba MAP6/bh0 -> MAP5/bh0L0(00:00:00:00:00:05) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;
+D end dev MAP7/bh0 beQueue=0
+D end dev MAP8/bh0 beQueue=0
+D end dev MAP9/bh0 beQueue=0
+D end dev N1/sta0 beQueue=0
+D end ba N1/sta0 -> MAP1/ap1(00:00:00:00:00:0a) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;L1:no;
+D end dev N2/sta0 beQueue=0
+D end ba N2/sta0 -> MAP1/ap1(00:00:00:00:00:0a) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;L1:no;
+D end dev N3/sta0 beQueue=0
+D end ba N3/sta0 -> MAP4/ap1(00:00:00:00:00:0d) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;L1:no;
+D end dev N4/sta0 beQueue=0
+D end ba N4/sta0 -> MAP4/ap1(00:00:00:00:00:0d) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;L1:no;
+D end dev N5/sta0 beQueue=0
+D end ba N5/sta0 -> MAP4/ap1(00:00:00:00:00:0d) tid=0 state=ESTABLISHED queued=0 blocked=L0:no;L1:no;
+rc 0

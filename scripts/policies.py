@@ -13,6 +13,7 @@ Evaluation is leave-one-position-out: learners never see the test position.
 """
 
 import math
+import os
 
 import numpy as np
 
@@ -44,6 +45,15 @@ def features(ctx):
 # (70,285), (100,255) although SLO works there). None disables this.
 CAND_FLOOR_DBM = -82.0
 
+# In-band receive power is slightly below the path-loss estimate: ns-3.48 normalizes the
+# transmit PSD, spectral-mask skirts included, to TxPower (WifiSpectrumValueHelper::
+# NormalizeSpectrumMask), and the receiver integrates only the in-band subbands. The traced
+# beacon power is 0.029 dB below rssi_dbm() at every traced position on both bands (data PPDUs:
+# 0.024 dB; results/edge_trace). The candidate check applies this beacon offset. Setting the
+# environment variable DAMA_CAND_RX_OFFSET_DB=0 gives the nominal check used before 2026-10-05
+# (sensitivity case; it admits MAP 1 at (100, 195) m under MLO, where the 6 GHz link is dead).
+CAND_RX_OFFSET_DB = float(os.environ.get("DAMA_CAND_RX_OFFSET_DB", "-0.029"))
+
 # Centre frequencies of the access channels in dama-mlo-v2.cc: MAP 1 ch 36 / ch 1,
 # MAP 4 ch 48 / ch 13 (5 GHz: 5000 + 5c MHz, 6 GHz: 5950 + 5c MHz).
 LINK_FREQ_HZ = {0: (5.180e9, 5.955e9), 1: (5.240e9, 6.015e9)}
@@ -52,7 +62,8 @@ LINK_FREQ_HZ = {0: (5.180e9, 5.955e9), 1: (5.240e9, 6.015e9)}
 def weakest_link_rssi(ctx, ap):
     """Beacon RSSI of the weakest link the station would set up with this MAP."""
     x, y = ctx["pos"]
-    return min(rssi_dbm(x, y, ap, freq_hz=f) for f in LINK_FREQ_HZ[ap][:ctx["nlinks"]])
+    return min(rssi_dbm(x, y, ap, freq_hz=f) for f in LINK_FREQ_HZ[ap][:ctx["nlinks"]]) \
+        + CAND_RX_OFFSET_DB
 
 
 def forced_action(ctx):

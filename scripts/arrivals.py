@@ -13,8 +13,10 @@ GreedyOracle tries both candidate MAPs at every step and keeps the better sumLog
 the one-step-lookahead reference, not a global optimum.
 
 Usage: python3 arrivals.py [--trials 15] [--k 5] [--mode mlo] [--rate EhtMcs0]
-                           [--learners] [--workers 4]
-Writes results/arrivals_<mode>_<rate>.json.
+                           [--learners] [--workers 4] [--train-seed 0]
+Writes results/arrivals_<mode>_<rate>.json. With --train-seed N > 0 the learners are trained
+with seed N and the output goes to results/arrivals_<mode>_<rate>_trainseed<N>.json, so the
+seed-0 result of the manuscript is never overwritten. Placement trials do not depend on N.
 """
 
 import argparse
@@ -77,13 +79,15 @@ def main():
     ap.add_argument("--learners", action="store_true")
     ap.add_argument("--policies", default="", help="comma list to restrict policies")
     ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--train-seed", type=int, default=0,
+                    help="learner training seed (0 = manuscript result)")
     opt = ap.parse_args()
 
     pols = dict(HEURISTICS)
     if opt.learners:
-        pols.update(trained_learners(opt.mode))
+        pols.update(trained_learners(opt.mode, seed=opt.train_seed))
     if opt.policies:
-        keep = set(opt.policies.split(","))
+        keep = set(opt.policies.split(",")) | {"RSSI"}  # RSSI is the baseline of every gain
         pols = {n: p for n, p in pols.items() if n in keep}
     names = list(pols) + ["GreedyOracle"]
 
@@ -135,7 +139,7 @@ def main():
             placed[(t, "GreedyOracle")] = placed[(t, "GreedyOracle")] + [(x, y, best)]
 
     out = {"trials": opt.trials, "k": opt.k, "mode": opt.mode, "rate": opt.rate, "policies": {},
-           "learnerTraining": "constrained" if opt.learners else None}
+           "learnerTraining": "constrained" if opt.learners else None, "trainSeed": opt.train_seed}
     for n in names:
         per_step = []
         for s in range(opt.k):
@@ -152,7 +156,8 @@ def main():
         frac_map1 = float(np.mean([a == 0 for t in range(opt.trials) for *_, a in placed[(t, n)]]))
         out["policies"][n] = {"per_step": per_step, "frac_map1": frac_map1}
     out["decisions"] = {f"{t}|{n}": placed[(t, n)] for t in range(opt.trials) for n in names}
-    path = os.path.join(OUT, f"arrivals_{opt.mode}_{opt.rate}.json")
+    suffix = f"_trainseed{opt.train_seed}" if opt.train_seed else ""
+    path = os.path.join(OUT, f"arrivals_{opt.mode}_{opt.rate}{suffix}.json")
     with open(path, "w") as f:
         json.dump(out, f, indent=1)
     final = {n: out["policies"][n]["per_step"][-1]["sumLog_gain_vs_rssi"] for n in names}

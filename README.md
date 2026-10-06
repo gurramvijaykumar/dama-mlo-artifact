@@ -22,6 +22,14 @@ trace runs used to diagnose failed or stalled runs are included as raw output.
 - `scripts/simlib.py`: runs the scenario and caches each run as one JSON line.
 - `scripts/experiments.py`: the sweeps (`states`, `grid`, `backhaul`, `sens`).
 - `scripts/arrivals.py`: the sequential multi-station arrival experiment.
+- `scripts/summarize_arrival_seeds.py`: final-step learner gains for each
+  training seed and pooled intervals, resampling training seeds and shared
+  placement trials independently while preserving placement pairing across
+  seeds. Outputs: `data/arrival_seeds_<mode>_EhtMcs0.json`.
+- `scripts/stall_arrivals.py`: lists the sequential-arrival trials whose
+  final run stalled (one rule for every policy and training seed) and
+  computes the sensitivity check without them. Outputs:
+  `data/arrival_stall_trace/stalls.json`, `candidates.json`, `jobs.txt`.
 - `scripts/policies.py`: association policies (RSSI, LoadAware, Airtime,
   AirtimeThr, UCB1, LinUCB, neural contextual bandit).
 - `scripts/analyze.py`: builds the tables (`ablation`, `policies`, `states`).
@@ -31,7 +39,7 @@ trace runs used to diagnose failed or stalled runs are included as raw output.
   every metric the scenario printed.
 - `data/*.json`: analysis outputs used for the tables and figures.
 - `data/failed_runs.jsonl`: runs that aborted in ns-3.48 (the downlink run of
-  Section 8.5). They are reported, never imputed.
+  Section 8.5, Appendix A.4). They are reported, never imputed.
 - `tables/`, `figures/`: the tables and figures of the manuscript as generated
   from the included data.
 - `scripts/diag_policy_breakdown.py`, `scripts/diag_pilot.py`,
@@ -39,16 +47,28 @@ trace runs used to diagnose failed or stalled runs are included as raw output.
   text of Section 7 (per-position policy gains and utility-floor rescoring,
   steady-state check, per-trial arrival results). Outputs:
   `data/diag_*.json`.
+- `scripts/common_candidate_diagnostic.py`: paired SLO-MLO comparison on the
+  grid positions where both MAPs pass the candidate check in both
+  configurations (Section 7.1). Outputs:
+  `data/common_candidate_diag_offset-0.029.json` (receiver-calibrated check,
+  primary) and `data/common_candidate_diag_offset0.json` (nominal check).
+- `scripts/margin_check.py`: candidate check with a safety margin of
+  0.5--3 dB (Section 7.2, Table `tab_margin`). Outputs: `data/margin_check/`.
+- `scripts/paired_check.py`: paired t-test and Holm-corrected versions of
+  the named-state comparisons (Section 6.3). Output: `data/paired_check.json`.
+- `sensitivity_nominal_check/`: policy, arrival and breakdown outputs and the
+  affected tables computed with the nominal candidate check; see "Candidate
+  check" below.
 - `scripts/check_v21.py`, `data/validate_v21.json`: check that a version 2.1
   build reproduces the validation runs of its development build.
 - `scratch/dama-mlo-trace.cc`: version 2.1 of the scenario with a per-link
   trace of N5 and its serving access point (cell-edge diagnosis, Section 8.2)
-  and, with `--psTrace=true`, a power-save trace (Section 8.5).
+  and, with `--psTrace=true`, a power-save trace (Appendix A.4).
 - `scratch/dama-mlo-diag.cc`: `dama-mlo-trace.cc` with an added MAC-state and
   ARP trace (`--diagTrace=true`), used for the failed-run diagnosis in
   Sections 7.3 and 7.4.
 - `data/edge_trace/`, `data/ps_trace/`, `data/addba_screen/`,
-  `data/anomaly_trace/`: raw output of the trace runs; see "Trace runs" below.
+  `data/arrival_stall_trace/`, `data/anomaly_trace/`: raw output of the trace runs; see "Trace runs" below.
 - `secondary_analysis/`: the UDP analysis excluding trace-confirmed
   ADDBA-expiry cases (Section 7.4, Table `tab_udp_excl`); see below.
 - `MANIFEST.txt`: file list with SHA-256 checksums.
@@ -64,8 +84,8 @@ experiment, and a cached result is reused only for the same version.
 |---|---|---|---|
 | 2.0 | `scratch/dama-mlo-v2.0.cc` | `states`, `grid` | named states, grid ablation, policy comparison and training variants |
 | 2.1 | `scratch/dama-mlo-v2.1.cc` | `states21`, `backhaul`, `sens`, `pilot`, `arrivals.py` | its own 80 MHz baseline, backhaul width, UDP/downlink/near sensitivity, delay split, steady-state check, sequential arrivals |
-| 2.1 + trace | `scratch/dama-mlo-trace.cc` | `run_edge_trace.sh`, `run_ps_trace.sh` | cell-edge diagnosis (Section 8.2), power-save trace (Section 8.5) |
-| 2.1 + diag trace | `scratch/dama-mlo-diag.cc` | `run_addba_screen.sh` | zero-output screen and ADDBA-expiry diagnosis (Sections 7.3, 7.4) |
+| 2.1 + trace | `scratch/dama-mlo-trace.cc` | `run_edge_trace.sh`, `run_ps_trace.sh` | cell-edge diagnosis (Section 8.2), power-save trace (Appendix A.4) |
+| 2.1 + diag trace | `scratch/dama-mlo-diag.cc` | `run_addba_screen.sh` | zero-output screen, ADDBA-expiry diagnosis and stalled-arrival traces (Sections 7.3--7.5) |
 
 The learners of the sequential-arrival experiment are trained on the version 2.0
 grid, while the arrivals themselves are simulated with version 2.1.
@@ -115,6 +135,8 @@ No simulation is needed. Copy the data into the folder the scripts expect:
 ```bash
 cd scripts
 mkdir -p results && cp ../data/*.json ../data/*.jsonl results/
+cp -r ../data/margin_check results/      # for margin_check.py table
+python3 stall_arrivals.py                 # needed for tab_arrival_seeds
 python3 make_tables_figs.py --from-json   # about 15 s
 ```
 
@@ -131,7 +153,18 @@ The text checks are rerun with:
 python3 diag_pilot.py
 python3 diag_arrivals.py
 python3 diag_policy_breakdown.py      # retrains the learners; slow
+python3 summarize_arrival_seeds.py --mode mlo
+python3 summarize_arrival_seeds.py --mode mloConfined
+python3 paired_check.py               # about 1 min
 ```
+
+The training-seed summaries use seed 0 from the original arrival results
+and seeds 1--4 from `arrivals_<mode>_EhtMcs0_trainseed<N>.json`. The five
+training seeds share the same 15 placement trials. The `crossed_boot_95`
+interval resamples these two dimensions with replacement (10,000 draws);
+each sampled placement column stays paired across training seeds. These
+intervals include training-seed and placement variation. The original
+seed-0 arrival files and tables remain separately reproducible.
 
 ## Rerun the simulations
 
@@ -146,6 +179,12 @@ python3 experiments.py states grid                # version 2.0
 python3 experiments.py states21 backhaul sens     # version 2.1
 python3 arrivals.py --trials 15 --k 5 --mode mlo --learners
 python3 arrivals.py --trials 15 --k 5 --mode mloConfined --learners
+for s in 1 2 3 4; do
+  for m in mlo mloConfined; do
+    python3 arrivals.py --trials 15 --k 5 --mode "$m" --learners \
+      --policies ucb1,linucb,neural --train-seed "$s" --workers 4
+  done
+done
 python3 experiments.py pilot                      # version 2.1
 python3 analyze.py ablation policies states
 ```
@@ -189,7 +228,7 @@ point on link `l` (0 = 5 GHz, 1 = 6 GHz), `dn_<l>` the reverse. Counts cover
 the whole run, not only the measurement window. `--n5Links=5` makes N5 a
 single-link 5 GHz device.
 
-### Power-save trace of the downlink runs (Section 8.5)
+### Power-save trace of the downlink runs (Appendix A.4)
 
 ```bash
 export NS3_DIR=/path/to/ns-3.48
@@ -201,7 +240,7 @@ python3 summarize_ps_trace.py ../data/ps_trace   # the included runs
 `data/ps_trace/` holds one output per unique downlink run and
 `summary.json`.
 
-### Zero-output screen and ADDBA-expiry diagnosis (Sections 7.3, 7.4)
+### Zero-output screen and ADDBA-expiry diagnosis (Appendix A.1, A.2)
 
 `screen_zero_delivery.py` lists every run of `runs.jsonl` in which a station
 transmitted or delivered nothing over the whole run (341 runs) and writes
@@ -225,6 +264,32 @@ an earlier build of `dama-mlo-diag.cc`. They were rerun with the included
 source; the reruns are the files in `data/addba_screen/`. The other 335 runs
 were made with the earlier build. The fix changes only the format of the `T`
 lines, which only these six runs print.
+
+### Stalled sequential-arrival trials (Section 7.5)
+
+`stall_arrivals.py` marks the final run of a sequential-arrival trial as
+stalled when a station delivered less than 0.05 Mbit/s or sent no data
+frame, the threshold of `screen_zero_delivery.py`. The rule is applied to
+every policy, link configuration and training seed. The primary results keep
+every trial; `stalls.json` gives the sensitivity check that removes a trial
+when the final run of the policy or of RSSI stalled. The three unique stalled
+runs were traced with `dama-mlo-diag` and classified with the ADDBA rule:
+
+```bash
+python3 stall_arrivals.py                      # writes results/arrival_stall_trace/
+./run_addba_screen.sh results/arrival_stall_trace
+python3 summarize_addba_screen.py results/arrival_stall_trace
+python3 summarize_addba_screen.py ../data/arrival_stall_trace   # the included runs
+```
+
+All three reruns reproduce their stored records, and none meets the
+ADDBA-expiry rule. In `a0000` (Airtime, MLO) and `a0002` (DAMA-MLO, training
+seed 2, MLO-confined) a backhaul MAP never resolved the address of MAP 5
+(`arp end ... STALE`): each of its four broadcast ARP requests was dropped at
+MAP 5 with `PREAMBLE_DETECT_FAILURE` while another MAP was transmitting. In
+`a0001` (UCB1 and Airtime, MLO-confined) one new station had a resolved ARP
+entry and established block-ack agreements but never set up its TCP
+connection; the cause was not identified.
 
 `data/anomaly_trace/round1` to `round3` are the earlier, targeted trace rounds
 of the same diagnosis (two UDP runs and one 160 MHz backhaul run, each with a
@@ -271,6 +336,35 @@ option.
 - The original submission used a different scenario
   (`user-association-wmn.cc`). It is not part of this archive, because the
   revised manuscript reports no number from it.
+
+## Candidate check
+
+`policies.py` admits a MAP only if the path-loss estimate of its weakest
+link, plus `CAND_RX_OFFSET_DB = -0.029` dB, reaches the preamble-detection
+threshold of -82 dBm. ns-3.48 scales the whole transmit spectrum, mask skirts
+included, to the transmit power, and the receiver integrates only the in-band
+part, so the traced beacon power is 0.029 dB below the path-loss estimate at
+every traced position (`data/edge_trace/`). The offset matches the check to
+the receiver. Setting `DAMA_CAND_RX_OFFSET_DB=0` restores the nominal check;
+its outputs are in `sensitivity_nominal_check/`:
+
+```bash
+python3 common_candidate_diagnostic.py > results/common_candidate_diag_offset-0.029.json
+DAMA_CAND_RX_OFFSET_DB=0 python3 common_candidate_diagnostic.py > results/common_candidate_diag_offset0.json
+```
+
+A deployed station cannot know this offset. `margin_check.py` admits a MAP only
+if the receiver-matched estimate of its weakest link exceeds -82 dBm by a
+margin m (m = -0.029 is the nominal check, m = 0 the check of the paper), and
+joins the MAP with the larger weakest-link power if none passes. RSSI and the
+oracle under m = 0 are the fixed reference for every margin. The learners are
+retrained with the candidate set of each margin (about 40 minutes on 4 cores):
+
+```bash
+for mo in slo mlo mloConfined; do for m in -0.029 0 0.5 1 2 3; do
+  python3 margin_check.py run $mo $m; done; done
+python3 margin_check.py table           # tables/tab_margin.tex
+```
 
 ## License
 

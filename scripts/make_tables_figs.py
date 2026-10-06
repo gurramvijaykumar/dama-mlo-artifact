@@ -697,6 +697,50 @@ def arrivals():
     axes[0][0].set_ylabel("Sum-log gain over RSSI")
     axes[0][-1].legend(frameon=False, fontsize=6, loc="upper left", bbox_to_anchor=(1.0, 1.0))
     save_fig(fig, "fig_arrivals")
+    arrival_seeds()
+
+
+def arrival_seeds():
+    """Training-seed table: summarize_arrival_seeds.py + stall_arrivals.py outputs."""
+    res = os.path.join(HERE, "results")
+    seeds = {m: os.path.join(res, f"arrival_seeds_{m}_EhtMcs0.json") for m in ("mlo", "mloConfined")}
+    stall_f = os.path.join(res, "arrival_stall_trace", "stalls.json")
+    if not all(os.path.exists(f) for f in seeds.values()) or not os.path.exists(stall_f):
+        return skip("tab_arrival_seeds", "summarize_arrival_seeds.py / stall_arrivals.py not run")
+    with open(stall_f) as f:
+        stalls = json.load(f)
+
+    def ci(lo_hi):
+        return f"$[{lo_hi[0]:.3f}, {lo_hi[1]:.3f}]$"
+
+    body = ["\\begin{tabular}{ll ccccc cc c}", "\\toprule",
+            "Config. & Learner & \\multicolumn{5}{c}{Training seed} & Pooled & 95\\% CI & "
+            "Excl.\\ stalled [95\\% CI] \\\\",
+            "\\cmidrule(lr){3-7}",
+            " & & 0 & 1 & 2 & 3 & 4 & & & \\\\", "\\midrule"]
+    for i, mode in enumerate(("mlo", "mloConfined")):
+        if i:
+            body.append("\\addlinespace")
+        with open(seeds[mode]) as f:
+            rep = json.load(f)
+        for j, n in enumerate(("ucb1", "linucb", "neural")):
+            r = rep["learners"][n]
+            s = stalls[mode]["sensitivity_excl_stalled"][n]
+            removed = sum(s["trials_removed_per_seed"].values())
+            ex = s["excl_stalled"]
+            per = " & ".join(num(r["per_seed_mean"][str(k)], 3) for k in rep["seeds"])
+            body.append(f"{MODE_NAME[mode] if j == 0 else ''} & {POL_NAME[n]} & {per} & "
+                        f"{num(r['pooled_mean'], 3)} & {ci(r['crossed_boot_95'])} & "
+                        f"{num(ex['pooled_mean'], 3)} {ci(ex['crossed_boot_95'])}"
+                        + (f" ({removed})" if removed else "") + " \\\\")
+    body += ["\\bottomrule", "\\end{tabular}"]
+    write_table("tab_arrival_seeds", "\n".join(body),
+                "Sequential arrivals: sum-log gain over RSSI after 5 new stations, by learner training seed.",
+                "tab:arrival_seeds", wide=True,
+                note="Each seed: mean over the same 15 placement trials. Pooled: mean of the five seeds; "
+                     "crossed bootstrap over seeds and trials. Excl.\\ stalled: sensitivity check without "
+                     "trials whose final run (learner or RSSI) had a station below 0.05~Mbit/s or without "
+                     "data frames; number of removed trial-seed pairs in parentheses.")
 
 
 # ------------------------------------------------------------------ preview document

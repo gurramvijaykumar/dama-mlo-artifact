@@ -1,0 +1,33 @@
+\begin{table*}[t]
+\caption{Utility gain over RSSI against the margin of the candidate check.}
+\label{tab:margin}
+\centering
+\small
+\begin{tabular}{llrrrrrrr}
+\toprule
+Config. & Margin & Both & AirtimeThr & Airtime & DAMA-MLO & UCB1 & LinUCB & Oracle \\
+\midrule
+SLO & nominal & 18 & $\mathbf{+0.045}$ & $\mathbf{+0.044}$ & $\mathbf{+0.042}$ & $\mathbf{+0.044}$ & $\mathbf{+0.038}$ & $\mathbf{+0.046}$ \\
+SLO & matched & 18 & $\mathbf{+0.045}$ & $\mathbf{+0.044}$ & $\mathbf{+0.042}$ & $\mathbf{+0.044}$ & $\mathbf{+0.038}$ & $\mathbf{+0.046}$ \\
+SLO & 0.5~dB & 18 & $\mathbf{+0.045}$ & $\mathbf{+0.044}$ & $\mathbf{+0.042}$ & $\mathbf{+0.044}$ & $\mathbf{+0.038}$ & $\mathbf{+0.046}$ \\
+SLO & 1~dB & 16 & $\mathbf{+0.041}$ & $\mathbf{+0.041}$ & $\mathbf{+0.041}$ & $\mathbf{+0.041}$ & $\mathbf{+0.035}$ & $\mathbf{+0.041}$ \\
+SLO & 2~dB & 10 & $+0.024$ & $+0.024$ & $+0.024$ & $+0.014$ & $+0.021$ & $+0.024$ \\
+SLO & 3~dB & 7 & $+0.014$ & $+0.014$ & $+0.014$ & $+0.014$ & $+0.012$ & $+0.014$ \\
+\midrule
+MLO & nominal & 15 & $-0.192$ & $-0.192$ & $-0.320$ & $-0.299$ & $-0.305$ & $\mathbf{+0.015}$ \\
+MLO & matched & 14 & $\mathbf{+0.012}$ & $\mathbf{+0.012}$ & $\mathbf{+0.013}$ & $+0.007$ & $+0.001$ & $\mathbf{+0.015}$ \\
+MLO & 0.5~dB & 12 & $\mathbf{+0.012}$ & $\mathbf{+0.011}$ & $\mathbf{+0.013}$ & $+0.005$ & $+0.000$ & $\mathbf{+0.015}$ \\
+MLO & 1~dB & 10 & $+0.012$ & $+0.010$ & $+0.013$ & $+0.006$ & $+0.000$ & $\mathbf{+0.014}$ \\
+MLO & 2~dB & 7 & $+0.006$ & $+0.004$ & $+0.006$ & $+0.006$ & $+0.007$ & $+0.007$ \\
+MLO & 3~dB & 5 & $+0.003$ & $+0.002$ & $+0.003$ & $+0.000$ & $+0.003$ & $+0.003$ \\
+\midrule
+MLO-conf. & nominal & 15 & $-0.126$ & $-0.230$ & $\mathbf{-0.393}$ & $-0.316$ & $\mathbf{-0.330}$ & $+0.002$ \\
+MLO-conf. & matched & 14 & $+0.000$ & $+0.001$ & $-0.003$ & $-0.001$ & $\mathbf{-0.033}$ & $+0.002$ \\
+MLO-conf. & 0.5~dB & 12 & $+0.001$ & $+0.001$ & $-0.004$ & $-0.001$ & $\mathbf{-0.009}$ & $+0.002$ \\
+MLO-conf. & 1~dB & 10 & $+0.001$ & $+0.001$ & $+0.001$ & $+0.000$ & $\mathbf{-0.012}$ & $+0.002$ \\
+MLO-conf. & 2~dB & 7 & $+0.000$ & $+0.000$ & $-0.001$ & $+0.000$ & $\mathbf{-0.008}$ & $+0.000$ \\
+MLO-conf. & 3~dB & 5 & $+0.000$ & $+0.000$ & $-0.001$ & $+0.000$ & $\mathbf{-0.004}$ & $+0.000$ \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize Nominal: estimate 0.029~dB too high; matched: receiver-matched check ($m = 0$). Both: grid positions where both MAPs are candidates. Reference for every row: RSSI and the oracle under the matched check. Bold: paired two-stage bootstrap 95\% interval excludes zero.
+\end{table*}

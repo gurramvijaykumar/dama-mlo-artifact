@@ -1,5 +1,5 @@
 #!/bin/bash
-# Codex item 3: edge-stall trace runs (scratch/dama-mlo-trace.cc, code 2.1 + trace).
+# Edge-stall trace runs (scratch/dama-mlo-trace.cc, code 2.1 + trace).
 # N5 on MAP 1 (scenario 1), N4 at EhtMcs0, base configuration of simlib.BASE.
 # Failing points (70,165), (100,195); nearby working points (40,165), (70,195);
 # control: N5 single-link 5 GHz (--n5Links=5) at the failing points; references:

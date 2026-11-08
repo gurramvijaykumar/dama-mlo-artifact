@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\caption{Cross-condition check: available gain, effect of AirtimeThr's departures, and shortfall, with per-seed and seed-mean input.}
+\label{tab:crosscond}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llcclllllll}
+\toprule
+ & & & \multicolumn{5}{c}{Per-seed input (primary)} & \multicolumn{3}{c}{Seed-mean input (secondary)} \\
+\cmidrule(lr){4-8}\cmidrule(lr){9-11}
+Condition & Mode & $d_N$ & Dep. & $G$ = oracle $-$ RSSI & $D$ = Thr $-$ RSSI & $S$ = oracle $-$ Thr & Verdict & Dep. & $S$ & Verdict \\
+\midrule
+T1 two slow stations & SLO & 0.06 & 1.00 & $+1.176$ [$+0.921$, $+1.451$] & $+1.176$ [$+0.921$, $+1.451$] & $0.000$ [$0.000$, $0.000$] & sufficient & 1.00 & $0.000$ [$0.000$, $0.000$] & sufficient \\
+ & MLO & 0.06 & 1.00 & $+0.587$ [$+0.457$, $+0.723$] & $+0.587$ [$+0.457$, $+0.723$] & $0.000$ [$0.000$, $0.000$] & sufficient & 1.00 & $0.000$ [$0.000$, $0.000$] & sufficient \\
+T2 network spacing 100 m & SLO & 0.05 & 1.00 & $+0.557$ [$+0.453$, $+0.669$] & $+0.557$ [$+0.453$, $+0.669$] & $0.000$ [$0.000$, $0.000$] & sufficient & 1.00 & $0.000$ [$0.000$, $0.000$] & sufficient \\
+ & MLO & 0.05 & 0.80 & $+0.262$ [$+0.201$, $+0.328$] & $+0.214$ [$+0.153$, $+0.283$] & $+0.047$ [$+0.017$, $+0.084$] & inconclusive & 1.00 & $0.000$ [$0.000$, $0.000$] & sufficient \\
+T3 busy MAP 4, no slow station & SLO & 0.07 & 0.60 & $+0.269$ [$+0.177$, $+0.371$] & $+0.201$ [$+0.129$, $+0.287$] & $+0.068$ [$+0.011$, $+0.130$] & inconclusive & 1.00 & $0.000$ [$0.000$, $0.000$] & sufficient \\
+ & MLO & 0.07 & 0.00 & $+0.090$ [$+0.045$, $+0.135$] & $0.000$ [$0.000$, $0.000$] & $+0.090$ [$+0.045$, $+0.135$] & inconclusive & 0.00 & $+0.090$ [$+0.045$, $+0.135$] & inconclusive \\
+\bottomrule
+\end{tabular}
+}
+\par\smallskip{\scriptsize Sum-log differences with 95\% two-stage bootstrap intervals; 8 positions, 5 seeds. Dep.: share of choices in which AirtimeThr departs from RSSI. T2 under MLO, seed~1: utilization taken from a flagged pre-arrival run (Section~\ref{sec:res-cross}).}
+\end{table*}

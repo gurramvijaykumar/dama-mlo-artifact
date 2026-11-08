@@ -4,9 +4,6 @@ Code and raw simulation results for the revised manuscript
 
 > When Does Airtime-Aware User Association Matter in IEEE 802.11be
 > Multi-Link Wireless Mesh Networks?
-> (Computer Networks, manuscript COMNET-D-26-05038; the submitted version was
-> titled "Decentralized Anomaly-Mitigating User Association in IEEE 802.11be
-> Multi-Link Wireless Mesh Networks")
 
 Author: G. Vijaya Kumar, SCIM Govt. College, Tanuku, Andhra Pradesh, India.
 
@@ -39,7 +36,7 @@ trace runs used to diagnose failed or stalled runs are included as raw output.
   every metric the scenario printed.
 - `data/*.json`: analysis outputs used for the tables and figures.
 - `data/failed_runs.jsonl`: runs that aborted in ns-3.48 (the downlink run of
-  Section 8.5, Appendix A.4). They are reported, never imputed.
+  Section 8.5, Appendix B.1). They are reported, never imputed.
 - `tables/`, `figures/`: the tables and figures of the manuscript as generated
   from the included data.
 - `scripts/diag_policy_breakdown.py`, `scripts/diag_pilot.py`,
@@ -63,15 +60,39 @@ trace runs used to diagnose failed or stalled runs are included as raw output.
   build reproduces the validation runs of its development build.
 - `scratch/dama-mlo-trace.cc`: version 2.1 of the scenario with a per-link
   trace of N5 and its serving access point (cell-edge diagnosis, Section 8.2)
-  and, with `--psTrace=true`, a power-save trace (Appendix A.4).
+  and, with `--psTrace=true`, a power-save trace (Appendix B.1).
 - `scratch/dama-mlo-diag.cc`: `dama-mlo-trace.cc` with an added MAC-state and
   ARP trace (`--diagTrace=true`), used for the failed-run diagnosis in
-  Sections 7.3 and 7.4.
+  Sections 7.5 and 7.6.
 - `data/edge_trace/`, `data/ps_trace/`, `data/addba_screen/`,
   `data/arrival_stall_trace/`, `data/anomaly_trace/`: raw output of the trace runs; see "Trace runs" below.
 - `secondary_analysis/`: the UDP analysis excluding trace-confirmed
-  ADDBA-expiry cases (Section 7.4, Table `tab_udp_excl`); see below.
+  ADDBA-expiry cases (Section 7.6, Table `tab_udp_excl`); see below.
 - `MANIFEST.txt`: file list with SHA-256 checksums.
+
+## Post-review material (`postreview/`)
+
+Added for the revised manuscript. The scripts in `postreview/` are byte-identical to the frozen versions recorded in
+the `FREEZE_*.txt` files, so they name absolute paths of the author's machine. To rerun them, edit `REV` (or set the
+path variables at the top of each script) to point at a folder holding `policies.py`, `analyze.py`, `simlib.py` and
+the stored runs.
+
+- `scratch/dama-mlo-v22-diag.cc`: version 2.2, which adds a MAP-spacing parameter. Its default reproduces four stored
+  version 2.0 runs field for field. `scratch/dama-mlo-v20-diag.cc`: version 2.0 with the diagnostic trace.
+- `postreview/cross_condition/`: the cross-condition check (Section 7.4). It holds the frozen specification and its
+  amendments, the Stage 0 and Stage P scripts and freeze files, 34 Stage A runs, the stdout and stderr of the 480 Stage B
+  runs, the frozen results (`STAGEB_RESULTS.json`) and a descriptive per-position report (`STAGEB_DESCRIPTIVE.json`).
+  `stageB_diag_traces.tar.gz` holds the 480 diagnostic traces (about 1 GB unpacked).
+- `postreview/f1_bss_load/`: the input-sensitivity check (Section 7.3).
+- `postreview/f2_masking/`: the exploratory masking check (Appendix C): scripts, 26 runs and the checker output.
+- `postreview/manuscript_tables/`: generators and outputs of the post-review tables.
+
+- `postreview/design/`: the pre-run design and study plan that the specifications implement.
+- `postreview/claim_evidence_clearance/`: rules fixed before computing, script and results of the checks on the central estimate (Section 7.1) and the recovery shares (Section 7.2).
+- `REDACTIONS.md`: every difference between a public document and the retained original, with hashes.
+
+One pre-arrival run, `stageA_runs/A_T2_mlo_pre_s1`, is flagged: N3 and N4 delivered 9e-05 Mbit/s. It stays in the
+primary analysis, and its utilization is not a healthy measurement of the load (Section 7.4).
 
 ## Scenario versions
 
@@ -84,7 +105,7 @@ experiment, and a cached result is reused only for the same version.
 |---|---|---|---|
 | 2.0 | `scratch/dama-mlo-v2.0.cc` | `states`, `grid` | named states, grid ablation, policy comparison and training variants |
 | 2.1 | `scratch/dama-mlo-v2.1.cc` | `states21`, `backhaul`, `sens`, `pilot`, `arrivals.py` | its own 80 MHz baseline, backhaul width, UDP/downlink/near sensitivity, delay split, steady-state check, sequential arrivals |
-| 2.1 + trace | `scratch/dama-mlo-trace.cc` | `run_edge_trace.sh`, `run_ps_trace.sh` | cell-edge diagnosis (Section 8.2), power-save trace (Appendix A.4) |
+| 2.1 + trace | `scratch/dama-mlo-trace.cc` | `run_edge_trace.sh`, `run_ps_trace.sh` | cell-edge diagnosis (Section 8.2), power-save trace (Appendix B.1) |
 | 2.1 + diag trace | `scratch/dama-mlo-diag.cc` | `run_addba_screen.sh` | zero-output screen, ADDBA-expiry diagnosis and stalled-arrival traces (Sections 7.3--7.5) |
 
 The learners of the sequential-arrival experiment are trained on the version 2.0
@@ -228,7 +249,7 @@ point on link `l` (0 = 5 GHz, 1 = 6 GHz), `dn_<l>` the reverse. Counts cover
 the whole run, not only the measurement window. `--n5Links=5` makes N5 a
 single-link 5 GHz device.
 
-### Power-save trace of the downlink runs (Appendix A.4)
+### Power-save trace of the downlink runs (Appendix B.1)
 
 ```bash
 export NS3_DIR=/path/to/ns-3.48
@@ -265,7 +286,7 @@ source; the reruns are the files in `data/addba_screen/`. The other 335 runs
 were made with the earlier build. The fix changes only the format of the `T`
 lines, which only these six runs print.
 
-### Stalled sequential-arrival trials (Section 7.5)
+### Stalled sequential-arrival trials (Section 7.7)
 
 `stall_arrivals.py` marks the final run of a sequential-arrival trial as
 stalled when a station delivered less than 0.05 Mbit/s or sent no data

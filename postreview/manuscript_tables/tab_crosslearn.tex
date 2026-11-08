@@ -1,0 +1,22 @@
+\begin{table}[t]
+\caption{Cross-condition check: learner minus AirtimeThr under transfer, per-seed input.}
+\label{tab:crosslearn}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{llccc}
+\toprule
+Cond. & Mode & DAMA-MLO & UCB1 & LinUCB \\
+\midrule
+T1 & SLO & $0.000$ [$0.000$, $0.000$]$^{\dagger}$ & $0.000$ [$0.000$, $0.000$]$^{\dagger}$ & $0.000$ [$0.000$, $0.000$]$^{\dagger}$ \\
+T1 & MLO & $0.000$ [$0.000$, $0.000$]$^{\dagger}$ & $0.000$ [$0.000$, $0.000$]$^{\dagger}$ & $0.000$ [$0.000$, $0.000$]$^{\dagger}$ \\
+T2 & SLO & $0.000$ [$0.000$, $0.000$]$^{\dagger}$ & $0.000$ [$0.000$, $0.000$]$^{\dagger}$ & $0.000$ [$0.000$, $0.000$]$^{\dagger}$ \\
+T2 & MLO & $+0.017$ [$+0.004$, $+0.036$]$^{\dagger}$ & $+0.035$ [$+0.006$, $+0.071$] & $+0.047$ [$+0.017$, $+0.083$] \\
+T3 & SLO & $+0.017$ [$-0.070$, $+0.102$] & $+0.012$ [$-0.086$, $+0.105$] & $+0.068$ [$+0.011$, $+0.129$] \\
+T3 & MLO & $+0.083$ [$+0.035$, $+0.131$] & $+0.083$ [$+0.038$, $+0.130$] & $+0.088$ [$+0.039$, $+0.135$] \\
+\bottomrule
+\end{tabular}
+}
+\par\smallskip{\scriptsize Learners trained on the main grid, applied unchanged. Intervals include training variation. $^{\dagger}$: difference below $d_N$ supported after the Holm correction.}
+\end{table}

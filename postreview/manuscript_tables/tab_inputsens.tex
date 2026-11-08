@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\caption{Sensitivity to the utilization input: regret of AirtimeThr and learner minus AirtimeThr.}
+\label{tab:inputsens}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{llllll}
+\toprule
+ & \multicolumn{2}{c}{AirtimeThr regret} & \multicolumn{3}{c}{Learner $-$ AirtimeThr, other-seed 8-bit input} \\
+Config. & original input & other-seed 8-bit & DAMA-MLO & UCB1 & LinUCB \\
+\midrule
+SLO & $+0.001 [0.000, +0.004]$ & $+0.003 [0.000, +0.006]$ & $-0.001 [-0.003, 0.000]$ & $+0.001 [-0.001, +0.002]$ & $-0.005 [-0.011, -0.001]$ \\
+MLO & $+0.003 [0.000, +0.007]$ & $+0.003 [0.000, +0.008]$ & $+0.001 [-0.001, +0.004]$ & $-0.006 [-0.019, +0.001]$ & $-0.010 [-0.019, -0.003]$ \\
+MLO-conf. & $+0.002 [0.000, +0.005]$ & $+0.002 [0.000, +0.005]$ & $-0.003 [-0.007, 0.000]$ & $-0.001 [-0.005, +0.001]$ & $-0.033 [-0.072, -0.010]$ \\
+\bottomrule
+\end{tabular}
+\end{table*}
